@@ -1,4 +1,5 @@
 import Head from "next/head";
+import CarouselHome from "@/components/carouselHome";
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <p>Home</p>
+        <CarouselHome />
       </main>
     </>
   );

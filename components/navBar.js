@@ -6,16 +6,19 @@ const NavBar = () => {
   const router = useRouter();
   const route = router.asPath;
   return (
-    <div className="overflow-hidden sticky top-0 pt-0.4 bg-white p-4">
-      <Navbar fluid={false} rounded={true}>
-        <Navbar.Brand href="https://flowbite.com/">
+    <div className="overflow-hidden sticky top-0 pt-0.4 bg-white p-4 z-50">
+      <Navbar fluid={true} rounded={true}>
+        <Navbar.Brand href="/">
           <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="mr-3 h-6 sm:h-9"
+            src="/isologo.png"
+            className="mr-3 h-5 sm:h-8"
             alt="Flowbite Logo"
           />
+
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            Estudio Contable Dillon
+            <div class="font-['Secular_One'] text-1xl sm:text-2xl text-fuchsia-600">
+              ESTUDIO DILLON
+            </div>
           </span>
         </Navbar.Brand>
         <Navbar.Toggle />
@@ -34,9 +37,6 @@ const NavBar = () => {
           </Navbar.Link>
           <Navbar.Link href="/tramites" active={route === "/tramites"}>
             Trámites
-          </Navbar.Link>
-          <Navbar.Link href="/novedades" active={route === "/novedades"}>
-            Novedades
           </Navbar.Link>
           <Navbar.Link href="/vencimientos" active={route === "/vencimientos"}>
             Vencimientos

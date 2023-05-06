@@ -8,6 +8,9 @@ module.exports = {
     "./node_modules/flowbite-react/**/*.js",
   ],
   theme: {
+    fontFamily: {
+      'title': ['ui-sans-serif', 'system-ui'],      
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
