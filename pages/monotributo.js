@@ -1,17 +1,17 @@
 import Head from "next/head";
 
-const Home = () => {
+const Monotributo = () => {
   return (
     <>
       <Head>
-        <title>Estudio Contable Dillon - Home</title>
+        <title>Estudio Contable Dillon - Monotributo</title>
         <meta name="description" content="La mejor atención y asesoramiento" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index,follow" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <p>Home</p>
+        <p>Monotributo</p>
       </main>
     </>
   );
@@ -23,4 +23,4 @@ const Home = () => {
 //   };
 // }
 
-export default Home;
+export default Monotributo;
