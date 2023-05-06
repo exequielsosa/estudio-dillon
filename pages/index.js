@@ -11,7 +11,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <p>Este es mi hogar</p>
+        <p>Este es mi hogar 2</p>
       </main>
     </>
   );
