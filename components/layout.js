@@ -2,6 +2,7 @@ import LayoutBody from "./layoutBody";
 import NavBar from "./navBar";
 import FooterLayout from "./footer";
 import FormContact from "./formContact";
+import CallToActionCard from "./callToActionCard";
 
 const Layout = ({ children }) => {
   return (
@@ -10,6 +11,7 @@ const Layout = ({ children }) => {
       <LayoutBody>
         {children}
         <FormContact />
+        <CallToActionCard />
       </LayoutBody>
       <FooterLayout />
     </>
