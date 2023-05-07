@@ -9,11 +9,14 @@ const Impuestos = () => {
           Liquidacion de Impuestos - Estudio Contable Dillon | Estudio Contable
           Integral
         </title>
-        <meta name="description" content="Brindamos Servicios Contables Integrales en materia impositiva. Asesoramiento para pequeños contribuyentes que quieran empezar o posean un emprendimiento..." />
+        <meta
+          name="description"
+          content="Brindamos Servicios Contables Integrales en materia impositiva. Asesoramiento para pequeños contribuyentes que quieran empezar o posean un emprendimiento..."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index,follow" />
-        <link rel="icon" href="/favicon.ico" />  
-        <link rel="canonical" href="https://estudio-dillon.com.ar/impuestos" />        
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://estudio-dillon.com.ar/impuestos" />
       </Head>
       <main>
         <HeaderImage image="/impuestos.jpg" />
@@ -21,41 +24,53 @@ const Impuestos = () => {
           <div className="flex justify-center flex-col w-11/12">
             <section className="articles">
               <article>
-                <h1 className="mt-6 mb-6 text-xl font-semibold">
-                  Servicios Impositivos
-                </h1>
-                <h2 className="mt-6 mb-6 text-lg font-semibold opacity-70">Impuestos y DDJJ de presentación</h2>                
-                <ul className="list-disc ml-8">
-                  <li>Impuesto al Valor Agregado</li>
-                  <li>Libro IVA - Ventas y IVA - Compras</li>
-                  <li>DDJJ de Ganancias y Bienes Personales</li>
-                  <li>Impuesto a la Renta Financiera</li>
-                  <li>Impuesto sobre los Ingresos Brutos</li>
-                </ul>
+                <div className="w-full justify-center flex mt-4">
+                  <div className="w-full 2xl:w-10/12">
+                    <h1 className="mt-6 mb-6 text-xl font-semibold">
+                      Servicios Impositivos
+                    </h1>
+                    <h2 className="mt-6 mb-6 text-lg font-semibold opacity-70">
+                      Impuestos y DDJJ de presentación
+                    </h2>
+                    <ul className="list-disc ml-8">
+                      <li>Impuesto al Valor Agregado</li>
+                      <li>Libro IVA - Ventas y IVA - Compras</li>
+                      <li>DDJJ de Ganancias y Bienes Personales</li>
+                      <li>Impuesto a la Renta Financiera</li>
+                      <li>Impuesto sobre los Ingresos Brutos</li>
+                    </ul>
+                  </div>
+                </div>
               </article>
               <article>
-                <h2 className="mt-8 mb-6 text-lg font-semibold opacity-70">Gestiones</h2>                
-                <ul className="list-disc ml-8">
-                  <li>
-                    Regulación de deudas impositivas y/o previsionales de plazo
-                    vencido.
-                  </li>
-                  <li>Confección de planes de facilidades de pago.</li>
-                  <li>Reintegro por exportaciones.</li>
-                  <li>
-                    Devoluciones, transferencias y/o compensaciones con deudas
-                    exigibles o futuros ingresos.
-                  </li>
-                  <li>
-                    Inspecciones, minimización de los efectos y consideración de
-                    medidas preventivas.
-                  </li>
-                  <li>
-                    Asesoramiento y patrocinio en materia contencioso
-                    tributaria, tanto en la instancia administrativa como en la
-                    instancia judicial.
-                  </li>
-                </ul>
+                <div className="w-full justify-center flex mt-4">
+                  <div className="w-full 2xl:w-10/12">
+                    <h2 className="mt-8 mb-6 text-lg font-semibold opacity-70">
+                      Gestiones
+                    </h2>
+                    <ul className="list-disc ml-8">
+                      <li>
+                        Regulación de deudas impositivas y/o previsionales de
+                        plazo vencido.
+                      </li>
+                      <li>Confección de planes de facilidades de pago.</li>
+                      <li>Reintegro por exportaciones.</li>
+                      <li>
+                        Devoluciones, transferencias y/o compensaciones con
+                        deudas exigibles o futuros ingresos.
+                      </li>
+                      <li>
+                        Inspecciones, minimización de los efectos y
+                        consideración de medidas preventivas.
+                      </li>
+                      <li>
+                        Asesoramiento y patrocinio en materia contencioso
+                        tributaria, tanto en la instancia administrativa como en
+                        la instancia judicial.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </article>
             </section>
           </div>
