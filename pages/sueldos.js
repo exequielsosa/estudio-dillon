@@ -5,11 +5,18 @@ const Sueldos = () => {
   return (
     <>
       <Head>
-        <title>Estudio Contable Dillon - Sueldos</title>
-        <meta name="description" content="La mejor atención y asesoramiento" />
+        <title>
+          Liquidacion de Sueldos - Estudio Contable Dillon | Estudio Contable
+          Integral
+        </title>
+        <meta
+          name="description"
+          content="La tercerización de la liquidación de sueldos en las empresas ayuda a las mismas en no tener que estar actualizándose en la normativa y problemática laboral"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index,follow" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://estudio-dillon.com.ar/sueldos" />
       </Head>
       <main>
         <HeaderImage image="/sueldos.jpg" />
@@ -23,7 +30,7 @@ const Sueldos = () => {
                 <h2 className="mt-6 mb-2 text-lg font-semibold opacity-70">
                   Asesoramiento en liquidación de haberes y administración de
                   personal
-                </h2>                
+                </h2>
                 <p>
                   Este servicio comprende la realización de un amplio abanico de
                   trámites y tareas inherentes a los procesos de incorporación,
@@ -33,7 +40,9 @@ const Sueldos = () => {
                   forma idónea para su compañía.
                 </p>
                 <br />
-                <h3 className="mt-1 mb-2 text-lg font-semibold opacity-70">Incorporación de personal:</h3>
+                <h3 className="mt-1 mb-2 text-lg font-semibold opacity-70">
+                  Incorporación de personal:
+                </h3>
                 <ul className="list-disc ml-8">
                   <li>Trámite de obtención de CUIL</li>
                   <li>Obtención de exámenes preocupacionales</li>
@@ -44,7 +53,9 @@ const Sueldos = () => {
                   <li>Confección de legajo del empleado</li>
                 </ul>
                 <br />
-                <h3 className="mt-1 mb-2 text-lg font-semibold opacity-70">Administración de personal:</h3>
+                <h3 className="mt-1 mb-2 text-lg font-semibold opacity-70">
+                  Administración de personal:
+                </h3>
                 <ul className="list-disc ml-8">
                   <li>Inscripciones como empleador</li>
                   <li>
