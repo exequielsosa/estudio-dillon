@@ -6,14 +6,14 @@ const dataCards = [
   {
     link: "/impuestos",
     title: " Liquidación de Impuestos",
-    img: "/impuestos.jpg",
+    img: "/impuestos-min.jpg",
     description:
       "Brindamos Servicios Contables Integrales en materia impositiva.",
   },
   {
     link: "/sueldos",
     title: "Liquidación de haberes",
-    img: "/sueldos.jpg",
+    img: "/sueldos-min.jpg",
     description: "Realizamos todo lo referente a la liquidación de sueldos",
   },
   {
@@ -25,13 +25,13 @@ const dataCards = [
   {
     link: "/tramites",
     title: "Gestión de trámites",
-    img: "/tramites.jpg",
+    img: "/tramites-min.jpg",
     description: "Gestionamos todas tus inscripciones/altas/bajas.",
   },
   {
     link: "/vencimientos",
     title: "Vencimientos 2023",
-    img: "/vencimientos.jpg",
+    img: "/vencimientos-min.jpg",
     description: "Calendario de vencimientos 2023",
   },
   {
@@ -49,18 +49,14 @@ const CallToActionCard = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6 mt-12 mb-12">
         {dataCards.map((item, i) => (
           <Link href={item.link}>
-            <div className=" flex justify-center w-full">
+            <div className=" flex justify-center w-full" key={i}>
               <div className="max-w-lg">
                 <Card
                   horizontal={true}
-                  imgSrc={item.img}
-                  key={i}
+                  imgSrc={item.img}                  
                   className="md:h-80"
                 >
-                  <h5
-                    className="text-2xl font-bold tracking-tight text-gray-800 dark:text-white opacity-90"
-                    key={i}
-                  >
+                  <h5 className="text-2xl font-bold tracking-tight text-gray-800 dark:text-white opacity-90">
                     {item.title}
                   </h5>
                   <p className="font-normal text-gray-700 dark:text-gray-400">
