@@ -4,17 +4,6 @@ import SeoHome from "@/components/seo/seoHome";
 const Home = () => {
   return (
     <>
-      {/* <Head>
-        <title>Estudio Contable Dillon | Estudio Contable Integral</title>
-        <meta
-          name="description"
-          content="Soluciones Contables Integrales, Brindamos servicios contables profesionales a la medida de sus requerimientos. Servicios Legales, Corporativos, Derecho Empresario, Conflictos Judiciales y Derecho Laboral y Previsional. Servicios Contables para PyMEs. Analizamos puntos críticos del emprendimiento con el objetivo de brindar mejoras a la empresa para minimizar posibles contingencias. Brindamos soluciones contables integrales a empresas"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index,follow" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://estudio-dillon.com.ar" />
-      </Head> */}
       <SeoHome />
       <main>
         <CarouselHome />
