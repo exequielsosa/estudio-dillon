@@ -21,6 +21,7 @@ const FooterLayout = () => {
                 <Footer.LinkGroup col={true}>
                   <Footer.Link href="/contacto"><p>Contactos</p></Footer.Link>
                   <Footer.Link href="https://wa.me/541158959823"><p>WhatsApp</p></Footer.Link>
+                  <Footer.Link href="mailto:estudiodillonsosa@gmail.com?Subject:Consulta%20a%20Estudio%20Dillon"><p>email</p></Footer.Link>
                 </Footer.LinkGroup>
               </div>
               <div>
