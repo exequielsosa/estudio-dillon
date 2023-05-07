@@ -6,7 +6,7 @@ const Tramites = () => {
     <>
       <SeoTramites />
       <main>
-        <HeaderImage image="/tramites.jpg" />
+        <HeaderImage image="/tramites-min.jpg" />
         <div className="flex w-full justify-center flex-col items-center mb-10">
           <div className="flex justify-center flex-col w-11/12">
             <section className="main">

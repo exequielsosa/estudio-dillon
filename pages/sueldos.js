@@ -6,7 +6,7 @@ const Sueldos = () => {
     <>
       <SeoSueldos />
       <main>
-        <HeaderImage image="/sueldos.jpg" />
+        <HeaderImage image="/sueldos-min.jpg" />
         <div className="flex w-full justify-center flex-col items-center mb-10">
           <div className="flex justify-center flex-col w-11/12">
             <section className="articles">

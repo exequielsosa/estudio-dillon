@@ -15,7 +15,7 @@ const NavBar = () => {
             alt="Flowbite Logo"
           />
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            <h1 class="font-['Secular_One'] text-1xl sm:text-2xl text-fuchsia-600">
+            <h1 className="font-['Secular_One'] text-1xl sm:text-2xl text-fuchsia-600">
               ESTUDIO DILLON
             </h1>
           </span>
