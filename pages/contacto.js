@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import HeaderImage from "../components/headerImage"
-import FormContact from "@/components/formContact";
 
 const Contacto = () => {
   return (
@@ -19,9 +18,9 @@ const Contacto = () => {
           <div className="flex justify-center flex-col w-11/12">
             <section className="articles">
               <article>
-                <h2 className="mt-6 text-xl font-semibold">
+                <h1 className="mt-6 text-xl font-semibold">
                   Comunicate con nosotros
-                </h2>
+                </h1>
                 <br />
                 <p>
                   En Estudio Dillon estamos su disposición para atender sus
@@ -39,8 +38,6 @@ const Contacto = () => {
                   inmediatamente para concretar una entrevista.
                 </p>
                 <br />
-                <FormContact />
-                
               </article>
             </section>
           </div>
