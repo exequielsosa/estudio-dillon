@@ -1,26 +1,12 @@
 import Head from "next/head";
 import ModalImage from "react-modal-image";
 import Taxes from "../components/taxes";
+import SeoVencimientos from "../components/seo/seoVencimientos";
 
 const Vencimientos = () => {
   return (
-    <>
-      <Head>
-        <title>
-          Vencimientos - Estudio Contable Dillon | Estudio Contable Integral
-        </title>
-        <meta
-          name="description"
-          content="Te brindamos un detalle de todos los vencimientos de la Afip correspondientes al año 2023."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index,follow" />
-        <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="canonical"
-          href="https://estudio-dillon.com.ar/vencimientos"
-        />
-      </Head>
+    <>      
+      <SeoVencimientos />
       <main>
         <div className="flex w-full justify-center flex-col items-center">
           <div className="flex justify-center flex-col w-11/12">

@@ -1,23 +1,10 @@
-import Head from "next/head";
 import HeaderImage from "@/components/headerImage";
+import SeoSueldos from "@/components/seo/seoSueldos";
 
 const Sueldos = () => {
   return (
     <>
-      <Head>
-        <title>
-          Liquidacion de Sueldos - Estudio Contable Dillon | Estudio Contable
-          Integral
-        </title>
-        <meta
-          name="description"
-          content="La tercerización de la liquidación de sueldos en las empresas ayuda a las mismas en no tener que estar actualizándose en la normativa y problemática laboral"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index,follow" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://estudio-dillon.com.ar/sueldos" />
-      </Head>
+      <SeoSueldos />
       <main>
         <HeaderImage image="/sueldos.jpg" />
         <div className="flex w-full justify-center flex-col items-center mb-10">

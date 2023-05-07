@@ -1,25 +1,10 @@
-import Head from "next/head";
 import HeaderImage from "@/components/headerImage";
+import SeoMonotributo from "@/components/seo/seoMonotributo";
 
 const Monotributo = () => {
   return (
     <>
-      <Head>
-        <title>
-          Monotributo - Estudio Contable Dillon | Estudio Contable Integral
-        </title>
-        <meta
-          name="description"
-          content="En el caso de las Pequeños emprendimientos, cada caso es particular, por lo que se le brinda un trato personalizado y con la mayor rigurosidad profesional, con la experiencia adquirida de otras empresas"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index,follow" />
-        <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="canonical"
-          href="https://estudio-dillon.com.ar/monotributo"
-        />
-      </Head>
+      <SeoMonotributo />
       <main>
         <HeaderImage image="/monotributo.webp" />
         <div className="flex w-full justify-center flex-col items-center mb-10">

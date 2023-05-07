@@ -1,23 +1,10 @@
-import Head from "next/head";
 import HeaderImage from "@/components/headerImage";
+import SeoImpuestos from "@/components/seo/seoImpuestos";
 
 const Impuestos = () => {
   return (
     <>
-      <Head>
-        <title>
-          Liquidacion de Impuestos - Estudio Contable Dillon | Estudio Contable
-          Integral
-        </title>
-        <meta
-          name="description"
-          content="Brindamos Servicios Contables Integrales en materia impositiva. Asesoramiento para pequeños contribuyentes que quieran empezar o posean un emprendimiento..."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index,follow" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://estudio-dillon.com.ar/impuestos" />
-      </Head>
+      <SeoImpuestos />
       <main>
         <HeaderImage image="/impuestos.jpg" />
         <div className="flex w-full justify-center flex-col items-center mb-10">

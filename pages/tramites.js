@@ -1,23 +1,10 @@
-import Head from "next/head";
 import HeaderImage from "@/components/headerImage";
+import SeoTramites from "@/components/seo/seoTramites";
 
 const Tramites = () => {
   return (
     <>
-      <Head>
-        <title>
-          Gestión de trámites - Estudio Contable Dillon | Estudio Contable
-          Integral
-        </title>
-        <meta
-          name="description"
-          content="En cualquier tipo de emprendimiento es importante un buen asesoramiento a la hora de gestionar sus trámites, tanto para obtener los resultados esperados, como para no tener innecesaria perdidas de tiempo.Poseemos experiencia en todo tipo de trámites societarios y certificados contables"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index,follow" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://estudio-dillon.com.ar/tramites" />
-      </Head>
+      <SeoTramites />
       <main>
         <HeaderImage image="/tramites.jpg" />
         <div className="flex w-full justify-center flex-col items-center mb-10">

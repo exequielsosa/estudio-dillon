@@ -1,10 +1,10 @@
-import Head from "next/head";
 import CarouselHome from "@/components/carouselHome";
+import SeoHome from "@/components/seo/seoHome";
 
 const Home = () => {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Estudio Contable Dillon | Estudio Contable Integral</title>
         <meta
           name="description"
@@ -14,7 +14,8 @@ const Home = () => {
         <meta name="robots" content="index,follow" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://estudio-dillon.com.ar" />
-      </Head>
+      </Head> */}
+      <SeoHome />
       <main>
         <CarouselHome />
 

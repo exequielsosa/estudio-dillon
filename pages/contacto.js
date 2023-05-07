@@ -1,23 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import Head from "next/head";
 import HeaderImage from "../components/headerImage";
+import SeoContactos from "@/components/seo/seoContactos";
 
 const Contacto = () => {
   return (
     <>
-      <Head>
-        <title>
-          Contacto - Estudio Contable Dillon | Estudio Contable Integral
-        </title>
-        <meta
-          name="description"
-          content="Desde hace mas de veinte años brindamos soluciones contables integrales a empresas, instituciones y particulares. Contáctenos aquí y comencemos hoy mismo."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index,follow" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://estudio-dillon.com.ar/contacto" />
-      </Head>
+      <SeoContactos />
       <main>
         <HeaderImage image="/imageContact.jpg" />
         <div className="flex w-full justify-center flex-col items-center">
