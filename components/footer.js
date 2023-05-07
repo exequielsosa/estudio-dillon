@@ -7,7 +7,7 @@ const FooterLayout = () => {
       <Footer container={true}>
         <div className="w-full">
           <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-          <div>
+          <div className="mb-6">
               <Footer.Brand
                 href="/"
                 src="/mini.jpg"
@@ -15,7 +15,7 @@ const FooterLayout = () => {
                 name="Estudio Dillon"
               />
             </div>
-            <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
+            <div className="grid grid-cols-2 gap-8 sm:mt-4 lg:grid-cols-3 sm:gap-4 md:max-w-2xl ">
               <div>
                 <Footer.Title title="Nosotros" />
                 <Footer.LinkGroup col={true}>
@@ -34,6 +34,9 @@ const FooterLayout = () => {
                   </Footer.Link>
                   <Footer.Link href="https://www.linkedin.com/in/maria-eugenia-dillon-05346113/">
                     <p>Linkedin</p>
+                  </Footer.Link>
+                  <Footer.Link href="https://twitter.com/maugexxiv?lang=es">
+                    <p>Twitter</p>
                   </Footer.Link>
                 </Footer.LinkGroup>
               </div>
