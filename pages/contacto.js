@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import HeaderImage from "../components/headerImage"
+import FormContact from "@/components/formContact";
 
 const Contacto = () => {
   return (
@@ -38,14 +39,8 @@ const Contacto = () => {
                   inmediatamente para concretar una entrevista.
                 </p>
                 <br />
-                <div align="center" className="quienes">
-                  <img
-                    src="/mini.jpg"
-                    tag="quienessomos"
-                    width="300"
-                    alt="Contactos"
-                  />
-                </div>
+                <FormContact />
+                
               </article>
             </section>
           </div>
