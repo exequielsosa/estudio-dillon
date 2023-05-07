@@ -14,11 +14,10 @@ const NavBar = () => {
             className="mr-3 h-5 sm:h-8"
             alt="Flowbite Logo"
           />
-
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            <div class="font-['Secular_One'] text-1xl sm:text-2xl text-fuchsia-600">
+            <h1 class="font-['Secular_One'] text-1xl sm:text-2xl text-fuchsia-600">
               ESTUDIO DILLON
-            </div>
+            </h1>
           </span>
         </Navbar.Brand>
         <Navbar.Toggle />
