@@ -2,8 +2,9 @@ import "@/styles/globals.css";
 import "@/styles/whatsApp.css";
 import Layout from "@/components/layout";
 import FloatingWhatsApp from "@/components/floatingWP";
+import { appWithTranslation } from "next-i18next";
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <Layout>
       <FloatingWhatsApp />
@@ -11,3 +12,5 @@ export default function App({ Component, pageProps }) {
     </Layout>
   );
 }
+
+export default appWithTranslation(App);

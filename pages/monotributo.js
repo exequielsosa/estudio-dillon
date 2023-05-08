@@ -1,5 +1,6 @@
 import HeaderImage from "@/components/headerImage";
 import SeoMonotributo from "@/components/seo/seoMonotributo";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Monotributo = () => {
   return (
@@ -53,5 +54,14 @@ const Monotributo = () => {
     </>
   );
 };
+
+export async function getServerSideProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+      // Will be passed to the page component as props
+    },
+  };
+}
 
 export default Monotributo;

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import HeaderImage from "../components/headerImage";
 import SeoContactos from "@/components/seo/seoContactos";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Contacto = () => {
   return (
@@ -45,5 +46,14 @@ const Contacto = () => {
     </>
   );
 };
+
+export async function getServerSideProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+      // Will be passed to the page component as props
+    },
+  };
+}
 
 export default Contacto;

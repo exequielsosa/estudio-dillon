@@ -1,5 +1,6 @@
 import HeaderImage from "@/components/headerImage";
 import SeoSueldos from "@/components/seo/seoSueldos";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Sueldos = () => {
   return (
@@ -84,5 +85,14 @@ const Sueldos = () => {
     </>
   );
 };
+
+export async function getServerSideProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+      // Will be passed to the page component as props
+    },
+  };
+}
 
 export default Sueldos;

@@ -1,7 +1,7 @@
-import Head from "next/head";
 import ModalImage from "react-modal-image";
 import Taxes from "../components/taxes";
 import SeoVencimientos from "../components/seo/seoVencimientos";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Vencimientos = () => {
   return (
@@ -34,5 +34,14 @@ const Vencimientos = () => {
     </>
   );
 };
+
+export async function getServerSideProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+      // Will be passed to the page component as props
+    },
+  };
+}
 
 export default Vencimientos;

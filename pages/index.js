@@ -1,7 +1,10 @@
 import CarouselHome from "@/components/carouselHome";
 import SeoHome from "@/components/seo/seoHome";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 const Home = () => {
+  const { t } = useTranslation("common");
   return (
     <>
       <SeoHome />
@@ -14,6 +17,7 @@ const Home = () => {
               <article>
                 <div className="w-full justify-center flex mt-4">
                   <div className="w-full 2xl:w-10/12">
+                    <p>{t("hello")}</p>
                     <h2 className="mt-6 text-xl font-semibold">
                       Estudio Contable Dillon
                     </h2>
@@ -41,5 +45,14 @@ const Home = () => {
     </>
   );
 };
+
+export async function getServerSideProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+      // Will be passed to the page component as props
+    },
+  };
+}
 
 export default Home;
