@@ -14,7 +14,7 @@ const Vencimientos = () => {
               <ModalImage
                 small="/calendarioVencimientos2023SmallR.png"
                 large="/calendarioVencimientos2023.png"
-                alt="Hello World!"
+                alt="Vencimientos 2023"
               />
             </div>
             <br />

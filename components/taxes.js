@@ -8,7 +8,7 @@ const Taxes = () => {
           <span id="iva" />
           <Content />
           <span id="bp" />
-          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70">
+          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Impuesto al Valor Agregado (IVA)
           </h2>
           <p className="opacity-70 text-sm">
@@ -28,7 +28,7 @@ const Taxes = () => {
             ese motivo, se pierdan los beneficios que otorga la ley 27.264.
           </p>
           <span id="bp" />
-          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70">
+          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Bienes Personales
           </h2>
           <p className="opacity-70 text-sm">
@@ -79,7 +79,7 @@ const Taxes = () => {
             vencimientos en los meses de febrero y abril. El monto a partir del
             cual se hacen exigibles los anticipos es de $5.000.
           </p>
-          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70">
+          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Impuesto a las Ganancias
           </h2>
           <p className="opacity-70 text-sm">
@@ -128,7 +128,7 @@ const Taxes = () => {
             progresivas del impuesto a las ganancias para las empresas, se
             actualizan por el índice de precios IPC.
           </p>
-          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70">
+          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Percepción Impuesto PAIS
           </h2>
           <p className="opacity-70 text-sm">
@@ -149,7 +149,7 @@ const Taxes = () => {
             Lo que quede por recuperar se deberá solicitar la devolución en el
             CBU ante la AFIP.
           </p>
-          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70">
+          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Cuarta Categoría
           </h2>
           <p className="opacity-70 text-sm">
@@ -179,7 +179,7 @@ const Taxes = () => {
             vencido. Siempre considerando que sean días hábiles, sino los días
             se corren en bloque.
           </p>
-          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70">
+          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Participaciones societarias, autoridades y apoderados
           </h2>
           <p className="opacity-70 text-sm">
@@ -210,7 +210,7 @@ const Taxes = () => {
             mensuales vencerán del 9 al 11 de cada mes, o días hábiles
             siguientes.
           </p>
-          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70">
+          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Régimen Simplificado (Monotributo)
           </h2>
           <p className="opacity-70 text-sm">
@@ -235,7 +235,7 @@ const Taxes = () => {
             anual aumentó su valor significativamente, con relación a lo que se
             pagó durante este año.
           </p>
-          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70">
+          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Impuestos internos
           </h2>
           <p className="opacity-70 text-sm">
@@ -244,7 +244,7 @@ const Taxes = () => {
             agrupados por tres números finales de CUIT.
           </p>
           <span id="fc" />
-          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70">
+          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Convenio multilateral
           </h2>
           <p className="opacity-70 text-sm">
@@ -256,7 +256,7 @@ const Taxes = () => {
             verificador del CUIT.
           </p>
           <span id="gmp" />
-          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70">
+          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Fondo Cooperativo
           </h2>
           <p className="opacity-70 text-sm">
@@ -266,7 +266,7 @@ const Taxes = () => {
             que sucede con las sociedades en el Impuesto a las Ganancias, vence
             del 13 al 15 en el quinto mes posterior al cierre de ejercicio.
           </p>
-          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70" id="gmp">
+          <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Ganancia Mínima Presunta (residual)
           </h2>
           <p className="opacity-70 text-sm">
