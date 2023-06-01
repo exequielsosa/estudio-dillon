@@ -13,7 +13,7 @@ const SeoVencimientos = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index,follow" />
       <link rel="icon" href="/favicon.ico" />
-      <link rel="canonical" href="https://estudio-dillon.com.ar/vencimientos" />
+      <link rel="canonical" href="https://www.estudio-dillon.com/vencimientos" />
       <meta
         name="title"
         content="Vencimientos - Estudio Contable Dillon | Estudio Contable Integral"
@@ -29,7 +29,7 @@ const SeoVencimientos = () => {
       <meta property="og:site_name" content="Estudio Contable Dillon | Estudio Contable Integral" />
       <meta property="og:title" content="Vencimientos - Estudio Contable Dillon | Estudio Contable Integral" />
       <meta property="og:description" content="Te brindamos un detalle de todos los vencimientos de la Afip correspondientes al año 2023." />
-      <meta property="og:url" content="https://estudio-dillon.com.ar/vencimientos" />
+      <meta property="og:url" content="https://www.estudio-dillon.com/vencimientos" />
     </Head>
   );
 };

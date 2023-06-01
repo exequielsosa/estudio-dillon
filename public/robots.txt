@@ -4,4 +4,4 @@ Allow: /
 User-agent: *
 
 
-Sitemap: https://www.estudio-dillon.com.ar/sitemap.xml
+Sitemap: https://www.estudio-dillon.com/sitemap.xml

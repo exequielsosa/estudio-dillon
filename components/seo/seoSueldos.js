@@ -14,7 +14,7 @@ const SeoSueldos = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index,follow" />
       <link rel="icon" href="/favicon.ico" />
-      <link rel="canonical" href="https://estudio-dillon.com.ar/sueldos" />
+      <link rel="canonical" href="https://www.estudio-dillon.com/sueldos" />
       <meta property="og:locale" content="es_ES" />
       <meta property="og:type" content="article" />
       <meta
@@ -30,7 +30,7 @@ const SeoSueldos = () => {
         property="og:description"
         content="La tercerización de la liquidación de sueldos en las empresas ayuda a las mismas en no tener que estar actualizándose en la normativa y problemática laboral"
       />
-      <meta property="og:url" content="https://estudio-dillon.com.ar/sueldos" />
+      <meta property="og:url" content="https://www.estudio-dillon.com/sueldos" />
       <meta
         name="title"
         content="Liquidacion de Sueldos - Estudio Contable Dillon | Estudio Contable

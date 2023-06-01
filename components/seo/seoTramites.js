@@ -14,7 +14,7 @@ const SeoTramites = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index,follow" />
       <link rel="icon" href="/favicon.ico" />
-      <link rel="canonical" href="https://estudio-dillon.com.ar/tramites" />
+      <link rel="canonical" href="https://www.estudio-dillon.com/tramites" />
       <meta property="og:locale" content="es_ES" />
       <meta property="og:type" content="article" />
       <meta
@@ -32,7 +32,7 @@ const SeoTramites = () => {
       />
       <meta
         property="og:url"
-        content="https://estudio-dillon.com.ar/tramites"
+        content="https://www.estudio-dillon.com/tramites"
       />
       <meta
         name="title"
