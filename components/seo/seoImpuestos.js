@@ -14,7 +14,7 @@ const SeoImpuestos = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index,follow" />
       <link rel="icon" href="/favicon.ico" />
-      <link rel="canonical" href="https://estudio-dillon.com.ar/impuestos" />
+      <link rel="canonical" href="https://www.estudio-dillon.com/impuestos" />
       <meta property="og:locale" content="es_ES" />
       <meta property="og:type" content="article" />
       <meta
@@ -32,7 +32,7 @@ const SeoImpuestos = () => {
       />
       <meta
         property="og:url"
-        content="https://estudio-dillon.com.ar/impuestos"
+        content="https://www.estudio-dillon.com/impuestos"
       />
       <meta
         name="title"

@@ -13,7 +13,7 @@ const SeoMonotributo = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index,follow" />
       <link rel="icon" href="/favicon.ico" />
-      <link rel="canonical" href="https://estudio-dillon.com.ar/monotributo" />
+      <link rel="canonical" href="https://www.estudio-dillon.com/monotributo" />
       <meta property="og:locale" content="es_ES" />
       <meta property="og:type" content="article" />
       <meta
@@ -30,7 +30,7 @@ const SeoMonotributo = () => {
       />
       <meta
         property="og:url"
-        content="https://estudio-dillon.com.ar/monotributo"
+        content="https://www.estudio-dillon.com/monotributo"
       />
       <meta
         name="title"

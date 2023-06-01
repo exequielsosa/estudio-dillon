@@ -11,7 +11,7 @@ const SeoHome = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index,follow" />
       <link rel="icon" href="/favicon.ico" />
-      <link rel="canonical" href="https://estudio-dillon.com.ar" />
+      <link rel="canonical" href="https://www.estudio-dillon.com" />
 
       <meta property="og:locale" content="es_ES" />
       <meta property="og:type" content="article" />
@@ -27,7 +27,7 @@ const SeoHome = () => {
         property="og:description"
         content="Soluciones Contables Integrales, Brindamos servicios contables profesionales a la medida de sus requerimientos. Servicios Legales, Corporativos, Derecho Empresario, Conflictos Judiciales y Derecho Laboral y Previsional. Servicios Contables para PyMEs. Analizamos puntos críticos del emprendimiento con el objetivo de brindar mejoras a la empresa para minimizar posibles contingencias. Brindamos soluciones contables integrales a empresas"
       />
-      <meta property="og:url" content="https://estudio-dillon.com.ar" />
+      <meta property="og:url" content="https://www.estudio-dillon.com" />
       <meta
         name="title"
         content="Estudio Contable Dillon | Estudio Contable Integral"
