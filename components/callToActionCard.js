@@ -50,7 +50,7 @@ const CallToActionCard = () => {
         {dataCards.map((item, i) => (
           <Link href={item.link}>
             <div className=" flex justify-center w-full" key={i}>
-              <div className="max-w-lg">
+              <div className="max-w-lg" key={i + 1}>
                 <Card
                   horizontal={true}
                   imgSrc={item.img}                  
