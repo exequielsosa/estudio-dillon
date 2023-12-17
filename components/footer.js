@@ -7,7 +7,7 @@ const FooterLayout = () => {
       <Footer container={true}>
         <div className="w-full">
           <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-          <div className="mb-6">
+            <div className="mb-6">
               <Footer.Brand
                 href="/"
                 src="/mini.jpg"
@@ -19,9 +19,15 @@ const FooterLayout = () => {
               <div>
                 <Footer.Title title="Nosotros" />
                 <Footer.LinkGroup col={true}>
-                  <Footer.Link href="/contacto"><p>Contactos</p></Footer.Link>
-                  <Footer.Link href="https://wa.me/541158959823"><p>WhatsApp</p></Footer.Link>
-                  <Footer.Link href="mailto:estudiodillonsosa@gmail.com?Subject:Consulta%20a%20Estudio%20Dillon"><p>email</p></Footer.Link>
+                  <Footer.Link href="/contacto">
+                    <p>Contactos</p>
+                  </Footer.Link>
+                  <Footer.Link href="https://wa.me/541158959823">
+                    <p>WhatsApp</p>
+                  </Footer.Link>
+                  <Footer.Link href="mailto:estudiodillonsosa@gmail.com?Subject:Consulta%20a%20Estudio%20Dillon">
+                    <p>email</p>
+                  </Footer.Link>
                 </Footer.LinkGroup>
               </div>
               <div>

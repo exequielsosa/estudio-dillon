@@ -51,11 +51,7 @@ const CallToActionCard = () => {
           <Link href={item.link}>
             <div className=" flex justify-center w-full" key={i}>
               <div className="max-w-lg" key={i + 1}>
-                <Card
-                  horizontal={true}
-                  imgSrc={item.img}                  
-                  className="md:h-80"
-                >
+                <Card horizontal={true} imgSrc={item.img} className="md:h-80">
                   <h5 className="text-2xl font-bold tracking-tight text-gray-800 dark:text-white opacity-90">
                     {item.title}
                   </h5>

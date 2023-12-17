@@ -38,6 +38,11 @@ const SeoHome = () => {
       />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="Spanish" />
+      <meta name="author" content="Estudio Dillon" />
+      <meta
+        property="og:image"
+        content="https://www.estudio-dillon.com/mini.png"
+      />
     </Head>
   );
 };

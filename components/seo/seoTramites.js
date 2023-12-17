@@ -45,6 +45,11 @@ const SeoTramites = () => {
         name="keywords"
         content="vencimientos, afip, 2023, iva, convenio, multilateral, impuesto, impuestos, ganancias, bienes, personales, sueldos, liquidacion, liquidaceiones. asesoramiento, impositivo, contable, contabilidad, estudio, pymes, empresa, patrimonio, valor, agregado, ingresos, brutos, monotributo, regimen, simplificado, cuil, cuit"
       />
+      <meta name="author" content="Estudio Dillon" />
+      <meta
+        property="og:image"
+        content="https://www.estudio-dillon.com/mini.png"
+      />
     </Head>
   );
 };

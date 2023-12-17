@@ -1,11 +1,10 @@
-import Head from "next/head";
 import ModalImage from "react-modal-image";
 import Taxes from "../components/taxes";
 import SeoVencimientos from "../components/seo/seoVencimientos";
 
 const Vencimientos = () => {
   return (
-    <>      
+    <>
       <SeoVencimientos />
       <main>
         <div className="flex w-full justify-center flex-col items-center">

@@ -30,7 +30,10 @@ const SeoSueldos = () => {
         property="og:description"
         content="La tercerización de la liquidación de sueldos en las empresas ayuda a las mismas en no tener que estar actualizándose en la normativa y problemática laboral"
       />
-      <meta property="og:url" content="https://www.estudio-dillon.com/sueldos" />
+      <meta
+        property="og:url"
+        content="https://www.estudio-dillon.com/sueldos"
+      />
       <meta
         name="title"
         content="Liquidacion de Sueldos - Estudio Contable Dillon | Estudio Contable
@@ -41,6 +44,11 @@ const SeoSueldos = () => {
       <meta
         name="keywords"
         content="vencimientos, afip, 2023, iva, convenio, multilateral, impuesto, impuestos, ganancias, bienes, personales, sueldos, liquidacion, liquidaceiones. asesoramiento, impositivo, contable, contabilidad, estudio, pymes, empresa, patrimonio, valor, agregado, ingresos, brutos, monotributo, regimen, simplificado, cuil, cuit"
+      />
+      <meta name="author" content="Estudio Dillon" />
+      <meta
+        property="og:image"
+        content="https://www.estudio-dillon.com/mini.png"
       />
     </Head>
   );
