@@ -47,7 +47,26 @@ const SeoImpuestos = () => {
       <meta name="author" content="Estudio Dillon" />
       <meta
         property="og:image"
-        content="https://www.estudio-dillon.com/mini.png"
+        content="https://www.estudio-dillon.com/mini.jpg"
+      />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@maugexxiv" />
+      <meta name="twitter:creator" content="@maugexxiv" />
+      <meta
+        name="twitter:title"
+        content="Liquidacion de Impuestos - Estudio Contable Dillon | Estudio Contable Integral"
+      />
+      <meta
+        name="twitter:description"
+        content="Brindamos Servicios Contables Integrales en materia impositiva. Asesoramiento para pequeños contribuyentes que quieran empezar o posean un emprendimiento..."
+      />
+      <meta
+        name="twitter:image"
+        content="https://www.estudio-dillon.com/mini.jpg"
+      />
+      <meta
+        name="twitter:url"
+        content="https://www.estudio-dillon.com/impuestos"
       />
     </Head>
   );

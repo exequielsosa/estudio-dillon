@@ -48,7 +48,26 @@ const SeoTramites = () => {
       <meta name="author" content="Estudio Dillon" />
       <meta
         property="og:image"
-        content="https://www.estudio-dillon.com/mini.png"
+        content="https://www.estudio-dillon.com/mini.jpg"
+      />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@maugexxiv" />
+      <meta name="twitter:creator" content="@maugexxiv" />
+      <meta
+        name="twitter:title"
+        content="Gestión de trámites - Estudio Contable Dillon | Estudio Contable Integral"
+      />
+      <meta
+        name="twitter:description"
+        content="En cualquier tipo de emprendimiento es importante un buen asesoramiento a la hora de gestionar sus trámites, tanto para obtener los resultados esperados, como para no tener innecesaria perdidas de tiempo. Poseemos experiencia en todo tipo de trámites societarios y certificados contables"
+      />
+      <meta
+        name="twitter:image"
+        content="https://www.estudio-dillon.com/mini.jpg"
+      />
+      <meta
+        name="twitter:url"
+        content="https://www.estudio-dillon.com/tramites"
       />
     </Head>
   );

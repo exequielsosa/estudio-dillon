@@ -45,7 +45,26 @@ const SeoContactos = () => {
       <meta name="author" content="Estudio Dillon" />
       <meta
         property="og:image"
-        content="https://www.estudio-dillon.com/mini.png"
+        content="https://www.estudio-dillon.com/mini.jpg"
+      />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@maugexxiv" />
+      <meta name="twitter:creator" content="@maugexxiv" />
+      <meta
+        name="twitter:title"
+        content="Contacto - Estudio Contable Dillon | Estudio Contable Integral"
+      />
+      <meta
+        name="twitter:description"
+        content="Desde hace más de veinte años brindamos soluciones contables integrales a empresas, instituciones y particulares. Contáctenos aquí y comencemos hoy mismo."
+      />
+      <meta
+        name="twitter:image"
+        content="https://www.estudio-dillon.com/mini.jpg"
+      />
+      <meta
+        name="twitter:url"
+        content="https://www.estudio-dillon.com/contacto"
       />
     </Head>
   );

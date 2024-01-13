@@ -45,7 +45,26 @@ const SeoMonotributo = () => {
       <meta name="author" content="Estudio Dillon" />
       <meta
         property="og:image"
-        content="https://www.estudio-dillon.com/mini.png"
+        content="https://www.estudio-dillon.com/mini.jpg"
+      />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@maugexxiv" />
+      <meta name="twitter:creator" content="@maugexxiv" />
+      <meta
+        name="twitter:title"
+        content="Monotributo - Estudio Contable Dillon | Estudio Contable Integral"
+      />
+      <meta
+        name="twitter:description"
+        content="En el caso de las Pequeños emprendimientos, cada caso es particular, por lo que se le brinda un trato personalizado y con la mayor rigurosidad profesional, con la experiencia adquirida de otras empresas"
+      />
+      <meta
+        name="twitter:image"
+        content="https://www.estudio-dillon.com/mini.jpg"
+      />
+      <meta
+        name="twitter:url"
+        content="https://www.estudio-dillon.com/monotributo"
       />
     </Head>
   );

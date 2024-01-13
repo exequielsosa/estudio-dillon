@@ -41,8 +41,24 @@ const SeoHome = () => {
       <meta name="author" content="Estudio Dillon" />
       <meta
         property="og:image"
-        content="https://www.estudio-dillon.com/mini.png"
+        content="https://www.estudio-dillon.com/mini.jpg"
       />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@maugexxiv" />
+      <meta name="twitter:creator" content="@maugexxiv" />
+      <meta
+        name="twitter:title"
+        content="Estudio Contable Dillon | Estudio Contable Integral"
+      />
+      <meta
+        name="twitter:description"
+        content="Soluciones Contables Integrales, Brindamos servicios contables profesionales a la medida de sus requerimientos. Servicios Legales, Corporativos, Derecho Empresario, Conflictos Judiciales y Derecho Laboral y Previsional. Servicios Contables para PyMEs. Analizamos puntos críticos del emprendimiento con el objetivo de brindar mejoras a la empresa para minimizar posibles contingencias. Brindamos soluciones contables integrales a empresas"
+      />
+      <meta
+        name="twitter:image"
+        content="https://www.estudio-dillon.com/mini.jpg"
+      />
+      <meta name="twitter:url" content="https://www.estudio-dillon.com" />
     </Head>
   );
 };
