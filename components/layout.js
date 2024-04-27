@@ -7,7 +7,9 @@ import CallToActionCard from "./callToActionCard";
 const Layout = ({ children }) => {
   return (
     <>
-      <NavBar />
+      <div className="flex w-full">
+        <NavBar />
+      </div>
       <LayoutBody>
         {children}
         <FormContact />

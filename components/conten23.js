@@ -14,7 +14,7 @@ const arrayContent = [
     link: "#ig",
   },
   {
-    name: "Percepciones de impuesto a las ganancias y bienes personales",
+    name: "Percepción Impuesto PAIS",
     link: "#pip",
   },
   {
@@ -22,16 +22,8 @@ const arrayContent = [
     link: "#cc",
   },
   {
-    name: "Cargas sociales y aportes jubilatorios",
-    link: "#cas",
-  },
-  {
     name: "Participaciones societarias, autoridades y apoderados",
     link: "#ps",
-  },
-  {
-    name: "Retenciones y percepciones (SICORE)",
-    link: "#sicore",
   },
   {
     name: "Régimen Simplificado (Monotributo)",
@@ -50,12 +42,12 @@ const arrayContent = [
     link: "#fc",
   },
   {
-    name: "Vencimientos del Alivio Fiscal",
-    link: "#vaf",
+    name: "Ganancia Mínima Presunta (residual)",
+    link: "#gmp",
   },
 ];
 
-const Content = () => {
+const Content23 = () => {
   return (
     <div className="p-4 bg-white rounded-2xl border border-gray-200 w-fit">
       <h1 className="text-sm font-semibold opacity-80 mb-1">Contenidos</h1>
@@ -70,4 +62,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default Content23;

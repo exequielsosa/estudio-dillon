@@ -5,14 +5,14 @@ const Impuestos = () => {
   return (
     <>
       <SeoImpuestos />
-      <main>
+      <main className="flex flex-col w-full">
         <HeaderImage image="/impuestos-min.jpg" />
-        <div className="flex w-full justify-center flex-col items-center mb-10">
-          <div className="flex justify-center flex-col w-11/12">
+        <div className="flex w-full justify-center flex-col mb-10">
+          <div className="flex flex-col ">
             <section className="articles">
               <article>
                 <div className="w-full justify-center flex mt-4">
-                  <div className="w-full 2xl:w-10/12">
+                  <div className="w-full">
                     <h1 className="mt-6 mb-6 text-xl font-semibold">
                       Servicios Impositivos
                     </h1>
@@ -31,7 +31,7 @@ const Impuestos = () => {
               </article>
               <article>
                 <div className="w-full justify-center flex mt-4">
-                  <div className="w-full 2xl:w-10/12">
+                  <div className="w-full">
                     <h2 className="mt-8 mb-6 text-lg font-semibold opacity-70">
                       Gestiones
                     </h2>

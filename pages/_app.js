@@ -1,5 +1,7 @@
 import "@/styles/globals.css";
 import "@/styles/whatsApp.css";
+import "aos/dist/aos.css";
+import Aos from "aos";
 import Layout from "@/components/layout";
 import FloatingWhatsApp from "@/components/floatingWP";
 import { Analytics } from "@vercel/analytics/react";
@@ -9,6 +11,9 @@ import * as gtag from "../gatg";
 import Script from "next/script";
 
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   const router = useRouter();
   useEffect(() => {
     const handleRouteChange = (url) => {

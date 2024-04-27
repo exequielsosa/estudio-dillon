@@ -26,7 +26,7 @@ const dataCards = [
     link: "/tramites",
     title: "Gestión de trámites",
     img: "/tramites-min.jpg",
-    description: "Gestionamos todas tus inscripciones/altas/bajas.",
+    description: "Gestionamos tus inscripciones / altas / bajas.",
   },
   {
     link: "/vencimientos",
@@ -46,9 +46,9 @@ const dataCards = [
 const CallToActionCard = () => {
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6 mt-12 mb-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6 mt-12 mb-12 w-full">
         {dataCards.map((item, i) => (
-          <Link href={item.link}>
+          <Link href={item.link} className="hover:shadow-2xl">
             <div className=" flex justify-center w-full" key={i}>
               <div className="max-w-lg" key={i + 1}>
                 <Card horizontal={true} imgSrc={item.img} className="md:h-80">

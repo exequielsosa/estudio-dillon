@@ -8,11 +8,11 @@ const Sueldos = () => {
       <main>
         <HeaderImage image="/sueldos-min.jpg" />
         <div className="flex w-full justify-center flex-col items-center mb-10">
-          <div className="flex justify-center flex-col w-11/12">
+          <div className="flex justify-center flex-col ">
             <section className="articles">
               <article>
                 <div className="w-full justify-center flex mt-4">
-                  <div className="w-full 2xl:w-10/12">
+                  <div className="w-full ">
                     <h1 className="mt-6 mb-6 text-xl font-semibold">
                       Servicios de liquidacion de haberes
                     </h1>

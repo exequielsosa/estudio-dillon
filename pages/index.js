@@ -7,13 +7,12 @@ const Home = () => {
       <SeoHome />
       <main>
         <CarouselHome />
-
         <section>
           <div className="flex w-full justify-center flex-col items-center">
-            <div className="flex justify-center flex-col w-11/12">
+            <div className="flex justify-center flex-col">
               <article>
                 <div className="w-full justify-center flex mt-4">
-                  <div className="w-full 2xl:w-10/12">
+                  <div className="w-full">
                     <h2 className="mt-6 text-xl font-semibold">
                       Estudio Contable Dillon
                     </h2>

@@ -1,134 +1,133 @@
 import { Label, TextInput, Textarea, Button } from "flowbite-react";
 import { useState } from "react";
-import { isMobile } from "react-device-detect";
+import ThanksMail from "../components/thanks";
 import { useRouter } from "next/router";
+import { sendContactForm } from "../lib/api";
+
+const initValues = {
+  name: "",
+  email: "",
+  subject: "Mensaje de estudio-dillon.com ",
+  message: "",
+};
+
+const initState = { isLoading: false, error: "", values: initValues };
 
 const FormContact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    comment: "",
-  });
+  const [state, setState] = useState(initState);
+  const [success, setSuccess] = useState(false);
 
-  const { name, email, phone, comment, subject } = formData;
+  const { values, isLoading, error } = state;
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.id]: e.target.value });
-  };
+  const handleChange = ({ target }) =>
+    setState((prev) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [target.name]: target.value,
+      },
+    }));
 
-  const disabled =
-    name.length > 0 &&
-    email.length > 0 &&
-    phone.length > 0 &&
-    comment.length > 0 &&
-    subject.length > 0;
-
-  const handleSubmit = () => {
-    setTimeout(() => {
-      if (isMobile) {
-        const mensaje =
-          "whatsapp://send?phone=541158959823" +
-          "&text=*Gracias por comunicarte con Estudio Dillon*%0A*Nombre:*%0A" +
-          name +
-          "%0A*e-mail:*%0A" +
-          email +
-          "%0A*Teléfono:*%0A" +
-          phone +
-          "%0A*Asunto:*%0A" +
-          subject +
-          "%0A*Detalle:*%0A" +
-          comment;
-        window.open(mensaje, "_blank");
-      } else {
-        const mensaje =
-          "https://web.whatsapp.com/send?phone=541158959823" +
-          "&text=*Gracias por comunicarte con Estudio Dillon*%0A*Nombre:*%0A" +
-          name +
-          "%0A*e-mail:*%0A" +
-          email +
-          "%0A*Teléfono:*%0A" +
-          phone +
-          "%0A*Asunto:*%0A" +
-          subject +
-          "%0A*Detalle:*%0A" +
-          comment;
-        window.open(mensaje, "_blank");
-      }
-    }, 1500);
+  const onSubmit = async (e) => {
+    e.preventDefault(); // Esto evita la recarga de la página
+    setState((prev) => ({
+      ...prev,
+      isLoading: true,
+    }));
+    try {
+      console.log("pasa");
+      await sendContactForm(values);
+      setState(initState);
+      setSuccess(true);
+    } catch (error) {
+      setState((prev) => ({
+        ...prev,
+        isLoading: false,
+        error: error.message,
+      }));
+    }
   };
 
   const router = useRouter();
   const route = router.asPath;
 
+  const disabled =
+    state.values.name.length > 1 &&
+    state.values.email.length > 1 &&
+    state.values.message.length > 1;
+
+  const handleClose = () => {
+    setState(initState);
+    setSuccess(false);
+  };
+
   return (
-    <div className="mb-16 mt-4 w-full flex items-center justify-center">
-      <div className="w-full md:w-96 lg:w-1/2 xl:w-1/3">
-        {route !== "/contacto" && (
-          <h2 className="mt-6 font-semibold mb-4 opacity-80 text-lg">
-            Comunicate con nosotros
-          </h2>
+    <div className="mb-5 mt-10 w-full flex items-center justify-center">
+      <div className="w-full md:w-[600px] border-[1px] border-[#3f83f8] rounded-lg bg-white pb-3 px-8 h-[500px] flex items-center flex-col justify-center shadow-md">
+        {isLoading ? (
+          <>
+            <div className="w-full justify-center items-center h-[500px] flex">
+              <div className="loader"></div>
+            </div>
+          </>
+        ) : success ? (
+          <ThanksMail handleClick={handleClose} />
+        ) : (
+          <>
+            {route !== "/contacto" && (
+              <h2 className="mt-6 font-semibold opacity-80 text-lg">
+                Comunicate con nosotros
+              </h2>
+            )}
+            <form
+              id="contact-form"
+              onSubmit={(e) => onSubmit(e)}
+              className="flex flex-col w-full max-w-[600px] mt-5"
+            >
+              <div className="mb-2 block">
+                <Label htmlFor="name" value="Nombre y Apellido" />
+              </div>
+              <TextInput
+                type="text"
+                id="name"
+                name="name"
+                value={values.name}
+                sizing="md"
+                onChange={handleChange}
+                placeholder="ingresa tu nombre"
+              />
+              <div className="mb-2 mt-4 block">
+                <Label htmlFor="email" value="Email" />
+              </div>
+              <TextInput
+                type="email"
+                id="email"
+                name="email"
+                value={values.email}
+                placeholder="ingresa tu email"
+                required={true}
+                onChange={handleChange}
+              />
+              <div className="mb-2 block mt-3">
+                <Label htmlFor="comment" value="Detalle" />
+              </div>
+              <Textarea
+                id="message"
+                name="message"
+                value={values.message}
+                placeholder="Dejanos el motivo de tu consulta..."
+                required={true}
+                rows={4}
+                onChange={handleChange}
+              />
+              <div className="mb-4 mt-4 w-full flex items-end justify-center">
+                <Button color="light" type="submit" disabled={!disabled}>
+                  Enviar
+                </Button>
+              </div>
+            </form>
+          </>
         )}
-        <div className="mb-2 block">
-          <Label htmlFor="name" value="Nombre y Apellido" />
-        </div>
-        <TextInput
-          id="name"
-          type="text"
-          sizing="md"
-          onChange={handleChange}
-          placeholder="ingresa tu nombre"
-        />
-        <div className="mb-2 mt-4 block">
-          <Label htmlFor="email" value="Tu email" />
-        </div>
-        <TextInput
-          id="email"
-          type="email"
-          placeholder="ingresa tu email"
-          required={true}
-          onChange={handleChange}
-        />
-        <div className="mb-2 mt-4 block">
-          <Label htmlFor="phone" value="Tu teléfono" />
-        </div>
-        <TextInput
-          id="phone"
-          type="number"
-          placeholder="ingresa tu teléfono"
-          required={true}
-          onChange={handleChange}
-        />
-        <div className="mb-2 mt-4 block">
-          <Label htmlFor="subject" value="Asunto" />
-        </div>
-        <TextInput
-          id="subject"
-          type="text"
-          placeholder="Asunto"
-          required={true}
-          onChange={handleChange}
-        />
-        <div className="mb-2 block">
-          <Label htmlFor="comment" value="Detalle" />
-        </div>
-        <Textarea
-          id="comment"
-          placeholder="Dejanos el motivo de tu consulta..."
-          required={true}
-          rows={4}
-          onChange={handleChange}
-        />
-        <div className="mb-4 mt-4 w-full flex items-end justify-end">
-          <Button
-            color="light"
-            onClick={() => handleSubmit()}
-            disabled={!disabled}
-          >
-            Enviar
-          </Button>
-        </div>
       </div>
     </div>
   );
