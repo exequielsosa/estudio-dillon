@@ -63,7 +63,7 @@ const FormContact = () => {
 
   return (
     <div className="mb-5 mt-10 w-full flex items-center justify-center">
-      <div className="w-full md:w-[600px] border-[1px] border-[#3f83f8] rounded-lg bg-white pb-3 px-8 h-[500px] flex items-center flex-col justify-center shadow-md">
+      <div className="w-full md:w-[600px] border-[1px] border-[#10207A] rounded-lg bg-white pb-3 px-8 h-[500px] flex items-center flex-col justify-center shadow-md">
         {isLoading ? (
           <>
             <div className="w-full justify-center items-center h-[500px] flex">

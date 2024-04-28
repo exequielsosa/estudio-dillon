@@ -4,7 +4,7 @@
   height: 60px;
   bottom: 40px;
   right: 40px;
-  background-color: #25d366;
+  background-color: #10207a;
   color: #fff;
   border-radius: 50px;
   text-align: center;
@@ -24,14 +24,14 @@
 }
 
 .whatsapp-icon {
-  margin-top: 16px;
+  margin-top: 15px;
   color: #fff;
 }
 
 /* for mobile */
 @media screen and (max-width: 768px) {
   .whatsapp-icon {
-    margin-top: 10px;
+    margin-top: 9px;
   }
 
   .whatsapp_float {
