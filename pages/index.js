@@ -13,9 +13,9 @@ const Home = () => {
               <article>
                 <div className="w-full justify-center flex mt-4">
                   <div className="w-full">
-                    <h2 className="mt-6 text-xl font-semibold">
+                    <h1 className="mt-6 text-xl font-semibold">
                       Estudio Contable Dillon
-                    </h2>
+                    </h1>
                     <br />
                     <p>
                       En Estudio Contable Dillon entendemos que preferís

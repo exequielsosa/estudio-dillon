@@ -6,7 +6,7 @@ const SeoHome = () => {
       <title>Estudio Contable Dillon | Estudio Contable Integral</title>
       <meta
         name="description"
-        content="Soluciones Contables Integrales, Brindamos servicios contables profesionales a la medida de sus requerimientos. Servicios Legales, Corporativos, Derecho Empresario, Conflictos Judiciales y Derecho Laboral y Previsional. Servicios Contables para PyMEs. Analizamos puntos críticos del emprendimiento con el objetivo de brindar mejoras a la empresa para minimizar posibles contingencias. Brindamos soluciones contables integrales a empresas"
+        content="Servicios contables y legales integrales para empresas, incluyendo contabilidad y derecho empresarial. Minimizamos contingencias y ofrecemos soluciones."
       />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index,follow" />
@@ -25,7 +25,7 @@ const SeoHome = () => {
       />
       <meta
         property="og:description"
-        content="Soluciones Contables Integrales, Brindamos servicios contables profesionales a la medida de sus requerimientos. Servicios Legales, Corporativos, Derecho Empresario, Conflictos Judiciales y Derecho Laboral y Previsional. Servicios Contables para PyMEs. Analizamos puntos críticos del emprendimiento con el objetivo de brindar mejoras a la empresa para minimizar posibles contingencias. Brindamos soluciones contables integrales a empresas"
+        content="Servicios contables y legales integrales para empresas, incluyendo contabilidad y derecho empresarial. Minimizamos contingencias y ofrecemos soluciones."
       />
       <meta property="og:url" content="https://www.estudio-dillon.com" />
       <meta
@@ -52,13 +52,29 @@ const SeoHome = () => {
       />
       <meta
         name="twitter:description"
-        content="Soluciones Contables Integrales, Brindamos servicios contables profesionales a la medida de sus requerimientos. Servicios Legales, Corporativos, Derecho Empresario, Conflictos Judiciales y Derecho Laboral y Previsional. Servicios Contables para PyMEs. Analizamos puntos críticos del emprendimiento con el objetivo de brindar mejoras a la empresa para minimizar posibles contingencias. Brindamos soluciones contables integrales a empresas"
+        content="Servicios contables y legales integrales para empresas, incluyendo contabilidad y derecho empresarial. Minimizamos contingencias y ofrecemos soluciones."
       />
       <meta
         name="twitter:image"
         content="https://www.estudio-dillon.com/logotipoDillon.png"
       />
       <meta name="twitter:url" content="https://www.estudio-dillon.com" />
+      {/* Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          name: "Estudio Contable Dillon",
+          jobTitle: "Estudio Contable",
+          description:
+            "Servicios contables y legales integrales para empresas.",
+          url: "https://www.estudio-dillon.com",
+          sameAs: [
+            "https://www.linkedin.com/in/maria-eugenia-dillon/",
+            "https://twitter.com/maugexxiv",
+          ],
+        })}
+      </script>
     </Head>
   );
 };
