@@ -3,13 +3,10 @@ import Head from "next/head";
 const SeoTramites = () => {
   return (
     <Head>
-      <title>
-        Gestión de trámites - Estudio Contable Dillon | Estudio Contable
-        Integral
-      </title>
+      <title>Gestión de trámites - Estudio Contable Dillon</title>
       <meta
         name="description"
-        content="En cualquier tipo de emprendimiento es importante un buen asesoramiento a la hora de gestionar sus trámites, tanto para obtener los resultados esperados, como para no tener innecesaria perdidas de tiempo.Poseemos experiencia en todo tipo de trámites societarios y certificados contables"
+        content="En todo emprendimiento, es clave un asesoramiento eficiente en trámites societarios y contables para evitar pérdidas de tiempo innecesarias."
       />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index,follow" />
@@ -23,12 +20,11 @@ const SeoTramites = () => {
       />
       <meta
         property="og:title"
-        content="Gestión de trámites - Estudio Contable Dillon | Estudio Contable
-        Integral"
+        content="Gestión de trámites - Estudio Contable Dillon"
       />
       <meta
         property="og:description"
-        content="En cualquier tipo de emprendimiento es importante un buen asesoramiento a la hora de gestionar sus trámites, tanto para obtener los resultados esperados, como para no tener innecesaria perdidas de tiempo.Poseemos experiencia en todo tipo de trámites societarios y certificados contables"
+        content="En todo emprendimiento, es clave un asesoramiento eficiente en trámites societarios y contables para evitar pérdidas de tiempo innecesarias."
       />
       <meta
         property="og:url"
@@ -36,8 +32,7 @@ const SeoTramites = () => {
       />
       <meta
         name="title"
-        content="Gestión de trámites - Estudio Contable Dillon | Estudio Contable
-        Integral"
+        content="Gestión de trámites - Estudio Contable Dillon"
       />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="Spanish" />
@@ -69,6 +64,22 @@ const SeoTramites = () => {
         name="twitter:url"
         content="https://www.estudio-dillon.com/tramites"
       />
+      {/* Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          name: "Estudio Contable Dillon",
+          jobTitle: "Estudio Contable",
+          description:
+            "Servicios contables y legales integrales para empresas.",
+          url: "https://www.estudio-dillon.com",
+          sameAs: [
+            "https://www.linkedin.com/in/maria-eugenia-dillon/",
+            "https://twitter.com/maugexxiv",
+          ],
+        })}
+      </script>
     </Head>
   );
 };

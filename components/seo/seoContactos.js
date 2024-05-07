@@ -3,9 +3,7 @@ import Head from "next/head";
 const SeoContactos = () => {
   return (
     <Head>
-      <title>
-        Contacto - Estudio Contable Dillon | Estudio Contable Integral
-      </title>
+      <title>Contacto - Estudio Contable Dillon</title>
       <meta
         name="description"
         content="Desde hace mas de veinte años brindamos soluciones contables integrales a empresas, instituciones y particulares. Contáctenos aquí y comencemos hoy mismo."
@@ -16,14 +14,8 @@ const SeoContactos = () => {
       <link rel="canonical" href="https://www.estudio-dillon.com/contacto" />
       <meta property="og:locale" content="es_ES" />
       <meta property="og:type" content="article" />
-      <meta
-        property="og:site_name"
-        content="Estudio Contable Dillon | Estudio Contable Integral"
-      />
-      <meta
-        property="og:title"
-        content="Contacto - Estudio Contable Dillon | Estudio Contable Integral"
-      />
+      <meta property="og:site_name" content="Estudio Contable Dillon" />
+      <meta property="og:title" content="Contacto - Estudio Contable Dillon" />
       <meta
         property="og:description"
         content="Desde hace mas de veinte años brindamos soluciones contables integrales a empresas, instituciones y particulares. Contáctenos aquí y comencemos hoy mismo."
@@ -32,10 +24,7 @@ const SeoContactos = () => {
         property="og:url"
         content="https://www.estudio-dillon.com/contacto"
       />
-      <meta
-        name="title"
-        content="Contacto - Estudio Contable Dillon | Estudio Contable Integral"
-      />
+      <meta name="title" content="Contacto - Estudio Contable Dillon" />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="Spanish" />
       <meta
@@ -50,10 +39,7 @@ const SeoContactos = () => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@maugexxiv" />
       <meta name="twitter:creator" content="@maugexxiv" />
-      <meta
-        name="twitter:title"
-        content="Contacto - Estudio Contable Dillon | Estudio Contable Integral"
-      />
+      <meta name="twitter:title" content="Contacto - Estudio Contable Dillon" />
       <meta
         name="twitter:description"
         content="Desde hace más de veinte años brindamos soluciones contables integrales a empresas, instituciones y particulares. Contáctenos aquí y comencemos hoy mismo."
@@ -66,6 +52,22 @@ const SeoContactos = () => {
         name="twitter:url"
         content="https://www.estudio-dillon.com/contacto"
       />
+      {/* Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          name: "Estudio Contable Dillon",
+          jobTitle: "Estudio Contable",
+          description:
+            "Servicios contables y legales integrales para empresas.",
+          url: "https://www.estudio-dillon.com",
+          sameAs: [
+            "https://www.linkedin.com/in/maria-eugenia-dillon/",
+            "https://twitter.com/maugexxiv",
+          ],
+        })}
+      </script>
     </Head>
   );
 };

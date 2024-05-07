@@ -3,10 +3,7 @@ import Head from "next/head";
 const SeoSueldos = () => {
   return (
     <Head>
-      <title>
-        Liquidacion de Sueldos - Estudio Contable Dillon | Estudio Contable
-        Integral
-      </title>
+      <title>Liquidacion de Sueldos - Estudio Contable Dillon</title>
       <meta
         name="description"
         content="La tercerización de la liquidación de sueldos en las empresas ayuda a las mismas en no tener que estar actualizándose en la normativa y problemática laboral"
@@ -23,8 +20,7 @@ const SeoSueldos = () => {
       />
       <meta
         property="og:title"
-        content="Liquidacion de Sueldos - Estudio Contable Dillon | Estudio Contable
-        Integral"
+        content="Liquidacion de Sueldos - Estudio Contable Dillon"
       />
       <meta
         property="og:description"
@@ -36,8 +32,7 @@ const SeoSueldos = () => {
       />
       <meta
         name="title"
-        content="Liquidacion de Sueldos - Estudio Contable Dillon | Estudio Contable
-        Integral"
+        content="Liquidacion de Sueldos - Estudio Contable Dillon"
       />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="Spanish" />
@@ -69,6 +64,22 @@ const SeoSueldos = () => {
         name="twitter:url"
         content="https://www.estudio-dillon.com/sueldos"
       />
+      {/* Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          name: "Estudio Contable Dillon",
+          jobTitle: "Estudio Contable",
+          description:
+            "Servicios contables y legales integrales para empresas.",
+          url: "https://www.estudio-dillon.com",
+          sameAs: [
+            "https://www.linkedin.com/in/maria-eugenia-dillon/",
+            "https://twitter.com/maugexxiv",
+          ],
+        })}
+      </script>
     </Head>
   );
 };

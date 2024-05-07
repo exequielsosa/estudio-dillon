@@ -3,9 +3,7 @@ import Head from "next/head";
 const SeoVencimientos = () => {
   return (
     <Head>
-      <title>
-        Vencimientos - Estudio Contable Dillon | Estudio Contable Integral
-      </title>
+      <title>Vencimientos - Estudio Contable Dillon</title>
       <meta
         name="description"
         content="Te brindamos un detalle de todos los vencimientos de la Afip correspondientes al año 2023."
@@ -17,10 +15,7 @@ const SeoVencimientos = () => {
         rel="canonical"
         href="https://www.estudio-dillon.com/vencimientos"
       />
-      <meta
-        name="title"
-        content="Vencimientos - Estudio Contable Dillon | Estudio Contable Integral"
-      />
+      <meta name="title" content="Vencimientos - Estudio Contable Dillon" />
       <meta
         name="keywords"
         content="vencimientos, afip, 2023, iva, convenio, multilateral, impuesto, impuestos, ganancias, bienes, personales, sueldos, liquidacion, liquidaceiones. asesoramiento, impositivo, contable, contabilidad, estudio, pymes, empresa, patrimonio, valor, agregado, ingresos, brutos, monotributo, regimen, simplificado, cuit, cuil"
@@ -29,13 +24,10 @@ const SeoVencimientos = () => {
       <meta name="language" content="Spanish" />
       <meta property="og:locale" content="es_ES" />
       <meta property="og:type" content="article" />
-      <meta
-        property="og:site_name"
-        content="Estudio Contable Dillon | Estudio Contable Integral"
-      />
+      <meta property="og:site_name" content="Estudio Contable Dillon" />
       <meta
         property="og:title"
-        content="Vencimientos - Estudio Contable Dillon | Estudio Contable Integral"
+        content="Vencimientos - Estudio Contable Dillon"
       />
       <meta
         property="og:description"
@@ -55,7 +47,7 @@ const SeoVencimientos = () => {
       <meta name="twitter:creator" content="@maugexxiv" />
       <meta
         name="twitter:title"
-        content="Vencimientos - Estudio Contable Dillon | Estudio Contable Integral"
+        content="Vencimientos - Estudio Contable Dillon"
       />
       <meta
         name="twitter:description"
@@ -69,6 +61,22 @@ const SeoVencimientos = () => {
         name="twitter:url"
         content="https://www.estudio-dillon.com/vencimientos"
       />
+      {/* Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          name: "Estudio Contable Dillon",
+          jobTitle: "Estudio Contable",
+          description:
+            "Servicios contables y legales integrales para empresas.",
+          url: "https://www.estudio-dillon.com",
+          sameAs: [
+            "https://www.linkedin.com/in/maria-eugenia-dillon/",
+            "https://twitter.com/maugexxiv",
+          ],
+        })}
+      </script>
     </Head>
   );
 };

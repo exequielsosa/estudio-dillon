@@ -3,10 +3,7 @@ import Head from "next/head";
 const SeoImpuestos = () => {
   return (
     <Head>
-      <title>
-        Liquidacion de Impuestos - Estudio Contable Dillon | Estudio Contable
-        Integral
-      </title>
+      <title>Liquidacion de Impuestos - Estudio Contable Dillon</title>
       <meta
         name="description"
         content="Brindamos Servicios Contables Integrales en materia impositiva. Asesoramiento para pequeños contribuyentes que quieran empezar o posean un emprendimiento..."
@@ -23,8 +20,7 @@ const SeoImpuestos = () => {
       />
       <meta
         property="og:title"
-        content="Liquidacion de Impuestos - Estudio Contable Dillon | Estudio Contable
-        Integral"
+        content="Liquidacion de Impuestos - Estudio Contable Dillon"
       />
       <meta
         property="og:description"
@@ -36,7 +32,7 @@ const SeoImpuestos = () => {
       />
       <meta
         name="title"
-        content="Liquidacion de Impuestos - Estudio Contable Dillon | Estudio Contable Integral"
+        content="Liquidacion de Impuestos - Estudio Contable Dillon"
       />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="Spanish" />
@@ -68,6 +64,22 @@ const SeoImpuestos = () => {
         name="twitter:url"
         content="https://www.estudio-dillon.com/impuestos"
       />
+      {/* Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          name: "Estudio Contable Dillon",
+          jobTitle: "Estudio Contable",
+          description:
+            "Servicios contables y legales integrales para empresas.",
+          url: "https://www.estudio-dillon.com",
+          sameAs: [
+            "https://www.linkedin.com/in/maria-eugenia-dillon/",
+            "https://twitter.com/maugexxiv",
+          ],
+        })}
+      </script>
     </Head>
   );
 };
