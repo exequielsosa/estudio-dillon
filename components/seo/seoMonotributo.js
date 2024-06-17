@@ -11,7 +11,10 @@ const SeoMonotributo = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index,follow" />
       <link rel="icon" href="/favicon.ico" />
-      <link rel="canonical" href="https://www.estudio-dillon.com/monotributo" />
+      <link
+        rel="canonical"
+        href="https://www.estudio-dillon.com.ar/monotributo"
+      />
       <meta property="og:locale" content="es_ES" />
       <meta property="og:type" content="article" />
       <meta property="og:site_name" content="Estudio Contable Dillon" />
@@ -25,7 +28,7 @@ const SeoMonotributo = () => {
       />
       <meta
         property="og:url"
-        content="https://www.estudio-dillon.com/monotributo"
+        content="https://www.estudio-dillon.com.ar/monotributo"
       />
       <meta name="title" content="Monotributo - Estudio Contable Dillon" />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -37,7 +40,7 @@ const SeoMonotributo = () => {
       <meta name="author" content="Estudio Dillon" />
       <meta
         property="og:image"
-        content="https://www.estudio-dillon.com/logotipoDillon.png"
+        content="https://www.estudio-dillon.com.ar/logotipoDillon.png"
       />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@maugexxiv" />
@@ -52,11 +55,11 @@ const SeoMonotributo = () => {
       />
       <meta
         name="twitter:image"
-        content="https://www.estudio-dillon.com/logotipoDillon.png"
+        content="https://www.estudio-dillon.com.ar/logotipoDillon.png"
       />
       <meta
         name="twitter:url"
-        content="https://www.estudio-dillon.com/monotributo"
+        content="https://www.estudio-dillon.com.ar/monotributo"
       />
       {/* Schema Markup */}
       <script type="application/ld+json">
@@ -67,16 +70,16 @@ const SeoMonotributo = () => {
           jobTitle: "Estudio Contable",
           description:
             "Servicios contables y legales integrales para empresas.",
-          url: "https://www.estudio-dillon.com",
+          url: "https://www.estudio-dillon.com.ar",
           sameAs: [
-            "https://www.linkedin.com/in/maria-eugenia-dillon/",
-            "https://twitter.com/maugexxiv",
+            "https://www.linkedin.com.ar/in/maria-eugenia-dillon/",
+            "https://twitter.com.ar/maugexxiv",
           ],
         })}
       </script>
       <meta name="geo.region" content="AR" />
       <meta name="geo.placename" content="Ciudad Autónoma de Buenos Aires" />
-      <meta name="geo.position" content="-34.6037,-58.3816" /> 
+      <meta name="geo.position" content="-34.6037,-58.3816" />
     </Head>
   );
 };
