@@ -51,7 +51,10 @@ const SeoImpuestos = () => {
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="Liquidación de Impuestos - Estudio Contable Dillon" />
+      <meta
+        property="og:image:alt"
+        content="Liquidación de Impuestos - Estudio Contable Dillon"
+      />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@estudiodillon" />
       <meta name="twitter:creator" content="@estudiodillon" />
@@ -114,7 +117,8 @@ const SeoImpuestos = () => {
                 itemOffered: {
                   "@type": "Service",
                   name: "Ingresos Brutos",
-                  description: "Liquidación de ingresos brutos y convenio multilateral",
+                  description:
+                    "Liquidación de ingresos brutos y convenio multilateral",
                 },
               },
             ],

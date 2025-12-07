@@ -15,7 +15,10 @@ const SeoVencimientos = () => {
         rel="canonical"
         href="https://www.estudio-dillon.com.ar/vencimientos"
       />
-      <meta name="title" content="Vencimientos AFIP 2025 - Estudio Contable Dillon" />
+      <meta
+        name="title"
+        content="Vencimientos AFIP 2025 - Estudio Contable Dillon"
+      />
       <meta
         name="keywords"
         content="vencimientos AFIP 2025, calendario AFIP, vencimientos IVA, vencimientos ganancias, vencimientos monotributo, fechas de pago AFIP, calendario impositivo 2025, vencimientos ingresos brutos"
@@ -45,7 +48,10 @@ const SeoVencimientos = () => {
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="Calendario Vencimientos AFIP 2025" />
+      <meta
+        property="og:image:alt"
+        content="Calendario Vencimientos AFIP 2025"
+      />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@estudiodillon" />
       <meta name="twitter:creator" content="@estudiodillon" />

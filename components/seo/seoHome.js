@@ -46,7 +46,10 @@ const SeoHome = () => {
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="Estudio Contable Dillon - Servicios Contables Integrales" />
+      <meta
+        property="og:image:alt"
+        content="Estudio Contable Dillon - Servicios Contables Integrales"
+      />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@estudiodillon" />
       <meta name="twitter:creator" content="@estudiodillon" />
@@ -94,7 +97,13 @@ const SeoHome = () => {
           openingHoursSpecification: [
             {
               "@type": "OpeningHoursSpecification",
-              dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              dayOfWeek: [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+              ],
               opens: "09:00",
               closes: "18:00",
             },
@@ -112,7 +121,8 @@ const SeoHome = () => {
                 itemOffered: {
                   "@type": "Service",
                   name: "Liquidación de Impuestos",
-                  description: "Gestión integral de impuestos nacionales y provinciales",
+                  description:
+                    "Gestión integral de impuestos nacionales y provinciales",
                 },
               },
               {
@@ -120,7 +130,8 @@ const SeoHome = () => {
                 itemOffered: {
                   "@type": "Service",
                   name: "Liquidación de Sueldos",
-                  description: "Tercerización de liquidación de sueldos y jornales",
+                  description:
+                    "Tercerización de liquidación de sueldos y jornales",
                 },
               },
               {

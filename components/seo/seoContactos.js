@@ -39,7 +39,10 @@ const SeoContactos = () => {
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="Contacte con Estudio Contable Dillon" />
+      <meta
+        property="og:image:alt"
+        content="Contacte con Estudio Contable Dillon"
+      />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@estudiodillon" />
       <meta name="twitter:creator" content="@estudiodillon" />
