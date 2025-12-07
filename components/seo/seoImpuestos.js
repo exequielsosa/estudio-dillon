@@ -41,19 +41,23 @@ const SeoImpuestos = () => {
       <meta name="language" content="Spanish" />
       <meta
         name="keywords"
-        content="vencimientos, afip, 2023, iva, convenio, multilateral, impuesto, impuestos, ganancias, bienes, personales, sueldos, liquidacion, liquidaceiones. asesoramiento, impositivo, contable, contabilidad, estudio, pymes, empresa, patrimonio, valor, agregado, ingresos, brutos, monotributo, regimen, simplificado, cuil, cuit"
+        content="liquidación impuestos, IVA, ganancias, bienes personales, declaración jurada, AFIP, impuesto patrimonio, valor agregado, ingresos brutos, convenio multilateral, asesoramiento impositivo"
       />
-      <meta name="author" content="Estudio Dillon" />
+      <meta name="author" content="Estudio Contable Dillon" />
+      <meta name="theme-color" content="#1e40af" />
       <meta
         property="og:image"
-        content="https://www.estudio-dillon.com.ar/logotipoDillon.png"
+        content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"
       />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="Liquidación de Impuestos - Estudio Contable Dillon" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@maugexxiv" />
-      <meta name="twitter:creator" content="@maugexxiv" />
+      <meta name="twitter:site" content="@estudiodillon" />
+      <meta name="twitter:creator" content="@estudiodillon" />
       <meta
         name="twitter:title"
-        content="Liquidacion de Impuestos - Estudio Contable Dillon | Estudio Contable Integral"
+        content="Liquidacion de Impuestos - Estudio Contable Dillon"
       />
       <meta
         name="twitter:description"
@@ -61,25 +65,80 @@ const SeoImpuestos = () => {
       />
       <meta
         name="twitter:image"
-        content="https://www.estudio-dillon.com.ar/logotipoDillon.png"
+        content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"
       />
-      <meta
-        name="twitter:url"
-        content="https://www.estudio-dillon.com.ar/impuestos"
-      />
-      {/* Schema Markup */}
+      {/* Schema Markup - Service */}
       <script type="application/ld+json">
         {JSON.stringify({
-          "@context": "https://schema.org/",
-          "@type": "Person",
-          name: "Estudio Contable Dillon",
-          jobTitle: "Estudio Contable",
-          description:
-            "Servicios contables y legales integrales para empresas.",
-          url: "https://www.estudio-dillon.com.ar",
-          sameAs: [
-            "https://www.linkedin.com.ar/in/maria-eugenia-dillon/",
-            "https://twitter.com.ar/maugexxiv",
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": "https://www.estudio-dillon.com.ar/impuestos",
+          serviceType: "Liquidación de Impuestos",
+          provider: {
+            "@id": "https://www.estudio-dillon.com.ar/#organization",
+          },
+          areaServed: {
+            "@type": "Country",
+            name: "Argentina",
+          },
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Servicios de Liquidación de Impuestos",
+            itemListElement: [
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "IVA",
+                  description: "Liquidación de IVA mensual y anual",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Ganancias",
+                  description: "Liquidación de impuesto a las ganancias",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Bienes Personales",
+                  description: "Declaración jurada de bienes personales",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Ingresos Brutos",
+                  description: "Liquidación de ingresos brutos y convenio multilateral",
+                },
+              },
+            ],
+          },
+        })}
+      </script>
+      {/* Breadcrumb Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Inicio",
+              item: "https://www.estudio-dillon.com.ar",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Liquidación de Impuestos",
+              item: "https://www.estudio-dillon.com.ar/impuestos",
+            },
           ],
         })}
       </script>

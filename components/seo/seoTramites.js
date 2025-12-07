@@ -38,45 +38,68 @@ const SeoTramites = () => {
       <meta name="language" content="Spanish" />
       <meta
         name="keywords"
-        content="vencimientos, afip, 2023, iva, convenio, multilateral, impuesto, impuestos, ganancias, bienes, personales, sueldos, liquidacion, liquidaceiones. asesoramiento, impositivo, contable, contabilidad, estudio, pymes, empresa, patrimonio, valor, agregado, ingresos, brutos, monotributo, regimen, simplificado, cuil, cuit"
+        content="trámites AFIP, alta CUIT, clave fiscal, certificados contables, inscripción impuestos, gestión societaria, constancia inscripción, trámites ante organismos"
       />
-      <meta name="author" content="Estudio Dillon" />
+      <meta name="author" content="Estudio Contable Dillon" />
+      <meta name="theme-color" content="#1e40af" />
       <meta
         property="og:image"
-        content="https://www.estudio-dillon.com.ar/logotipoDillon.png"
+        content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"
       />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="Gestión de Trámites - Estudio Contable Dillon" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@maugexxiv" />
-      <meta name="twitter:creator" content="@maugexxiv" />
+      <meta name="twitter:site" content="@estudiodillon" />
+      <meta name="twitter:creator" content="@estudiodillon" />
       <meta
         name="twitter:title"
-        content="Gestión de trámites - Estudio Contable Dillon | Estudio Contable Integral"
+        content="Gestión de trámites - Estudio Contable Dillon"
       />
       <meta
         name="twitter:description"
-        content="En cualquier tipo de emprendimiento es importante un buen asesoramiento a la hora de gestionar sus trámites, tanto para obtener los resultados esperados, como para no tener innecesaria perdidas de tiempo. Poseemos experiencia en todo tipo de trámites societarios y certificados contables"
+        content="En todo emprendimiento, es clave un asesoramiento eficiente en trámites societarios y contables para evitar pérdidas de tiempo innecesarias."
       />
       <meta
         name="twitter:image"
-        content="https://www.estudio-dillon.com.ar/logotipoDillon.png"
+        content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"
       />
-      <meta
-        name="twitter:url"
-        content="https://www.estudio-dillon.com.ar/tramites"
-      />
-      {/* Schema Markup */}
+      {/* Schema Markup - Service */}
       <script type="application/ld+json">
         {JSON.stringify({
-          "@context": "https://schema.org/",
-          "@type": "Person",
-          name: "Estudio Contable Dillon",
-          jobTitle: "Estudio Contable",
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": "https://www.estudio-dillon.com.ar/tramites",
+          serviceType: "Gestión de Trámites",
+          provider: {
+            "@id": "https://www.estudio-dillon.com.ar/#organization",
+          },
+          areaServed: {
+            "@type": "Country",
+            name: "Argentina",
+          },
           description:
-            "Servicios contables y legales integrales para empresas.",
-          url: "https://www.estudio-dillon.com.ar",
-          sameAs: [
-            "https://www.linkedin.com.ar/in/maria-eugenia-dillon/",
-            "https://twitter.com.ar/maugexxiv",
+            "Gestión integral de trámites ante AFIP, inscripción de impuestos, alta de CUIT, certificados contables y trámites societarios.",
+        })}
+      </script>
+      {/* Breadcrumb Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Inicio",
+              item: "https://www.estudio-dillon.com.ar",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Gestión de Trámites",
+              item: "https://www.estudio-dillon.com.ar/tramites",
+            },
           ],
         })}
       </script>

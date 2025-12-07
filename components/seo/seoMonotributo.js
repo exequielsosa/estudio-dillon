@@ -35,16 +35,20 @@ const SeoMonotributo = () => {
       <meta name="language" content="Spanish" />
       <meta
         name="keywords"
-        content="vencimientos, afip, 2023, iva, convenio, multilateral, impuesto, impuestos, ganancias, bienes, personales, sueldos, liquidacion, liquidaceiones. asesoramiento, impositivo, contable, contabilidad, estudio, pymes, empresa, patrimonio, valor, agregado, ingresos, brutos, monotributo, regimen, simplificado, cuil, cuit"
+        content="monotributo, régimen simplificado, categoría monotributo, alta monotributo, recategorización monotributo, autónomo, emprendedor, CUIT, factura electrónica, pequeño contribuyente"
       />
-      <meta name="author" content="Estudio Dillon" />
+      <meta name="author" content="Estudio Contable Dillon" />
+      <meta name="theme-color" content="#1e40af" />
       <meta
         property="og:image"
-        content="https://www.estudio-dillon.com.ar/logotipoDillon.png"
+        content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"
       />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="Monotributo - Estudio Contable Dillon" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@maugexxiv" />
-      <meta name="twitter:creator" content="@maugexxiv" />
+      <meta name="twitter:site" content="@estudiodillon" />
+      <meta name="twitter:creator" content="@estudiodillon" />
       <meta
         name="twitter:title"
         content="Monotributo - Estudio Contable Dillon"
@@ -55,25 +59,44 @@ const SeoMonotributo = () => {
       />
       <meta
         name="twitter:image"
-        content="https://www.estudio-dillon.com.ar/logotipoDillon.png"
+        content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"
       />
-      <meta
-        name="twitter:url"
-        content="https://www.estudio-dillon.com.ar/monotributo"
-      />
-      {/* Schema Markup */}
+      {/* Schema Markup - Service */}
       <script type="application/ld+json">
         {JSON.stringify({
-          "@context": "https://schema.org/",
-          "@type": "Person",
-          name: "Estudio Contable Dillon",
-          jobTitle: "Estudio Contable",
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": "https://www.estudio-dillon.com.ar/monotributo",
+          serviceType: "Gestión de Monotributo",
+          provider: {
+            "@id": "https://www.estudio-dillon.com.ar/#organization",
+          },
+          areaServed: {
+            "@type": "Country",
+            name: "Argentina",
+          },
           description:
-            "Servicios contables y legales integrales para empresas.",
-          url: "https://www.estudio-dillon.com.ar",
-          sameAs: [
-            "https://www.linkedin.com.ar/in/maria-eugenia-dillon/",
-            "https://twitter.com.ar/maugexxiv",
+            "Asesoramiento integral para monotributistas: alta, recategorización, liquidación mensual y facturación electrónica.",
+        })}
+      </script>
+      {/* Breadcrumb Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Inicio",
+              item: "https://www.estudio-dillon.com.ar",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Monotributo",
+              item: "https://www.estudio-dillon.com.ar/monotributo",
+            },
           ],
         })}
       </script>

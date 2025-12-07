@@ -1,10 +1,12 @@
 import CarouselHome from "@/components/carouselHome";
 import SeoHome from "@/components/seo/seoHome";
+import FAQSchema from "@/components/seo/FAQSchema";
 
 const Home = () => {
   return (
     <>
       <SeoHome />
+      <FAQSchema />
       <main>
         <CarouselHome />
         <section>

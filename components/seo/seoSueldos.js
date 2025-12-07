@@ -38,19 +38,23 @@ const SeoSueldos = () => {
       <meta name="language" content="Spanish" />
       <meta
         name="keywords"
-        content="vencimientos, afip, 2023, iva, convenio, multilateral, impuesto, impuestos, ganancias, bienes, personales, sueldos, liquidacion, liquidaceiones. asesoramiento, impositivo, contable, contabilidad, estudio, pymes, empresa, patrimonio, valor, agregado, ingresos, brutos, monotributo, regimen, simplificado, cuil, cuit"
+        content="liquidación sueldos, liquidación jornales, recibos de sueldo, aportes y contribuciones, seguridad social, ART, obra social, tercialización nómina, recursos humanos"
       />
-      <meta name="author" content="Estudio Dillon" />
+      <meta name="author" content="Estudio Contable Dillon" />
+      <meta name="theme-color" content="#1e40af" />
       <meta
         property="og:image"
-        content="https://www.estudio-dillon.com.ar/logotipoDillon.png"
+        content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"
       />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="Liquidación de Sueldos - Estudio Contable Dillon" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@maugexxiv" />
-      <meta name="twitter:creator" content="@maugexxiv" />
+      <meta name="twitter:site" content="@estudiodillon" />
+      <meta name="twitter:creator" content="@estudiodillon" />
       <meta
         name="twitter:title"
-        content="Liquidacion de Sueldos - Estudio Contable Dillon | Estudio Contable Integral"
+        content="Liquidacion de Sueldos - Estudio Contable Dillon"
       />
       <meta
         name="twitter:description"
@@ -58,25 +62,44 @@ const SeoSueldos = () => {
       />
       <meta
         name="twitter:image"
-        content="https://www.estudio-dillon.com.ar/logotipoDillon.png"
+        content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"
       />
-      <meta
-        name="twitter:url"
-        content="https://www.estudio-dillon.com.ar/sueldos"
-      />
-      {/* Schema Markup */}
+      {/* Schema Markup - Service */}
       <script type="application/ld+json">
         {JSON.stringify({
-          "@context": "https://schema.org/",
-          "@type": "Person",
-          name: "Estudio Contable Dillon",
-          jobTitle: "Estudio Contable",
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": "https://www.estudio-dillon.com.ar/sueldos",
+          serviceType: "Liquidación de Sueldos y Jornales",
+          provider: {
+            "@id": "https://www.estudio-dillon.com.ar/#organization",
+          },
+          areaServed: {
+            "@type": "Country",
+            name: "Argentina",
+          },
           description:
-            "Servicios contables y legales integrales para empresas.",
-          url: "https://www.estudio-dillon.com.ar",
-          sameAs: [
-            "https://www.linkedin.com.ar/in/maria-eugenia-dillon/",
-            "https://twitter.com.ar/maugexxiv",
+            "Tercerización de liquidación de sueldos, gestión de aportes y contribuciones, recibos de sueldo digitales.",
+        })}
+      </script>
+      {/* Breadcrumb Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Inicio",
+              item: "https://www.estudio-dillon.com.ar",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Liquidación de Sueldos",
+              item: "https://www.estudio-dillon.com.ar/sueldos",
+            },
           ],
         })}
       </script>

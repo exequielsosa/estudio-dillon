@@ -1,0 +1,29 @@
+{
+  "name": "Estudio Contable Dillon",
+  "short_name": "Dillon",
+  "description": "Servicios contables y legales integrales para empresas, monotributistas y pymes. Más de 20 años de experiencia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["business", "finance"],
+  "lang": "es-AR",
+  "dir": "ltr",
+  "scope": "/",
+  "id": "/?source=pwa"
+}

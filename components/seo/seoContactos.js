@@ -29,16 +29,20 @@ const SeoContactos = () => {
       <meta name="language" content="Spanish" />
       <meta
         name="keywords"
-        content="vencimientos, afip, 2023, iva, convenio, multilateral, impuesto, impuestos, ganancias, bienes, personales, sueldos, liquidacion, liquidaceiones. asesoramiento, impositivo, contable, contabilidad, estudio, pymes, empresa, patrimonio, valor, agregado, ingresos, brutos, monotributo, regimen, simplificado, cuil, cuit"
+        content="contacto estudio contable, consulta contador, presupuesto servicios contables, asesoramiento contable Buenos Aires, consultoría impositiva, contactar contador público"
       />
-      <meta name="author" content="Estudio Dillon" />
+      <meta name="author" content="Estudio Contable Dillon" />
+      <meta name="theme-color" content="#1e40af" />
       <meta
         property="og:image"
-        content="https://www.estudio-dillon.com.ar/logotipoDillon.png"
+        content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"
       />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="Contacte con Estudio Contable Dillon" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@maugexxiv" />
-      <meta name="twitter:creator" content="@maugexxiv" />
+      <meta name="twitter:site" content="@estudiodillon" />
+      <meta name="twitter:creator" content="@estudiodillon" />
       <meta name="twitter:title" content="Contacto - Estudio Contable Dillon" />
       <meta
         name="twitter:description"
@@ -46,25 +50,45 @@ const SeoContactos = () => {
       />
       <meta
         name="twitter:image"
-        content="https://www.estudio-dillon.com.ar/logotipoDillon.png"
+        content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"
       />
-      <meta
-        name="twitter:url"
-        content="https://www.estudio-dillon.com.ar/contacto"
-      />
-      {/* Schema Markup */}
+      {/* Schema Markup - ContactPage */}
       <script type="application/ld+json">
         {JSON.stringify({
-          "@context": "https://schema.org/",
-          "@type": "Person",
-          name: "Estudio Contable Dillon",
-          jobTitle: "Estudio Contable",
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "@id": "https://www.estudio-dillon.com.ar/contacto",
+          url: "https://www.estudio-dillon.com.ar/contacto",
+          name: "Contacto - Estudio Contable Dillon",
           description:
-            "Servicios contables y legales integrales para empresas.",
-          url: "https://www.estudio-dillon.com.ar",
-          sameAs: [
-            "https://www.linkedin.com.ar/in/maria-eugenia-dillon/",
-            "https://twitter.com.ar/maugexxiv",
+            "Contacte con nuestro estudio contable para servicios de asesoramiento impositivo y contable integral.",
+          mainEntity: {
+            "@type": "ProfessionalService",
+            "@id": "https://www.estudio-dillon.com.ar/#organization",
+            name: "Estudio Contable Dillon",
+            telephone: "+54-11-5895-9825",
+            email: "ma.eugenia.dillon@gmail.com",
+          },
+        })}
+      </script>
+      {/* Breadcrumb Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Inicio",
+              item: "https://www.estudio-dillon.com.ar",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Contacto",
+              item: "https://www.estudio-dillon.com.ar/contacto",
+            },
           ],
         })}
       </script>

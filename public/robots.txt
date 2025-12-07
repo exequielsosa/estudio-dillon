@@ -1,7 +1,22 @@
-User-Agent: Googlebot
-Disallow:
-Allow: /
+# Estudio Contable Dillon - robots.txt
+# https://www.estudio-dillon.com.ar
+
 User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
 
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
 
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+
+# Crawl-delay for general bots
+Crawl-delay: 1
+
+# Sitemap location
 Sitemap: https://www.estudio-dillon.com.ar/sitemap.xml
