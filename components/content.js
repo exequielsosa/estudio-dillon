@@ -26,7 +26,7 @@ const Content = () => {
     const id = link.replace("#", "");
     const el = document.getElementById(id);
     if (!el) return;
-    const offset = 100;
+    const offset = 140;
     const top = el.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({ top, behavior: "smooth" });
   };
