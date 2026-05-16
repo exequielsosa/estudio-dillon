@@ -12,8 +12,8 @@ const SeoSueldos = () => {
       <meta name="robots" content="index,follow" />
       <link rel="icon" href="/favicon.ico" />
       <link rel="canonical" href="https://www.estudio-dillon.com.ar/sueldos" />
-      <meta property="og:locale" content="es_ES" />
-      <meta property="og:type" content="article" />
+      <meta property="og:locale" content="es_AR" />
+      <meta property="og:type" content="website" />
       <meta
         property="og:site_name"
         content="Estudio Contable Dillon | Estudio Contable Integral"
@@ -34,7 +34,7 @@ const SeoSueldos = () => {
         name="title"
         content="Liquidacion de Sueldos - Estudio Contable Dillon"
       />
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="Spanish" />
       <meta
         name="keywords"
@@ -83,6 +83,47 @@ const SeoSueldos = () => {
           },
           description:
             "Tercerización de liquidación de sueldos, gestión de aportes y contribuciones, recibos de sueldo digitales.",
+        })}
+      </script>
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "¿Qué incluye el servicio de liquidación de sueldos?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Incluye la liquidación mensual de haberes, cálculo de aportes y contribuciones, generación de recibos de sueldo digitales, presentación de declaraciones juradas ante AFIP y organismos de seguridad social, gestión de altas y bajas de empleados, y liquidación de SAC (aguinaldo) y vacaciones.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "¿Cuándo vencen las cargas sociales de empleadores?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Las cargas sociales de empleadores vencen, en términos generales, del 9 al 13 de cada mes posterior al período devengado, según la terminación del CUIT y considerando los corrimientos por días inhábiles.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "¿Qué obligaciones tiene el empleador al contratar personal?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "El empleador debe realizar el alta del trabajador en AFIP antes del inicio de la relación laboral, inscribirlo en la ART, gestionar la afiliación a la obra social, generar recibos de sueldo conformes a la normativa, retener el impuesto a las Ganancias si corresponde, y abonar aportes y contribuciones mensualmente.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "¿Liquidan sueldos para empleados de casas particulares?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sí, gestionamos los aportes obligatorios del personal de casas particulares, cuyos vencimientos operan el día 10 de cada mes, y los aportes voluntarios con vencimiento general el día 15 de cada mes.",
+              },
+            },
+          ],
         })}
       </script>
       {/* Breadcrumb Schema */}

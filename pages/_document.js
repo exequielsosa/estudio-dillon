@@ -1,19 +1,39 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import { Html, Head, Main, NextScript } from "next/document";
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.estudio-dillon.com.ar/#organization",
+  name: "Estudio Contable Dillon",
+  alternateName: "Estudio Dillon",
+  description:
+    "Estudio contable y legal con más de 20 años de experiencia. Servicios integrales para empresas, monotributistas y pymes en Argentina.",
+  url: "https://www.estudio-dillon.com.ar",
+  telephone: "+54-11-5895-9825",
+  email: "ma.eugenia.dillon@gmail.com",
+  logo: "https://www.estudio-dillon.com.ar/assets/logo.png",
+  image: "https://www.estudio-dillon.com.ar/assets/og-image.jpg",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Ciudad Autónoma de Buenos Aires",
+    addressRegion: "Buenos Aires",
+    addressCountry: "AR",
+  },
+  areaServed: { "@type": "Country", name: "Argentina" },
+  priceRange: "$$",
+  sameAs: [
+    "https://www.linkedin.com/in/maria-eugenia-dillon/",
+    "https://twitter.com/maugexxiv",
+  ],
+};
+
 export default function Document() {
   return (
-    <Html lang="es">
+    <Html lang="es-AR">
       <Head>
-        {/* Preconnect for performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-
-        {/* Fonts */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Secular+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
-          rel="stylesheet"
-        />
+        {/* TODO: cuando verifiques el sitio en Google Search Console, pegar el token acá */}
+        {/* <meta name="google-site-verification" content="PEGAR_TOKEN_AQUI" /> */}
 
         {/* Icons and Manifest */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -21,30 +41,20 @@ export default function Document() {
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="/assets/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-16x16.png"
+          href="/assets/favicon-16x16.png"
         />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href="/assets/apple-touch-icon.png"
         />
         <link rel="manifest" href="/manifest.json" />
-
-        {/* External CSS */}
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-        />
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
-          rel="stylesheet"
-        />
 
         {/* Additional Meta Tags */}
         <meta name="format-detection" content="telephone=yes" />
@@ -52,11 +62,24 @@ export default function Document() {
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Estudio Dillon" />
         <meta name="mobile-web-app-capable" content="yes" />
+
+        {/* Robots directives (let Google show full previews) */}
+        <meta
+          name="robots"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+
+        {/* Organization Schema (aplica en todas las páginas) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
       </Head>
       <body>
         <Main />
         <NextScript />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
       </body>
     </Html>
   );

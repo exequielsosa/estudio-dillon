@@ -4,7 +4,7 @@ const Taxes23 = () => {
   return (
     <>
       <div className="w-full justify-center flex mt-8">
-        <div className="w-full 2xl:w-10/12">
+        <div className="w-full">
           <span id="iva" />
           <Content23 />
           <span id="bp" />

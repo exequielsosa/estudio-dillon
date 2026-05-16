@@ -30,9 +30,9 @@ const dataCards = [
   },
   {
     link: "/vencimientos",
-    title: "Vencimientos 2023",
+    title: "Vencimientos 2026",
     img: "/vencimientos-min.jpg",
-    description: "Calendario de vencimientos 2023",
+    description: "Calendario de vencimientos 2026",
   },
   {
     link: "/contacto",
@@ -48,7 +48,7 @@ const CallToActionCard = () => {
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6 mt-12 mb-12 w-full">
         {dataCards.map((item, i) => (
-          <Link href={item.link} key={i} className="hover:shadow-2xl">
+          <Link href={item.link} key={i} className="transition-shadow duration-300 ease-in-out hover:shadow-2xl">
             <div className="flex justify-center w-full">
               <div className="max-w-lg">
                 <Card horizontal={true} imgSrc={item.img} className="md:h-80">

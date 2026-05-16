@@ -6,7 +6,10 @@ const Monotributo = () => {
     <>
       <SeoMonotributo />
       <main>
-        <HeaderImage image="/monotributo.webp" />
+        <HeaderImage
+          image="/monotributo.webp"
+          alt="Asesoramiento integral de Monotributo - Estudio Contable Dillon"
+        />
         <div className="flex w-full justify-center flex-col items-center mb-10">
           <div className="flex justify-center flex-col">
             <article>

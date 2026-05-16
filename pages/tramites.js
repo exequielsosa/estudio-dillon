@@ -6,7 +6,10 @@ const Tramites = () => {
     <>
       <SeoTramites />
       <main>
-        <HeaderImage image="/tramites-min.jpg" />
+        <HeaderImage
+          image="/tramites-min.jpg"
+          alt="Gestión de trámites ante AFIP - Estudio Contable Dillon"
+        />
         <div className="flex w-full justify-center flex-col items-center mb-10">
           <div className="flex justify-center flex-col">
             <section className="main">

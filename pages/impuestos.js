@@ -6,7 +6,10 @@ const Impuestos = () => {
     <>
       <SeoImpuestos />
       <main className="flex flex-col w-full">
-        <HeaderImage image="/impuestos-min.jpg" />
+        <HeaderImage
+          image="/impuestos-min.jpg"
+          alt="Liquidación de impuestos - Estudio Contable Dillon"
+        />
         <div className="flex w-full justify-center flex-col mb-10">
           <div className="flex flex-col ">
             <section className="articles">

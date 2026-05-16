@@ -7,7 +7,7 @@
   padding: 0;
   margin: 0;
   color: #000;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-montserrat), system-ui, sans-serif;
 }
 
 .loader {

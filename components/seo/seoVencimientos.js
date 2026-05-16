@@ -3,10 +3,10 @@ import Head from "next/head";
 const SeoVencimientos = () => {
   return (
     <Head>
-      <title>Vencimientos AFIP 2025 - Estudio Contable Dillon</title>
+      <title>Vencimientos AFIP 2026 - Estudio Contable Dillon</title>
       <meta
         name="description"
-        content="Calendario completo de vencimientos AFIP 2025. Consulte todas las fechas de vencimiento de impuestos nacionales, provinciales y monotributo actualizadas."
+        content="Calendario completo de vencimientos AFIP 2026. Consulte todas las fechas de vencimiento de impuestos nacionales, provinciales y monotributo actualizadas."
       />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index,follow" />
@@ -17,25 +17,25 @@ const SeoVencimientos = () => {
       />
       <meta
         name="title"
-        content="Vencimientos AFIP 2025 - Estudio Contable Dillon"
+        content="Vencimientos AFIP 2026 - Estudio Contable Dillon"
       />
       <meta
         name="keywords"
-        content="vencimientos AFIP 2025, calendario AFIP, vencimientos IVA, vencimientos ganancias, vencimientos monotributo, fechas de pago AFIP, calendario impositivo 2025, vencimientos ingresos brutos"
+        content="vencimientos AFIP 2026, calendario AFIP, vencimientos IVA, vencimientos ganancias, vencimientos monotributo, fechas de pago AFIP, calendario impositivo 2026, vencimientos ingresos brutos"
       />
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="Spanish" />
       <meta name="theme-color" content="#1e40af" />
-      <meta property="og:locale" content="es_ES" />
+      <meta property="og:locale" content="es_AR" />
       <meta property="og:type" content="article" />
       <meta property="og:site_name" content="Estudio Contable Dillon" />
       <meta
         property="og:title"
-        content="Vencimientos AFIP 2025 - Estudio Contable Dillon"
+        content="Vencimientos AFIP 2026 - Estudio Contable Dillon"
       />
       <meta
         property="og:description"
-        content="Calendario completo de vencimientos AFIP 2025. Consulte todas las fechas de vencimiento de impuestos nacionales, provinciales y monotributo actualizadas."
+        content="Calendario completo de vencimientos AFIP 2026. Consulte todas las fechas de vencimiento de impuestos nacionales, provinciales y monotributo actualizadas."
       />
       <meta
         property="og:url"
@@ -50,18 +50,18 @@ const SeoVencimientos = () => {
       <meta property="og:image:height" content="630" />
       <meta
         property="og:image:alt"
-        content="Calendario Vencimientos AFIP 2025"
+        content="Calendario Vencimientos AFIP 2026"
       />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@estudiodillon" />
       <meta name="twitter:creator" content="@estudiodillon" />
       <meta
         name="twitter:title"
-        content="Vencimientos AFIP 2025 - Estudio Contable Dillon"
+        content="Vencimientos AFIP 2026 - Estudio Contable Dillon"
       />
       <meta
         name="twitter:description"
-        content="Calendario completo de vencimientos AFIP 2025. Consulte todas las fechas de vencimiento de impuestos actualizadas."
+        content="Calendario completo de vencimientos AFIP 2026. Consulte todas las fechas de vencimiento de impuestos actualizadas."
       />
       <meta
         name="twitter:image"
@@ -73,12 +73,12 @@ const SeoVencimientos = () => {
           "@context": "https://schema.org",
           "@type": "Article",
           "@id": "https://www.estudio-dillon.com.ar/vencimientos",
-          headline: "Calendario de Vencimientos AFIP 2025",
+          headline: "Calendario de Vencimientos AFIP 2026",
           description:
-            "Calendario completo con todas las fechas de vencimiento de impuestos nacionales, provinciales y monotributo para el año 2025.",
+            "Calendario completo con todas las fechas de vencimiento de impuestos nacionales, provinciales y monotributo para el año 2026.",
           image: "https://www.estudio-dillon.com.ar/assets/og-image.jpg",
-          datePublished: "2025-01-01",
-          dateModified: "2025-12-07",
+          datePublished: "2026-01-01",
+          dateModified: "2026-05-15",
           author: {
             "@type": "Organization",
             name: "Estudio Contable Dillon",
@@ -109,7 +109,7 @@ const SeoVencimientos = () => {
             {
               "@type": "ListItem",
               position: 2,
-              name: "Vencimientos AFIP 2025",
+              name: "Vencimientos AFIP 2026",
               item: "https://www.estudio-dillon.com.ar/vencimientos",
             },
           ],

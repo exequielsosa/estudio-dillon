@@ -12,8 +12,8 @@ const SeoTramites = () => {
       <meta name="robots" content="index,follow" />
       <link rel="icon" href="/favicon.ico" />
       <link rel="canonical" href="https://www.estudio-dillon.com.ar/tramites" />
-      <meta property="og:locale" content="es_ES" />
-      <meta property="og:type" content="article" />
+      <meta property="og:locale" content="es_AR" />
+      <meta property="og:type" content="website" />
       <meta
         property="og:site_name"
         content="Estudio Contable Dillon | Estudio Contable Integral"
@@ -34,7 +34,7 @@ const SeoTramites = () => {
         name="title"
         content="Gestión de trámites - Estudio Contable Dillon"
       />
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="Spanish" />
       <meta
         name="keywords"
@@ -83,6 +83,47 @@ const SeoTramites = () => {
           },
           description:
             "Gestión integral de trámites ante AFIP, inscripción de impuestos, alta de CUIT, certificados contables y trámites societarios.",
+        })}
+      </script>
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "¿Qué trámites ante AFIP pueden gestionar?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Gestionamos altas y bajas de CUIT, inscripciones y bajas en impuestos (IVA, Ganancias, Bienes Personales, Monotributo, Ingresos Brutos), tramitación de clave fiscal, certificados de no retención, certificaciones contables, MiPyME, exenciones, planes de facilidades de pago y trámites societarios.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "¿Cómo obtengo la clave fiscal de AFIP?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "La clave fiscal nivel 3 se obtiene presencialmente en una dependencia AFIP con documento. Para niveles inferiores existen alternativas digitales con biometría. Desde nuestro estudio te asesoramos sobre qué nivel necesitás según el trámite que vayas a realizar y te acompañamos en el proceso.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "¿Pueden inscribirme como Responsable Inscripto o Autónomo?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sí. Gestionamos la inscripción inicial ante AFIP en el régimen impositivo que corresponda según tu actividad: Responsable Inscripto en IVA y Ganancias, Autónomo, o Monotributo. También ante el régimen provincial de Ingresos Brutos y Convenio Multilateral si aplica.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "¿Atienden a clientes del interior del país?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sí, atendemos clientes de todas las provincias de Argentina. La mayoría de los trámites pueden gestionarse de forma remota mediante poderes y autorizaciones electrónicas, sin necesidad de presencia física en CABA.",
+              },
+            },
+          ],
         })}
       </script>
       {/* Breadcrumb Schema */}

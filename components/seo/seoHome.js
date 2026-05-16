@@ -13,8 +13,8 @@ const SeoHome = () => {
       <link rel="icon" href="/favicon.ico" />
       <link rel="canonical" href="https://www.estudio-dillon.com.ar" />
 
-      <meta property="og:locale" content="es_ES" />
-      <meta property="og:type" content="article" />
+      <meta property="og:locale" content="es_AR" />
+      <meta property="og:type" content="website" />
       <meta
         property="og:site_name"
         content="Estudio Contable Dillon | Estudio Contable Integral"
@@ -36,7 +36,7 @@ const SeoHome = () => {
         name="keywords"
         content="estudio contable, contador público, servicios contables, asesoramiento impositivo, liquidación impuestos, AFIP, IVA, ganancias, bienes personales, monotributo, liquidación sueldos, contabilidad pymes, ingresos brutos, Buenos Aires, trámites AFIP, declaración jurada, vencimientos impositivos"
       />
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="Spanish" />
       <meta name="author" content="Estudio Contable Dillon" />
       <meta name="theme-color" content="#1e40af" />

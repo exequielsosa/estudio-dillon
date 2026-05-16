@@ -12,8 +12,8 @@ const SeoContactos = () => {
       <meta name="robots" content="index,follow" />
       <link rel="icon" href="/favicon.ico" />
       <link rel="canonical" href="https://www.estudio-dillon.com.ar/contacto" />
-      <meta property="og:locale" content="es_ES" />
-      <meta property="og:type" content="article" />
+      <meta property="og:locale" content="es_AR" />
+      <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Estudio Contable Dillon" />
       <meta property="og:title" content="Contacto - Estudio Contable Dillon" />
       <meta
@@ -25,7 +25,7 @@ const SeoContactos = () => {
         content="https://www.estudio-dillon.com.ar/contacto"
       />
       <meta name="title" content="Contacto - Estudio Contable Dillon" />
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="Spanish" />
       <meta
         name="keywords"

@@ -7,7 +7,10 @@ const Contacto = () => {
     <>
       <SeoContactos />
       <main>
-        <HeaderImage image="/imageContact.jpg" />
+        <HeaderImage
+          image="/imageContact.jpg"
+          alt="Contacto - Estudio Contable Dillon"
+        />
         <div className="flex w-full justify-center flex-col items-center">
           <div className="flex justify-center flex-col">
             <section className="articles">

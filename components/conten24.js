@@ -30,7 +30,7 @@ const arrayContent = [
     link: "#ps",
   },
   {
-    name: "Retenciones y percepciones (SICORE / SIRE)",
+    name: "Retenciones y percepciones (SICORE)",
     link: "#sicore",
   },
   {
@@ -55,7 +55,7 @@ const arrayContent = [
   },
 ];
 
-const Content = () => {
+const Conten24 = () => {
   return (
     <div className="p-4 bg-white rounded-2xl border border-gray-200 w-fit">
       <h2 className="text-sm font-semibold opacity-80 mb-1">Contenidos</h2>
@@ -70,4 +70,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default Conten24;

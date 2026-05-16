@@ -6,7 +6,10 @@ const Sueldos = () => {
     <>
       <SeoSueldos />
       <main>
-        <HeaderImage image="/sueldos-min.jpg" />
+        <HeaderImage
+          image="/sueldos-min.jpg"
+          alt="Liquidación de sueldos y jornales - Estudio Contable Dillon"
+        />
         <div className="flex w-full justify-center flex-col items-center mb-10">
           <div className="flex justify-center flex-col ">
             <section className="articles">

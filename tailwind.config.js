@@ -9,7 +9,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
+      sans: ["var(--font-montserrat)", "system-ui", "sans-serif"],
       title: ["ui-sans-serif", "system-ui"],
+      titillium: ["var(--font-titillium)", "system-ui", "sans-serif"],
     },
     extend: {
       backgroundImage: {

@@ -33,9 +33,9 @@ const NavBar = () => {
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
               <img
-                src="/logoDillon2.png"
-                className="h-14"
-                alt="Flowbite Logo"
+                src="/estudio_dillon_logo.png"
+                className="h-9 w-auto md:h-14"
+                alt="Estudio Dillon"
               />
             </Link>
             <button
@@ -63,9 +63,11 @@ const NavBar = () => {
               </svg>
             </button>
             <div
-              className={`${
-                isOpen ? "block" : "hidden"
-              } w-full md:block md:w-auto`}
+              className={`w-full md:w-auto overflow-hidden transition-all duration-300 ease-in-out md:overflow-visible md:max-h-none md:opacity-100 md:pointer-events-auto ${
+                isOpen
+                  ? "max-h-[500px] opacity-100"
+                  : "max-h-0 opacity-0 pointer-events-none"
+              }`}
               id="navbar-default"
               onClick={closeMenu}
               ref={ref}

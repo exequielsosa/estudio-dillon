@@ -8,7 +8,7 @@ const FooterLayout = () => {
           <div className="mb-6 md:mb-0">
             <Link href="/" className="flex items-center">
               <img
-                src="/logoDillon2.png"
+                src="/estudio_dillon_logo.png"
                 className="h-10 me-3"
                 alt="logodillon"
               />
