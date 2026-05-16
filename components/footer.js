@@ -49,6 +49,7 @@ const FooterLayout = () => {
                 SEGUINOS
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                {/* Facebook: oculto temporalmente (sin cuenta vigente).
                 <li className="mb-4">
                   <a
                     href="http://www.facebook.com/"
@@ -58,6 +59,7 @@ const FooterLayout = () => {
                     Facebook
                   </a>
                 </li>
+                */}
                 <li className="mb-4">
                   <a
                     href="http://www.instagram.com/maugexxiv"

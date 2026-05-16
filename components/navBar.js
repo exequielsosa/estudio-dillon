@@ -1,13 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useClickAway } from "@uidotdev/usehooks";
 
 const NavBar = () => {
   const router = useRouter();
   const route = router.asPath;
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -24,7 +34,10 @@ const NavBar = () => {
     <>
       <div
         className="overflow-hidden fixed top-0 pt-0.4 bg-white p-4 z-50 w-full"
-        style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.15)" }}
+        style={{
+          boxShadow: isScrolled ? "0 2px 8px rgba(0,0,0,0.15)" : "none",
+          transition: "box-shadow 0.3s ease-in-out",
+        }}
       >
         <nav className="bg-white border-gray-200 dark:bg-gray-900">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
