@@ -30,7 +30,7 @@ const CarouselHome = () => {
         </Link>
         <Link href="/sueldos">
           <Image
-            src="/stock/stock10.png"
+            src="/stock/stock10.jpg"
             alt="Liquidación de Sueldos y Jornales - Estudio Contable Dillon"
             width={1920}
             height={1080}

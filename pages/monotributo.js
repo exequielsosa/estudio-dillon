@@ -458,7 +458,7 @@ const Monotributo = () => {
           </article>
 
           <SectionWithImage
-            image="/stock/stock42.WEBP"
+            image="/stock/stock51.jpg"
             alt="Servicio personalizado"
             imageRight
           >
