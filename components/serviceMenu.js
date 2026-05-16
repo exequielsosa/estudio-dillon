@@ -3,7 +3,7 @@ const ServiceMenu = ({ items }) => {
     e.preventDefault();
     const el = document.getElementById(id);
     if (!el) return;
-    const offset = 100; // altura del navbar fijo
+    const offset = 140; // navbar fijo + aire visual
     const top = el.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({ top, behavior: "smooth" });
   };

@@ -2,6 +2,7 @@ import Link from "next/link";
 import HeaderImage from "@/components/headerImage";
 import FAQAccordion from "@/components/faqAccordion";
 import ServiceMenu from "@/components/serviceMenu";
+import SectionWithImage from "@/components/sectionWithImage";
 import SeoTramites from "@/components/seo/seoTramites";
 import { tramitesFAQs } from "@/lib/faqs/tramites";
 
@@ -74,8 +75,12 @@ const Tramites = () => {
 
           <ServiceMenu items={tramitesMenu} />
 
-          <article>
-            <h2 id="igj" className="mt-8 mb-3 text-lg font-semibold opacity-70">
+          <SectionWithImage
+            image="/tramites-min.jpg"
+            alt="Trámites societarios IGJ"
+            imageRight
+          >
+            <h2 id="igj" className="section-h">
               Trámites societarios en IGJ CABA
             </h2>
             <p className="opacity-70 text-base">
@@ -99,13 +104,10 @@ const Tramites = () => {
               necesitan una gestión societaria prolija y respaldada por
               profesionales.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="constitucion"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="constitucion" className="section-h">
               Constitución de sociedades comerciales
             </h2>
             <p className="opacity-70 text-base">
@@ -121,7 +123,7 @@ const Tramites = () => {
               Asesoramos en la constitución de sociedades comerciales en IGJ
               CABA, incluyendo:
             </p>
-            <ul className="list-disc ml-6 mt-3 opacity-70 text-base space-y-1">
+            <ul className="check-list">
               <li>SAS.</li>
               <li>SRL.</li>
               <li>SA.</li>
@@ -140,11 +142,12 @@ const Tramites = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="transformacion"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock41.jpg"
+            alt="Transformación y disolución de sociedades"
+            imageRight={false}
+          >
+            <h2 id="transformacion" className="section-h">
               Transformación, modificación y disolución de sociedades
             </h2>
             <p className="opacity-70 text-base">
@@ -161,7 +164,7 @@ const Tramites = () => {
             <p className="mt-4 opacity-70 text-base">
               Realizamos trámites vinculados con:
             </p>
-            <ul className="list-disc ml-6 mt-3 opacity-70 text-base space-y-1">
+            <ul className="check-list">
               <li>Transformación de sociedades.</li>
               <li>Disolución de sociedades comerciales.</li>
               <li>Modificación de estatutos.</li>
@@ -178,13 +181,10 @@ const Tramites = () => {
               certificaciones, dictámenes, formularios y seguimiento
               administrativo.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="modificacion"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="modificacion" className="section-h">
               Modificación de estatutos, autoridades y composición accionaria
             </h2>
             <p className="opacity-70 text-base">
@@ -210,11 +210,12 @@ const Tramites = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="vistas"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock41.avif"
+            alt="Vistas y seguimiento IGJ"
+            imageRight
+          >
+            <h2 id="vistas" className="section-h">
               Vistas y seguimiento de expedientes ante IGJ
             </h2>
             <p className="opacity-70 text-base">
@@ -237,12 +238,10 @@ const Tramites = () => {
               requerimientos y orientar al cliente sobre los pasos necesarios
               para completar la gestión.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
-              Publicaciones legales y Artículo 60
-            </h2>
+            <h2 className="section-h">Publicaciones legales y Artículo 60</h2>
             <p className="opacity-70 text-base">
               Gestionamos publicaciones legales vinculadas con trámites
               societarios, incluyendo publicaciones del Artículo 60,
@@ -262,11 +261,12 @@ const Tramites = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="libros"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock42.avif"
+            alt="Libros societarios"
+            imageRight={false}
+          >
+            <h2 id="libros" className="section-h">
               Libros societarios actualizados
             </h2>
             <p className="opacity-70 text-base">
@@ -285,7 +285,7 @@ const Tramites = () => {
               Entre los libros y registros que pueden requerir seguimiento se
               encuentran:
             </p>
-            <ul className="list-disc ml-6 mt-3 opacity-70 text-base space-y-1">
+            <ul className="check-list">
               <li>Libro de actas.</li>
               <li>Libro de registro de accionistas o socios.</li>
               <li>Libro diario.</li>
@@ -298,13 +298,10 @@ const Tramites = () => {
               medida preventiva que brinda respaldo frente a socios, organismos,
               bancos, terceros y eventuales conflictos.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="reuniones"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="reuniones" className="section-h">
               Preparación y conducción de reuniones societarias
             </h2>
             <p className="opacity-70 text-base">
@@ -316,7 +313,7 @@ const Tramites = () => {
               Brindamos asistencia en la preparación y conducción de reuniones
               societarias, incluyendo:
             </p>
-            <ul className="list-disc ml-6 mt-3 opacity-70 text-base space-y-1">
+            <ul className="check-list">
               <li>Fijación del orden del día.</li>
               <li>Preparación de convocatoria.</li>
               <li>Redacción de actas.</li>
@@ -333,10 +330,12 @@ const Tramites = () => {
             </p>
           </article>
 
-          <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
-              Sociedades y sucursales del exterior
-            </h2>
+          <SectionWithImage
+            image="/stock/stock42.jpg"
+            alt="Sociedades del exterior"
+            imageRight
+          >
+            <h2 className="section-h">Sociedades y sucursales del exterior</h2>
             <p className="opacity-70 text-base">
               También brindamos asistencia en trámites vinculados con sociedades
               y sucursales del exterior, incluyendo inscripción, actualización
@@ -353,10 +352,10 @@ const Tramites = () => {
               profesional para ordenar la documentación y cumplir con los
               requisitos aplicables.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+            <h2 className="section-h">
               Acuerdos societarios entre socios o accionistas
             </h2>
             <p className="opacity-70 text-base">
@@ -383,10 +382,12 @@ const Tramites = () => {
             </p>
           </article>
 
-          <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
-              Confección de estatutos y reglamentos
-            </h2>
+          <SectionWithImage
+            image="/stock/stock44.jpg"
+            alt="Estatutos y reglamentos"
+            imageRight={false}
+          >
+            <h2 className="section-h">Confección de estatutos y reglamentos</h2>
             <p className="opacity-70 text-base">
               La confección de estatutos y reglamentos internos requiere
               precisión. Estos documentos definen aspectos centrales del
@@ -404,13 +405,10 @@ const Tramites = () => {
               que la documentación societaria acompañe la actividad real y la
               forma en que los socios esperan organizarse.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="certificados"
-              className="mt-10 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="certificados" className="section-h !mt-10">
               Certificados Contables
             </h2>
             <p className="mt-2 text-lg font-medium opacity-80 mb-3">
@@ -444,11 +442,12 @@ const Tramites = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="cert-ingresos"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock45.jpg"
+            alt="Certificado de ingresos"
+            imageRight
+          >
+            <h2 id="cert-ingresos" className="section-h">
               Certificado de ingresos
             </h2>
             <p className="opacity-70 text-base">
@@ -462,7 +461,7 @@ const Tramites = () => {
               Emitimos certificados de ingresos provenientes de distintas
               fuentes, como:
             </p>
-            <ul className="list-disc ml-6 mt-3 opacity-70 text-base space-y-1">
+            <ul className="check-list">
               <li>Sueldos percibidos.</li>
               <li>Ventas.</li>
               <li>Honorarios profesionales.</li>
@@ -485,12 +484,10 @@ const Tramites = () => {
               , un responsable inscripto, un profesional independiente o una
               sociedad requieren análisis y documentación distinta.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
-              Certificado de sueldos percibidos
-            </h2>
+            <h2 className="section-h">Certificado de sueldos percibidos</h2>
             <p className="opacity-70 text-base">
               El certificado de{" "}
               <Link href="/sueldos" className="text-blue-700 hover:underline">
@@ -512,10 +509,12 @@ const Tramites = () => {
             </p>
           </article>
 
-          <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
-              Certificado de ingresos por ventas
-            </h2>
+          <SectionWithImage
+            image="/stock/stock46.jpg"
+            alt="Certificado de ingresos por ventas"
+            imageRight={false}
+          >
+            <h2 className="section-h">Certificado de ingresos por ventas</h2>
             <p className="opacity-70 text-base">
               El certificado de ingresos por ventas puede ser requerido por
               comerciantes, profesionales, monotributistas, responsables
@@ -532,13 +531,10 @@ const Tramites = () => {
               alquileres comerciales, licitaciones, análisis crediticios,
               trámites institucionales o presentaciones ante terceros.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="manif-bienes"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="manif-bienes" className="section-h">
               Manifestación de bienes
             </h2>
             <p className="opacity-70 text-base">
@@ -562,11 +558,12 @@ const Tramites = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="origen-fondos"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock43.avif"
+            alt="Origen lícito de fondos"
+            imageRight
+          >
+            <h2 id="origen-fondos" className="section-h">
               Certificado de origen lícito de fondos
             </h2>
             <p className="opacity-70 text-base">
@@ -589,10 +586,10 @@ const Tramites = () => {
               la documentación necesaria para confeccionar un informe adecuado
               al destino del trámite.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+            <h2 className="section-h">
               Informe sobre cumplimiento de obligaciones impositivas y
               previsionales
             </h2>
@@ -619,8 +616,12 @@ const Tramites = () => {
             </p>
           </article>
 
-          <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+          <SectionWithImage
+            image="/stock/stock47.jpg"
+            alt="Trámites con seguimiento profesional"
+            imageRight={false}
+          >
+            <h2 className="section-h">
               Trámites contables con seguimiento profesional
             </h2>
             <p className="opacity-70 text-base">
@@ -640,10 +641,10 @@ const Tramites = () => {
               servicio claro para que cada cliente pueda resolver sus gestiones
               con respaldo profesional.
             </p>
-          </article>
+          </SectionWithImage>
 
-          <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+          <article className="cta-card">
+            <h2 className="section-h">
               Consultá por trámites societarios o certificados contables
             </h2>
             <p className="opacity-70 text-base">

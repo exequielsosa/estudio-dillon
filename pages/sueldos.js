@@ -2,6 +2,7 @@ import Link from "next/link";
 import HeaderImage from "@/components/headerImage";
 import FAQAccordion from "@/components/faqAccordion";
 import ServiceMenu from "@/components/serviceMenu";
+import SectionWithImage from "@/components/sectionWithImage";
 import SeoSueldos from "@/components/seo/seoSueldos";
 import { sueldosFAQs } from "@/lib/faqs/sueldos";
 
@@ -77,11 +78,12 @@ const Sueldos = () => {
 
           <ServiceMenu items={sueldosMenu} />
 
-          <article>
-            <h2
-              id="liquidacion"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock22.jpg"
+            alt="Asesoramiento en liquidación de haberes"
+            imageRight
+          >
+            <h2 id="liquidacion" className="section-h">
               Asesoramiento en liquidación de haberes
             </h2>
             <p className="opacity-70 text-base">
@@ -118,13 +120,10 @@ const Sueldos = () => {
               </Link>{" "}
               se cumplan en tiempo y forma.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="incorporacion"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="incorporacion" className="section-h">
               Incorporación de personal
             </h2>
             <p className="opacity-70 text-base">
@@ -138,7 +137,7 @@ const Sueldos = () => {
               Entre las tareas vinculadas con la incorporación de empleados,
               realizamos y asesoramos sobre:
             </p>
-            <ul className="list-disc ml-6 mt-3 opacity-70 text-base space-y-1">
+            <ul className="check-list">
               <li>Trámite de obtención de CUIL.</li>
               <li>Obtención y coordinación de exámenes preocupacionales.</li>
               <li>Alta temprana del trabajador.</li>
@@ -158,11 +157,12 @@ const Sueldos = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="alta-temprana"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock14.jpg"
+            alt="Alta temprana y registración laboral"
+            imageRight={false}
+          >
+            <h2 id="alta-temprana" className="section-h">
               Alta temprana y registración laboral
             </h2>
             <p className="opacity-70 text-base">
@@ -184,13 +184,10 @@ const Sueldos = () => {
               correctamente incorporado al sistema, con sus aportes, cobertura y
               derechos laborales debidamente informados.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="convenio"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="convenio" className="section-h">
               Determinación del convenio colectivo de trabajo
             </h2>
             <p className="opacity-70 text-base">
@@ -213,10 +210,12 @@ const Sueldos = () => {
             </p>
           </article>
 
-          <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
-              Confección de legajos del personal
-            </h2>
+          <SectionWithImage
+            image="/stock/stock24.jpg"
+            alt="Confección de legajos del personal"
+            imageRight
+          >
+            <h2 className="section-h">Confección de legajos del personal</h2>
             <p className="opacity-70 text-base">
               El legajo del empleado es una herramienta fundamental para ordenar
               la documentación laboral. Debe contener la información básica del
@@ -235,13 +234,10 @@ const Sueldos = () => {
               Un legajo ordenado no es un detalle administrativo menor. Es una
               parte importante de una gestión laboral prolija y preventiva.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="administracion"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="administracion" className="section-h">
               Administración mensual de personal
             </h2>
             <p className="opacity-70 text-base">
@@ -262,7 +258,7 @@ const Sueldos = () => {
             <p className="mt-4 opacity-70 text-base">
               Entre las tareas de administración mensual se incluyen:
             </p>
-            <ul className="list-disc ml-6 mt-3 opacity-70 text-base space-y-1">
+            <ul className="check-list">
               <li>Cálculo de haberes.</li>
               <li>Liquidación de sueldos mensuales o quincenales.</li>
               <li>Aplicación de convenios colectivos de trabajo.</li>
@@ -277,10 +273,12 @@ const Sueldos = () => {
             </ul>
           </article>
 
-          <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
-              Inscripción como empleador
-            </h2>
+          <SectionWithImage
+            image="/stock/stock23.jpg"
+            alt="Inscripción como empleador"
+            imageRight={false}
+          >
+            <h2 className="section-h">Inscripción como empleador</h2>
             <p className="opacity-70 text-base">
               Cuando una empresa incorpora personal por primera vez, debe
               realizar las inscripciones correspondientes como empleador. Este
@@ -303,13 +301,10 @@ const Sueldos = () => {
               entidades que correspondan según la actividad y el convenio
               aplicable.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="cargas-sociales"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="cargas-sociales" className="section-h">
               Liquidación de cargas sociales y SUSS
             </h2>
             <p className="opacity-70 text-base">
@@ -331,11 +326,12 @@ const Sueldos = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="recibos"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock28.jpg"
+            alt="Recibos de sueldo"
+            imageRight
+          >
+            <h2 id="recibos" className="section-h">
               Recibos de sueldo
             </h2>
             <p className="opacity-70 text-base">
@@ -356,12 +352,10 @@ const Sueldos = () => {
               comunicación con el personal y permite respaldar adecuadamente la
               liquidación realizada.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
-              Libro de sueldos y jornales
-            </h2>
+            <h2 className="section-h">Libro de sueldos y jornales</h2>
             <p className="opacity-70 text-base">
               La confección y rubricación del libro de sueldos y jornales es
               otra obligación relevante para los empleadores. Este registro
@@ -380,11 +374,12 @@ const Sueldos = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="ganancias-sueldos"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock30.jpg"
+            alt="Ganancias sobre sueldos"
+            imageRight={false}
+          >
+            <h2 id="ganancias-sueldos" className="section-h">
               Impuesto a las Ganancias sobre sueldos
             </h2>
             <p className="opacity-70 text-base">
@@ -408,10 +403,10 @@ const Sueldos = () => {
               finales, para que la empresa pueda cumplir correctamente con su
               rol como agente de retención.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+            <h2 className="section-h">
               Beneficios promocionales y reducción de cargas sociales
             </h2>
             <p className="opacity-70 text-base">
@@ -429,11 +424,12 @@ const Sueldos = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="egreso"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock29.jpg"
+            alt="Egreso y liquidaciones finales"
+            imageRight
+          >
+            <h2 id="egreso" className="section-h">
               Egreso de personal y liquidaciones finales
             </h2>
             <p className="opacity-70 text-base">
@@ -453,10 +449,10 @@ const Sueldos = () => {
               formalizar el egreso del trabajador y cerrar correctamente la
               relación laboral.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+            <h2 className="section-h">
               Prevención de errores y contingencias laborales
             </h2>
             <p className="opacity-70 text-base">
@@ -479,8 +475,12 @@ const Sueldos = () => {
             </p>
           </article>
 
-          <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+          <SectionWithImage
+            image="/stock/stock32.jpg"
+            alt="Servicio adaptado a cada empresa"
+            imageRight={false}
+          >
+            <h2 className="section-h">
               Un servicio claro, profesional y adaptado a cada empresa
             </h2>
             <p className="opacity-70 text-base">
@@ -500,10 +500,10 @@ const Sueldos = () => {
               tanto el cumplimiento normativo como la claridad en la
               comunicación con el cliente.
             </p>
-          </article>
+          </SectionWithImage>
 
-          <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+          <article className="cta-card">
+            <h2 className="section-h">
               Consultá por nuestro servicio de liquidación de sueldos
             </h2>
             <p className="opacity-70 text-base">

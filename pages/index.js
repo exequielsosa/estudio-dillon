@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CarouselHome from "@/components/carouselHome";
+import SectionWithImage from "@/components/sectionWithImage";
 import SeoHome from "@/components/seo/seoHome";
 import FAQSchema from "@/components/seo/FAQSchema";
 
@@ -59,8 +60,12 @@ const Home = () => {
               </p>
             </article>
 
-            <article>
-              <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+            <SectionWithImage
+              image="/stock/stock38.jpg"
+              alt="Servicios contables integrales"
+              imageRight
+            >
+              <h2 className="section-h">
                 Servicios contables e impositivos para personas y empresas
               </h2>
               <p className="opacity-70 text-base">
@@ -124,12 +129,10 @@ const Home = () => {
                 sirve solamente para cumplir con la ley: también ayuda a
                 entender mejor los números del negocio.
               </p>
-            </article>
+            </SectionWithImage>
 
             <article>
-              <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
-                Asesoramiento para monotributistas
-              </h2>
+              <h2 className="section-h">Asesoramiento para monotributistas</h2>
               <p className="opacity-70 text-base">
                 El{" "}
                 <Link
@@ -165,8 +168,12 @@ const Home = () => {
               </p>
             </article>
 
-            <article>
-              <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+            <SectionWithImage
+              image="/stock/stock10.jpg"
+              alt="Contadores para empresas"
+              imageRight={false}
+            >
+              <h2 className="section-h">
                 Contadores para responsables inscriptos, profesionales y
                 empresas
               </h2>
@@ -199,12 +206,10 @@ const Home = () => {
                 contable permite evitar problemas, pero también detectar
                 oportunidades de mejora.
               </p>
-            </article>
+            </SectionWithImage>
 
             <article>
-              <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
-                Startups, pymes y nuevos negocios
-              </h2>
+              <h2 className="section-h">Startups, pymes y nuevos negocios</h2>
               <p className="opacity-70 text-base">
                 Muchas startups y pymes crecen rápido, pero no siempre acompañan
                 ese crecimiento con una estructura contable ordenada. Al
@@ -243,8 +248,12 @@ const Home = () => {
               </p>
             </article>
 
-            <article>
-              <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+            <SectionWithImage
+              image="/stock/stock35.jpg"
+              alt="Estudio contable moderno"
+              imageRight
+            >
+              <h2 className="section-h">
                 Un estudio contable moderno, cercano y claro
               </h2>
               <p className="opacity-70 text-base">
@@ -271,10 +280,10 @@ const Home = () => {
                 deuda fiscal, recategorizaciones, altas, bajas o decisiones que
                 pueden tener impacto económico.
               </p>
-            </article>
+            </SectionWithImage>
 
             <article>
-              <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+              <h2 className="section-h">
                 Atención en Capital Federal y asesoramiento online en todo el
                 país
               </h2>
@@ -300,8 +309,8 @@ const Home = () => {
               </p>
             </article>
 
-            <article className="mb-10">
-              <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+            <article className="cta-card mb-10">
+              <h2 className="section-h">
                 Por qué elegir Estudio Contable Dillon
               </h2>
               <p className="opacity-70 text-base">

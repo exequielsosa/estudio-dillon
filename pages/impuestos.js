@@ -2,6 +2,7 @@ import Link from "next/link";
 import HeaderImage from "@/components/headerImage";
 import FAQAccordion from "@/components/faqAccordion";
 import ServiceMenu from "@/components/serviceMenu";
+import SectionWithImage from "@/components/sectionWithImage";
 import SeoImpuestos from "@/components/seo/seoImpuestos";
 import { impuestosFAQs } from "@/lib/faqs/impuestos";
 
@@ -87,11 +88,12 @@ const Impuestos = () => {
 
           <ServiceMenu items={impuestosMenu} />
 
-          <article>
-            <h2
-              id="liquidacion"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/impuestos.jpg"
+            alt="Liquidación y presentación de impuestos"
+            imageRight
+          >
+            <h2 id="liquidacion" className="section-h">
               Liquidación y presentación de impuestos
             </h2>
             <p className="opacity-70 text-base">
@@ -121,10 +123,10 @@ const Impuestos = () => {
               retención y percepción, impuestos vinculados a sociedades y
               presentaciones informativas exigidas por la normativa vigente.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2 id="iva" className="mt-8 mb-3 text-lg font-semibold opacity-70">
+            <h2 id="iva" className="section-h">
               Impuesto al Valor Agregado — IVA
             </h2>
             <p className="opacity-70 text-base">
@@ -153,10 +155,12 @@ const Impuestos = () => {
             </p>
           </article>
 
-          <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
-              Libro IVA Ventas e IVA Compras
-            </h2>
+          <SectionWithImage
+            image="/stock/stock00.jpg"
+            alt="Libro IVA Ventas y Compras"
+            imageRight={false}
+          >
+            <h2 className="section-h">Libro IVA Ventas e IVA Compras</h2>
             <p className="opacity-70 text-base">
               La correcta registración de operaciones es fundamental para una
               buena liquidación impositiva. Por eso, confeccionamos y
@@ -178,13 +182,10 @@ const Impuestos = () => {
               liquidación de impuestos y mejora la calidad de la información
               contable.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="ganancias"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="ganancias" className="section-h">
               Declaraciones Juradas de Ganancias
             </h2>
             <p className="opacity-70 text-base">
@@ -210,11 +211,12 @@ const Impuestos = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="bienes-personales"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock01.jpg"
+            alt="Declaraciones Juradas de Bienes Personales"
+            imageRight
+          >
+            <h2 id="bienes-personales" className="section-h">
               Declaraciones Juradas de Bienes Personales
             </h2>
             <p className="opacity-70 text-base">
@@ -238,12 +240,10 @@ const Impuestos = () => {
               sociedades o activos que requieren un tratamiento fiscal
               específico.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
-              Impuesto a la Renta Financiera
-            </h2>
+            <h2 className="section-h">Impuesto a la Renta Financiera</h2>
             <p className="opacity-70 text-base">
               El tratamiento impositivo de inversiones, rendimientos
               financieros, intereses, títulos, fondos, dividendos u otros
@@ -265,11 +265,12 @@ const Impuestos = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="ingresos-brutos"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock02.jpg"
+            alt="Impuesto sobre los Ingresos Brutos"
+            imageRight={false}
+          >
+            <h2 id="ingresos-brutos" className="section-h">
               Impuesto sobre los Ingresos Brutos
             </h2>
             <p className="opacity-70 text-base">
@@ -292,13 +293,10 @@ const Impuestos = () => {
               duplicados, acumulación de saldos o errores en la distribución de
               ingresos por jurisdicción.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="regularizacion"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="regularizacion" className="section-h">
               Regularización de deudas impositivas y previsionales
             </h2>
             <p className="opacity-70 text-base">
@@ -322,11 +320,12 @@ const Impuestos = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="facilidades"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock04.jpg"
+            alt="Planes de facilidades de pago"
+            imageRight
+          >
+            <h2 id="facilidades" className="section-h">
               Planes de facilidades de pago
             </h2>
             <p className="opacity-70 text-base">
@@ -346,13 +345,10 @@ const Impuestos = () => {
               automáticas que puedan generar una carga difícil de sostener o que
               no resuelvan el problema de fondo.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="devoluciones"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="devoluciones" className="section-h">
               Devoluciones, compensaciones y transferencias
             </h2>
             <p className="opacity-70 text-base">
@@ -378,10 +374,12 @@ const Impuestos = () => {
             </p>
           </article>
 
-          <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
-              Reintegros por exportaciones
-            </h2>
+          <SectionWithImage
+            image="/stock/stock05.jpg"
+            alt="Reintegros por exportaciones"
+            imageRight={false}
+          >
+            <h2 className="section-h">Reintegros por exportaciones</h2>
             <p className="opacity-70 text-base">
               Para empresas o contribuyentes vinculados al comercio exterior,
               brindamos asesoramiento en trámites de reintegro por
@@ -394,13 +392,10 @@ const Impuestos = () => {
               cumplimiento de requisitos formales. Una gestión ordenada permite
               mejorar los tiempos de presentación y reducir observaciones.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="inspecciones"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="inspecciones" className="section-h">
               Inspecciones y requerimientos fiscales
             </h2>
             <p className="opacity-70 text-base">
@@ -424,11 +419,12 @@ const Impuestos = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="contencioso"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock06.jpg"
+            alt="Asesoramiento contencioso tributario"
+            imageRight
+          >
+            <h2 id="contencioso" className="section-h">
               Asesoramiento contencioso tributario
             </h2>
             <p className="opacity-70 text-base">
@@ -449,10 +445,10 @@ const Impuestos = () => {
               contingencias y buscar la mejor solución posible dentro del marco
               legal aplicable.
             </p>
-          </article>
+          </SectionWithImage>
 
-          <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+          <article className="cta-card">
+            <h2 className="section-h">
               Un servicio impositivo claro, ordenado y profesional
             </h2>
             <p className="opacity-70 text-base">

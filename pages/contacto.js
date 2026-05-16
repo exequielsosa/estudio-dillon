@@ -2,6 +2,7 @@ import Link from "next/link";
 import HeaderImage from "@/components/headerImage";
 import FAQAccordion from "@/components/faqAccordion";
 import ServiceMenu from "@/components/serviceMenu";
+import SectionWithImage from "@/components/sectionWithImage";
 import SeoContactos from "@/components/seo/seoContactos";
 import { contactoFAQs } from "@/lib/faqs/contacto";
 
@@ -25,7 +26,6 @@ const Contacto = () => {
         />
 
         <div className="w-full flex flex-col mb-10">
-
           <article>
             <h1 className="mt-8 text-2xl font-semibold">Contacto</h1>
             <p className="mt-2 text-lg font-medium opacity-80">
@@ -35,8 +35,8 @@ const Contacto = () => {
             <p className="mt-4 opacity-70 text-base">
               En Estudio Contable Dillon estamos a disposición para atender tus
               consultas y asesorarte de manera clara, profesional y
-              personalizada. Si necesitás un contador en Capital Federal,
-              querés ordenar tu situación fiscal, consultar por{" "}
+              personalizada. Si necesitás un contador en Capital Federal, querés
+              ordenar tu situación fiscal, consultar por{" "}
               <Link
                 href="/monotributo"
                 className="text-blue-700 hover:underline"
@@ -68,43 +68,44 @@ const Contacto = () => {
               </Link>{" "}
               próximo, una deuda impositiva, una intimación, una
               recategorización pendiente, una sociedad que necesita actualizar
-              documentación o una empresa que requiere ordenar la liquidación
-              de sueldos. Por eso, nuestro objetivo es responder con rapidez,
+              documentación o una empresa que requiere ordenar la liquidación de
+              sueldos. Por eso, nuestro objetivo es responder con rapidez,
               entender tu situación y ayudarte a encontrar el camino más
               conveniente.
             </p>
             <p className="mt-4 opacity-70 text-base">
               Trabajamos con personas, profesionales independientes,
-              monotributistas, responsables inscriptos, emprendedores,
-              startups, pymes y sociedades. Cada caso requiere una mirada
-              particular, porque no todos los contribuyentes tienen las mismas
-              obligaciones ni los mismos problemas. Por eso, antes de ofrecer
-              una solución, escuchamos tu consulta, revisamos la información
-              básica y te indicamos cuáles son los pasos a seguir.
+              monotributistas, responsables inscriptos, emprendedores, startups,
+              pymes y sociedades. Cada caso requiere una mirada particular,
+              porque no todos los contribuyentes tienen las mismas obligaciones
+              ni los mismos problemas. Por eso, antes de ofrecer una solución,
+              escuchamos tu consulta, revisamos la información básica y te
+              indicamos cuáles son los pasos a seguir.
             </p>
           </article>
 
           <ServiceMenu items={contactoMenu} />
 
-          <article>
-            <h2
-              id="asesoramiento"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock50.jpg"
+            alt="Asesoramiento contable en CABA"
+            imageRight
+          >
+            <h2 id="asesoramiento" className="section-h">
               Asesoramiento contable en Capital Federal
             </h2>
             <p className="opacity-70 text-base">
-              Nuestro estudio brinda asesoramiento contable, impositivo,
-              laboral y societario desde CABA, con atención para clientes de
-              Capital Federal y también de otras jurisdicciones del país.
-              Gracias a las herramientas digitales actuales, muchas gestiones
-              pueden resolverse de manera online, sin necesidad de traslados
+              Nuestro estudio brinda asesoramiento contable, impositivo, laboral
+              y societario desde CABA, con atención para clientes de Capital
+              Federal y también de otras jurisdicciones del país. Gracias a las
+              herramientas digitales actuales, muchas gestiones pueden
+              resolverse de manera online, sin necesidad de traslados
               innecesarios.
             </p>
             <p className="mt-4 opacity-70 text-base">
               Podés contactarnos si necesitás ayuda con:
             </p>
-            <ul className="list-disc ml-6 mt-3 opacity-70 text-base space-y-1">
+            <ul className="check-list">
               <li>Alta, baja o recategorización de monotributo.</li>
               <li>Control de facturación y vencimientos.</li>
               <li>Inscripción o liquidación de Ingresos Brutos.</li>
@@ -127,13 +128,10 @@ const Contacto = () => {
               respuesta concreta, sin vueltas ni explicaciones innecesariamente
               técnicas.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="ayuda"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="ayuda" className="section-h">
               Cómo podemos ayudarte
             </h2>
             <p className="opacity-70 text-base">
@@ -145,10 +143,9 @@ const Contacto = () => {
                 monotributista
               </Link>
               , podemos ayudarte a revisar tu categoría, controlar tu
-              facturación, verificar si tenés deuda, hacer una
-              recategorización, emitir facturas electrónicas o analizar si
-              corresponde inscripción en Ingresos Brutos o Convenio
-              Multilateral.
+              facturación, verificar si tenés deuda, hacer una recategorización,
+              emitir facturas electrónicas o analizar si corresponde inscripción
+              en Ingresos Brutos o Convenio Multilateral.
             </p>
             <p className="mt-4 opacity-70 text-base">
               Si sos responsable inscripto, profesional independiente o titular
@@ -169,53 +166,50 @@ const Contacto = () => {
               <Link href="/tramites" className="text-blue-700 hover:underline">
                 trámites societarios
               </Link>
-              , libros contables y documentación necesaria para operar de
-              manera ordenada.
+              , libros contables y documentación necesaria para operar de manera
+              ordenada.
             </p>
             <p className="mt-4 opacity-70 text-base">
               Si necesitás realizar un trámite puntual, también podés
               consultarnos. Muchas personas se comunican por certificados
               contables, constancias de ingresos, manifestaciones de bienes,
-              documentación para bancos, trámites societarios, modificaciones
-              de autoridades o requerimientos específicos de organismos e
+              documentación para bancos, trámites societarios, modificaciones de
+              autoridades o requerimientos específicos de organismos e
               instituciones.
             </p>
           </article>
 
-          <article>
-            <h2
-              id="atencion"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock48.jpg"
+            alt="Atención personalizada"
+            imageRight={false}
+          >
+            <h2 id="atencion" className="section-h">
               Atención personalizada
             </h2>
             <p className="opacity-70 text-base">
               En Estudio Contable Dillon creemos que un buen asesoramiento
               empieza por entender el caso concreto. No todas las consultas
-              requieren el mismo tipo de respuesta. Algunas se resuelven con
-              una orientación puntual; otras necesitan revisar documentación,
+              requieren el mismo tipo de respuesta. Algunas se resuelven con una
+              orientación puntual; otras necesitan revisar documentación,
               analizar antecedentes o planificar una estrategia de
               regularización.
             </p>
             <p className="mt-4 opacity-70 text-base">
               Por eso, cuando te comuniques con nosotros, te vamos a pedir la
               información necesaria para poder orientarte correctamente. Puede
-              ser tu condición fiscal, actividad, jurisdicción, tipo de
-              trámite, período consultado o documentación relacionada con el
-              tema.
+              ser tu condición fiscal, actividad, jurisdicción, tipo de trámite,
+              período consultado o documentación relacionada con el tema.
             </p>
             <p className="mt-4 opacity-70 text-base">
-              Nuestro objetivo es que tengas claridad sobre tu situación y
-              sepas qué pasos conviene dar. La contabilidad y los impuestos
-              pueden ser complejos, pero la explicación no tiene por qué serlo.
+              Nuestro objetivo es que tengas claridad sobre tu situación y sepas
+              qué pasos conviene dar. La contabilidad y los impuestos pueden ser
+              complejos, pero la explicación no tiene por qué serlo.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="nuevos-clientes"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="nuevos-clientes" className="section-h">
               Consultas para nuevos clientes
             </h2>
             <p className="opacity-70 text-base">
@@ -225,12 +219,12 @@ const Contacto = () => {
             </p>
             <p className="mt-4 opacity-70 text-base">
               Podemos asesorarte si estás por iniciar una actividad, si querés
-              cambiar de contador, si necesitás ordenar documentación atrasada
-              o si buscás un servicio más claro, moderno y organizado.
+              cambiar de contador, si necesitás ordenar documentación atrasada o
+              si buscás un servicio más claro, moderno y organizado.
             </p>
             <p className="mt-4 opacity-70 text-base">
-              También trabajamos con clientes que necesitan resolver
-              situaciones específicas, como deuda fiscal,{" "}
+              También trabajamos con clientes que necesitan resolver situaciones
+              específicas, como deuda fiscal,{" "}
               <Link
                 href="/vencimientos"
                 className="text-blue-700 hover:underline"
@@ -242,17 +236,18 @@ const Contacto = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="reuniones"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock49.jpg"
+            alt="Reuniones y entrevistas"
+            imageRight
+          >
+            <h2 id="reuniones" className="section-h">
               Reuniones y entrevistas
             </h2>
             <p className="opacity-70 text-base">
-              Una vez recibida tu consulta, nos comunicaremos para coordinar
-              una entrevista o avanzar con el análisis inicial del caso. Según
-              la necesidad, la reunión puede ser presencial o virtual.
+              Una vez recibida tu consulta, nos comunicaremos para coordinar una
+              entrevista o avanzar con el análisis inicial del caso. Según la
+              necesidad, la reunión puede ser presencial o virtual.
             </p>
             <p className="mt-4 opacity-70 text-base">
               En esa instancia podremos revisar tu situación, responder tus
@@ -260,19 +255,16 @@ const Contacto = () => {
               Buscamos que cada cliente tenga una respuesta clara desde el
               primer contacto y sepa qué puede esperar del servicio.
             </p>
-          </article>
+          </SectionWithImage>
 
-          <article>
-            <h2
-              id="comunicate"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <article className="cta-card">
+            <h2 id="comunicate" className="section-h">
               Comunicate con nosotros
             </h2>
             <p className="opacity-70 text-base">
-              Podés contactarnos por mail o a través de nuestras redes
-              sociales. Te responderemos a la brevedad para coordinar una
-              entrevista y brindarte el asesoramiento que necesitás.
+              Podés contactarnos por mail o a través de nuestras redes sociales.
+              Te responderemos a la brevedad para coordinar una entrevista y
+              brindarte el asesoramiento que necesitás.
             </p>
             <p className="mt-4 opacity-70 text-base">
               En Estudio Contable Dillon estamos para ayudarte a ordenar tus
@@ -291,7 +283,6 @@ const Contacto = () => {
             </h2>
             <FAQAccordion faqs={contactoFAQs} />
           </section>
-
         </div>
       </main>
     </>

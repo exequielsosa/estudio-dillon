@@ -2,6 +2,7 @@ import Link from "next/link";
 import HeaderImage from "@/components/headerImage";
 import FAQAccordion from "@/components/faqAccordion";
 import ServiceMenu from "@/components/serviceMenu";
+import SectionWithImage from "@/components/sectionWithImage";
 import SeoMonotributo from "@/components/seo/seoMonotributo";
 import { monotributoFAQs } from "@/lib/faqs/monotributo";
 
@@ -77,11 +78,12 @@ const Monotributo = () => {
 
           <ServiceMenu items={monotributoMenu} />
 
-          <article>
-            <h2
-              id="contador"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/monotributo.webp"
+            alt="Contador especializado en monotributo"
+            imageRight
+          >
+            <h2 id="contador" className="section-h">
               Contador para monotributistas
             </h2>
             <p className="opacity-70 text-base">
@@ -109,13 +111,10 @@ const Monotributo = () => {
               y dedicar su tiempo a trabajar, vender, prestar servicios o hacer
               crecer su proyecto.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="alta"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="alta" className="section-h">
               Alta de monotributo
             </h2>
             <p className="opacity-70 text-base">
@@ -135,7 +134,7 @@ const Monotributo = () => {
             <p className="mt-4 opacity-70 text-base">
               Este servicio puede incluir:
             </p>
-            <ul className="list-disc ml-6 mt-3 opacity-70 text-base space-y-1">
+            <ul className="check-list">
               <li>Análisis de la actividad que vas a desarrollar.</li>
               <li>Alta de CUIT, cuando corresponda.</li>
               <li>Alta en el régimen de monotributo.</li>
@@ -154,11 +153,12 @@ const Monotributo = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="recategorizacion"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock37.jpg"
+            alt="Recategorización de monotributo"
+            imageRight={false}
+          >
+            <h2 id="recategorizacion" className="section-h">
               Recategorización de monotributo
             </h2>
             <p className="opacity-70 text-base">
@@ -188,13 +188,10 @@ const Monotributo = () => {
               Nuestro enfoque es preventivo: preferimos anticiparnos a los
               problemas antes que corregirlos tarde.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="facturacion"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="facturacion" className="section-h">
               Seguimiento online de facturación
             </h2>
             <p className="opacity-70 text-base">
@@ -226,11 +223,12 @@ const Monotributo = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="facturacion-electronica"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock39.jpg"
+            alt="Facturación electrónica para monotributistas"
+            imageRight
+          >
+            <h2 id="facturacion-electronica" className="section-h">
               Facturación electrónica para monotributistas
             </h2>
             <p className="opacity-70 text-base">
@@ -255,13 +253,10 @@ const Monotributo = () => {
               justificar operaciones y mantener correctamente la situación
               fiscal.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="ingresos-brutos"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="ingresos-brutos" className="section-h">
               Monotributo e Ingresos Brutos
             </h2>
             <p className="opacity-70 text-base">
@@ -290,11 +285,12 @@ const Monotributo = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="convenio-multilateral"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock40.webp"
+            alt="Convenio Multilateral para monotributistas"
+            imageRight={false}
+          >
+            <h2 id="convenio-multilateral" className="section-h">
               Convenio Multilateral para monotributistas
             </h2>
             <p className="opacity-70 text-base">
@@ -316,13 +312,10 @@ const Monotributo = () => {
               monotributistas, revisando la actividad real del contribuyente y
               las jurisdicciones involucradas.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="deuda"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="deuda" className="section-h">
               Regularización de deuda de monotributo
             </h2>
             <p className="opacity-70 text-base">
@@ -337,7 +330,7 @@ const Monotributo = () => {
               regularizarla.
             </p>
             <p className="mt-4 opacity-70 text-base">Podemos ayudarte a:</p>
-            <ul className="list-disc ml-6 mt-3 opacity-70 text-base space-y-1">
+            <ul className="check-list">
               <li>Consultar deuda vigente.</li>
               <li>Revisar períodos impagos.</li>
               <li>Generar volantes electrónicos de pago.</li>
@@ -353,11 +346,12 @@ const Monotributo = () => {
             </p>
           </article>
 
-          <article>
-            <h2
-              id="exclusiones"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+          <SectionWithImage
+            image="/stock/stock40.jpg"
+            alt="Prevención de exclusiones del monotributo"
+            imageRight
+          >
+            <h2 id="exclusiones" className="section-h">
               Prevención de exclusiones del monotributo
             </h2>
             <p className="opacity-70 text-base">
@@ -383,13 +377,10 @@ const Monotributo = () => {
               , analizamos el caso y planificamos la transición de manera
               ordenada.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2
-              id="baja"
-              className="mt-8 mb-3 text-lg font-semibold opacity-70"
-            >
+            <h2 id="baja" className="section-h">
               Baja de monotributo o modificación de datos
             </h2>
             <p className="opacity-70 text-base">
@@ -414,8 +405,12 @@ const Monotributo = () => {
             </p>
           </article>
 
-          <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+          <SectionWithImage
+            image="/stock/stock41.webp"
+            alt="Herramientas digitales"
+            imageRight={false}
+          >
+            <h2 className="section-h">
               Herramientas digitales para gestionar tu monotributo
             </h2>
             <p className="opacity-70 text-base">
@@ -433,12 +428,10 @@ const Monotributo = () => {
               La tecnología nos permite trabajar mejor, pero siempre acompañada
               de criterio profesional y atención personalizada.
             </p>
-          </article>
+          </SectionWithImage>
 
           <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
-              Cumplimiento de obligaciones fiscales
-            </h2>
+            <h2 className="section-h">Cumplimiento de obligaciones fiscales</h2>
             <p className="opacity-70 text-base">
               Ayudamos al cumplimiento de tus obligaciones ante el organismo
               fiscal nacional y otros organismos provinciales o locales,
@@ -464,8 +457,12 @@ const Monotributo = () => {
             </p>
           </article>
 
-          <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+          <SectionWithImage
+            image="/stock/stock42.WEBP"
+            alt="Servicio personalizado"
+            imageRight
+          >
+            <h2 className="section-h">
               Servicio claro, simple y personalizado
             </h2>
             <p className="opacity-70 text-base">
@@ -483,10 +480,10 @@ const Monotributo = () => {
               Te explicamos tu situación, te indicamos qué hacer, controlamos
               tus obligaciones y te acompañamos en cada etapa de tu actividad.
             </p>
-          </article>
+          </SectionWithImage>
 
-          <article>
-            <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
+          <article className="cta-card">
+            <h2 className="section-h">
               Consultá por nuestro servicio para monotributistas
             </h2>
             <p className="opacity-70 text-base">
