@@ -30,7 +30,7 @@ const Vencimientos = () => {
             <article>
               <div className="w-full justify-center flex mt-4">
                 <div className="w-full">
-                  <h1 className="mb-4 text-xl font-semibold">
+                  <h1 className="mb-4 text-2xl font-semibold">
                     Calendario de vencimientos impositivos para el 2023:
                   </h1>
                 </div>

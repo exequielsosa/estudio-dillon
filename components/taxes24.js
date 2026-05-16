@@ -11,7 +11,7 @@ const Taxes24 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Impuesto al Valor Agregado (IVA)
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Los vencimientos para las presentaciones y{" "}
             <b>los pagos irán del 18 al 22 de cada mes</b>, días que se van
             corriendo cuando caen en días feriados o que son inhábiles. Por
@@ -29,7 +29,7 @@ const Taxes24 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Bienes Personales
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             La fecha de <b>vencimiento</b> para la presentación de la{" "}
             <b>declaración jurada</b>, para los inscriptos y los que deben pagar
             el impuesto, cae en el período que abarca del{" "}
@@ -71,7 +71,7 @@ const Taxes24 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Impuesto a las Ganancias
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Las <b>declaraciones juradas anuales</b> de Ganancias de los
             contribuyentes autónomos vencerían junto con las de Bienes
             Personales, del <b>11 al 13 de junio de 2024</b> y el pago se podría
@@ -112,7 +112,7 @@ const Taxes24 = () => {
             Percepciones de impuesto a las ganancias y bienes personales
           </h2>
           <span id="cc" />
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             El importe abonado de percepciones por compra de dólar ahorro o por
             uso de tarjetas en el exterior se podrán consultar desde el servicio{" "}
             <b>“Mis Retenciones”</b>. Luego se podrán computar como pago a
@@ -129,7 +129,7 @@ const Taxes24 = () => {
             Cuarta Categoría
           </h2>
           <span id="cas" />
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Los empleados en relación de dependencia tendrán que informar las
             percepciones en el sistema{" "}
             <b>“Siradig – Trabajador”, hasta el 31 de marzo de 2024</b>, junto
@@ -145,7 +145,7 @@ const Taxes24 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Cargas sociales y aportes jubilatorios
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Los vencimientos de las <b>cargas sociales</b> de empleadores irán
             del <b>9 al 11 de cada mes</b> posterior al que corresponden los
             sueldos. Los aportes para el personal doméstico vencerán todos los
@@ -157,7 +157,7 @@ const Taxes24 = () => {
             Participaciones societarias, autoridades y apoderados
           </h2>
           <span id="sicore" />
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             El <b>Régimen de información anual</b> que deben presentar todas las
             sociedades, correspondiente al 2023,{" "}
             <b>vence del 29 al 31 de julio de 2024</b>, agrupados en tres fechas
@@ -173,7 +173,7 @@ const Taxes24 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Retenciones y percepciones (SICORE)
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             El pago a cuenta por la primera quincena de cada mes vence dentro de
             los días que van del <b>21 al 23 de cada mes</b>, siempre agrupadas
             de a <b>tres números finales de CUIT</b>. En cuanto a las
@@ -184,7 +184,7 @@ const Taxes24 = () => {
             Régimen Simplificado (Monotributo)
           </h2>
           <span id="ii" />
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             El pago de la mensualidad <b>vence todos los días 20 de cada mes</b>{" "}
             o en el primer día hábil siguiente. Las dos recategorizaciones
             deberán hacerse durante los meses de enero y julio de 2024, para eso
@@ -202,7 +202,7 @@ const Taxes24 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Impuestos internos
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Las <b>declaraciones juradas mensuales</b>, excepto cigarrillos,
             vencerán del 18 al 20 de cada mes, considerando los días hábiles y
             agrupados por tres números finales de CUIT.
@@ -211,7 +211,7 @@ const Taxes24 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Convenio multilateral
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             El vencimiento de las declaraciones juradas mensuales irá del{" "}
             <b>15 al 18 de cada mes</b>, en días hábiles y agrupados por los dos
             números finales de inscripción. <b>La declaración anual</b> (CM05)
@@ -223,7 +223,7 @@ const Taxes24 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Fondo Cooperativo
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Los <b>vencimientos de los anticipos</b> para el año que viene se
             producen los días <b>11 al 13</b>, dependiendo del número de{" "}
             <b>terminación del CUIT del contribuyente</b>. La declaración jurada
@@ -234,7 +234,7 @@ const Taxes24 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Vencimientos del Alivio Fiscal
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Continúan vigentes los plazos que, originariamente,{" "}
             <b>fueron prorrogados para los Monotributistas</b> (componente
             impositivo de las categorías que van de la “A” a la “D”); los

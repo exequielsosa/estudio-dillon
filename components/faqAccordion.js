@@ -39,7 +39,7 @@ const FAQAccordion = ({ faqs }) => {
         <Accordion.Panel key={i}>
           <Accordion.Title theme={titleTheme}>{q}</Accordion.Title>
           <Accordion.Content theme={contentTheme}>
-            <p className="opacity-70 text-sm">{a}</p>
+            <p className="opacity-70 text-base">{a}</p>
           </Accordion.Content>
         </Accordion.Panel>
       ))}

@@ -11,7 +11,7 @@ const Taxes23 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Impuesto al Valor Agregado (IVA)
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Los vencimientos para{" "}
             <b>las presentaciones y los pagos irán del 18 al 22 de cada mes</b>,
             días que se van corriendo en bloque cuando caen en días feriados o
@@ -31,7 +31,7 @@ const Taxes23 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Bienes Personales
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             La fecha de vencimiento para la presentación de la{" "}
             <b>declaración jurada</b>, para los inscriptos y los que deben pagar
             el impuesto, cae en el período que abarca del 12 al 14 de junio de
@@ -82,7 +82,7 @@ const Taxes23 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Impuesto a las Ganancias
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Las <b>declaraciones juradas anuales de Ganancias</b> de los
             contribuyentes autónomos vencerían junto con las de Bienes
             Personales, del 12 al 14 de junio de 2023 y el pago se podría
@@ -131,7 +131,7 @@ const Taxes23 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Percepción Impuesto PAIS
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             El importe abonado de percepciones por compra de dólar ahorro o por
             uso de tarjetas se podrán consultar desde el servicio{" "}
             <b>“Mis Retenciones”</b>.<br />
@@ -152,7 +152,7 @@ const Taxes23 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Cuarta Categoría
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Los empleados en relación de dependencia tendrán que informar las
             percepciones en el <b>sistema “Siradig – Trabajador”</b>, hasta el
             31 de marzo de 2023, junto con el 33% del Impuesto sobre los débitos
@@ -182,7 +182,7 @@ const Taxes23 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Participaciones societarias, autoridades y apoderados
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             El <b>Régimen de información anual</b> que deben presentar todas las
             sociedades, correspondiente al 2022, vence del 28 de julio al 1 de
             agosto de 2023, agrupados en tres fechas cada cuatro números y
@@ -213,7 +213,7 @@ const Taxes23 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Régimen Simplificado (Monotributo)
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             El <b>pago de la mensualidad</b> vence todos los días 20 de cada mes
             o en el primer día hábil siguiente. Las dos recategorizaciones
             deberán hacerse durante los meses de enero y julio de 2023, para eso
@@ -238,7 +238,7 @@ const Taxes23 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Impuestos internos
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Las <b>declaraciones juradas mensuales</b>, excepto cigarrillos,
             vencerán del 18 al 20 de cada mes, considerando los días hábiles y
             agrupados por tres números finales de CUIT.
@@ -247,7 +247,7 @@ const Taxes23 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Convenio multilateral
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             El vencimiento de las declaraciones juradas mensuales irá del 15 al
             18 de cada mes, en días hábiles y agrupados por los dos números
             finales de inscripción. <b>La declaración anual (CM05)</b> vence
@@ -259,7 +259,7 @@ const Taxes23 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Fondo Cooperativo
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Los vencimientos de los anticipos para el año que viene se producen
             los días 11 al 13, dependiendo del número de terminación del{" "}
             <b>CUIT del contribuyente</b>. La declaración jurada anual, igual
@@ -269,7 +269,7 @@ const Taxes23 = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Ganancia Mínima Presunta (residual)
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             No deben presentarse declaraciones juradas, ya que para todas las
             empresas este tributo fue eliminado en el 2019 y para las{" "}
             <b>Micro, Pequeñas y Medianas Empresas</b> en el 2017.

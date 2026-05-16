@@ -50,7 +50,7 @@ const arrayContent = [
 const Content23 = () => {
   return (
     <div className="p-4 bg-white rounded-2xl border border-gray-200 w-fit">
-      <h1 className="text-sm font-semibold opacity-80 mb-1">Contenidos</h1>
+      <h1 className="text-base font-semibold opacity-80 mb-1">Contenidos</h1>
       <ul className="list-decimal text-xs ml-6 opacity-90">
         {arrayContent.map((item, i) => (
           <li className="hover:underline decoration-gray-500 mb-1" key={i}>

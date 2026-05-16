@@ -17,7 +17,7 @@ const Contacto = () => {
               <article>
                 <div className="w-full justify-center flex mt-4">
                   <div className="w-full">
-                    <h1 className="mt-6 text-xl font-semibold">
+                    <h1 className="mt-6 text-2xl font-semibold">
                       Comunicate con nosotros
                     </h1>
                     <br />

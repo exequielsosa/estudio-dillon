@@ -10,7 +10,7 @@ const Taxes = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Impuesto al Valor Agregado (IVA)
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Los vencimientos para las presentaciones y los pagos irán, en
             términos generales, <b>del 18 al 22 de cada mes</b>, con los
             corrimientos correspondientes cuando esas fechas coincidan con días
@@ -32,7 +32,7 @@ const Taxes = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Bienes Personales
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             La fecha de <b>vencimiento</b> para la presentación de la{" "}
             <b>declaración jurada</b> correspondiente al período fiscal 2025,
             para los inscriptos y quienes deban pagar el impuesto, cae en el
@@ -63,7 +63,7 @@ const Taxes = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Impuesto a las Ganancias
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Las <b>declaraciones juradas anuales</b> de Ganancias de personas
             humanas correspondientes al período fiscal 2025 vencerán junto con
             las de Bienes Personales: la presentación irá del{" "}
@@ -100,7 +100,7 @@ const Taxes = () => {
             Percepciones de impuesto a las ganancias y bienes personales
           </h2>
           <span id="cc" />
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             El importe abonado en concepto de percepciones por operaciones
             alcanzadas, como compra de moneda extranjera o consumos con tarjeta
             en el exterior, cuando correspondan, podrá consultarse desde el
@@ -127,7 +127,7 @@ const Taxes = () => {
             Cuarta Categoría
           </h2>
           <span id="cas" />
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Los empleados en relación de dependencia tendrán que informar las
             percepciones, deducciones y demás datos correspondientes al período
             fiscal 2025 en el sistema{" "}
@@ -146,7 +146,7 @@ const Taxes = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Cargas sociales y aportes jubilatorios
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Los vencimientos de las <b>cargas sociales</b> de empleadores irán,
             en términos generales, del <b>9 al 13 de cada mes</b> posterior al
             período devengado, dependiendo de la terminación del CUIT y de los
@@ -167,7 +167,7 @@ const Taxes = () => {
             Participaciones societarias, autoridades y apoderados
           </h2>
           <span id="sicore" />
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             El <b>Régimen de información anual</b> que deben presentar las
             sociedades, correspondiente al período fiscal 2025, vencerá durante
             julio de 2026. Los vencimientos se producirán los días{" "}
@@ -186,7 +186,7 @@ const Taxes = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Retenciones y percepciones (SICORE / SIRE)
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             El pago a cuenta correspondiente a la{" "}
             <b>primera quincena de cada mes</b> vencerá, en términos generales,
             entre los días <b>21 y 23</b>, según la terminación del CUIT y los
@@ -202,7 +202,7 @@ const Taxes = () => {
             Régimen Simplificado (Monotributo)
           </h2>
           <span id="ii" />
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             El pago mensual del Monotributo{" "}
             <b>vencerá todos los días 20 de cada mes</b> o el primer día hábil
             siguiente, en caso de coincidir con feriados o días inhábiles.
@@ -226,7 +226,7 @@ const Taxes = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Impuestos internos
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Las <b>declaraciones juradas mensuales</b> de impuestos internos,
             excepto cigarrillos, vencerán entre los días{" "}
             <b>18 y 20 de cada mes</b>, considerando los días hábiles y la
@@ -240,7 +240,7 @@ const Taxes = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Convenio Multilateral
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             El vencimiento de las <b>declaraciones juradas mensuales</b> de
             Convenio Multilateral irá, en términos generales,{" "}
             <b>del 15 al 18 de cada mes</b>, en días hábiles y agrupado por los
@@ -257,7 +257,7 @@ const Taxes = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Fondo Cooperativo
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             Los vencimientos correspondientes al <b>Fondo Cooperativo</b> para
             el año 2026 se producirán, en términos generales, entre los días{" "}
             <b>11 y 13</b>, dependiendo de la terminación del CUIT del
@@ -271,7 +271,7 @@ const Taxes = () => {
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Vencimientos del Alivio Fiscal
           </h2>
-          <p className="opacity-70 text-sm">
+          <p className="opacity-70 text-base">
             En la información del calendario 2026 no surge un bloque específico
             de vencimientos del Alivio Fiscal como sí aparecía en el texto
             anterior. En caso de mantenerse beneficios, prórrogas o regímenes

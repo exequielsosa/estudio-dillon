@@ -16,7 +16,7 @@ const FooterLayout = () => {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-base font-semibold text-gray-900 uppercase dark:text-white">
                 NOSOTROS
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -45,7 +45,7 @@ const FooterLayout = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-base font-semibold text-gray-900 uppercase dark:text-white">
                 SEGUINOS
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -88,7 +88,7 @@ const FooterLayout = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-base font-semibold text-gray-900 uppercase dark:text-white">
                 SECCIONES
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -123,7 +123,7 @@ const FooterLayout = () => {
         </div>
         <hr className="my-6 border-[#10207A] sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span className="text-base text-gray-500 sm:text-center dark:text-gray-400">
             © 2024{" "}
             <a
               href="https://www.exequielsosa.com.ar/"

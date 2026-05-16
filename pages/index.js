@@ -12,27 +12,26 @@ const Home = () => {
         <CarouselHome />
         <div className="flex w-full justify-center flex-col items-center">
           <div className="w-full">
-
             <article>
-              <h1 className="mt-8 text-xl font-semibold">
+              <h1 className="mt-8 text-2xl font-semibold">
                 Estudio Contable Dillon
               </h1>
-              <p className="mt-2 text-base font-medium opacity-80">
+              <p className="mt-2 text-lg font-medium opacity-80">
                 Estudio contable en Capital Federal para monotributistas,
                 profesionales, startups y empresas
               </p>
 
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 En Estudio Contable Dillon sabemos que la mayoría de las
                 personas no quiere pasar horas tratando de entender
                 vencimientos, declaraciones juradas, impuestos, trámites
-                fiscales o cambios normativos. Y está bien que así sea. Si
-                tenés un negocio, trabajás de manera independiente, dirigís una
+                fiscales o cambios normativos. Y está bien que así sea. Si tenés
+                un negocio, trabajás de manera independiente, dirigís una
                 empresa o estás empezando un proyecto, tu tiempo debería estar
-                puesto en hacerlo crecer, conseguir nuevos clientes, mejorar
-                tus servicios y tomar mejores decisiones.
+                puesto en hacerlo crecer, conseguir nuevos clientes, mejorar tus
+                servicios y tomar mejores decisiones.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 Nuestro trabajo es ayudarte a que tus obligaciones contables e
                 impositivas estén en orden, con un acompañamiento claro,
                 profesional y cercano. Somos un estudio contable ubicado en
@@ -41,16 +40,15 @@ const Home = () => {
                 independientes, emprendedores, startups, pymes y sociedades de
                 distintos rubros.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 Nos enfocamos en brindar un servicio contable práctico, moderno
                 y eficiente. No creemos en complicar lo que puede explicarse de
-                manera simple. Por eso trabajamos para que cada cliente
-                entienda qué tiene que pagar, cuándo tiene que hacerlo, qué
-                documentación debe presentar y qué decisiones conviene tomar
-                para evitar problemas fiscales, multas, omisiones o costos
-                innecesarios.
+                manera simple. Por eso trabajamos para que cada cliente entienda
+                qué tiene que pagar, cuándo tiene que hacerlo, qué documentación
+                debe presentar y qué decisiones conviene tomar para evitar
+                problemas fiscales, multas, omisiones o costos innecesarios.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 En Estudio Contable Dillon nuestro principal objetivo es darte
                 tranquilidad. Queremos que sepas que tus impuestos,
                 presentaciones, inscripciones y vencimientos están siendo
@@ -65,7 +63,7 @@ const Home = () => {
               <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
                 Servicios contables e impositivos para personas y empresas
               </h2>
-              <p className="opacity-70 text-sm">
+              <p className="opacity-70 text-base">
                 Ofrecemos un servicio integral de asesoramiento contable,
                 impositivo y administrativo para clientes de Capital Federal y
                 de todo el país. Trabajamos con herramientas digitales que nos
@@ -73,13 +71,13 @@ const Home = () => {
                 comunicación fluida, sin perder el trato personalizado que cada
                 caso necesita.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 Acompañamos a quienes necesitan iniciar una actividad,
                 inscribirse correctamente, elegir el régimen tributario
                 adecuado, regularizar su situación fiscal o mejorar la
                 organización contable de su negocio.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 Entre nuestros principales servicios se encuentran la
                 inscripción y gestión de{" "}
                 <Link
@@ -104,10 +102,7 @@ const Home = () => {
                   vencimientos
                 </Link>
                 , planificación fiscal,{" "}
-                <Link
-                  href="/sueldos"
-                  className="text-blue-700 hover:underline"
-                >
+                <Link href="/sueldos" className="text-blue-700 hover:underline">
                   liquidación de sueldos
                 </Link>
                 , asesoramiento societario, altas de actividad, bajas,
@@ -121,7 +116,7 @@ const Home = () => {
                 </Link>{" "}
                 ante los organismos correspondientes.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 También asistimos a empresas que necesitan ordenar su
                 administración contable, mejorar sus procesos internos, delegar
                 tareas fiscales o contar con información más clara para la toma
@@ -135,7 +130,7 @@ const Home = () => {
               <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
                 Asesoramiento para monotributistas
               </h2>
-              <p className="opacity-70 text-sm">
+              <p className="opacity-70 text-base">
                 El{" "}
                 <Link
                   href="/monotributo"
@@ -146,10 +141,10 @@ const Home = () => {
                 parece simple, pero muchas veces genera dudas. Qué categoría
                 corresponde, cuándo recategorizarse, qué pasa si se supera el
                 límite de facturación, cómo emitir facturas, qué obra social
-                elegir, cómo pagar deuda, cómo evitar exclusiones o qué hacer
-                si aparece una intimación son consultas frecuentes.
+                elegir, cómo pagar deuda, cómo evitar exclusiones o qué hacer si
+                aparece una intimación son consultas frecuentes.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 En Estudio Contable Dillon ayudamos a monotributistas de
                 distintos rubros a mantenerse al día y evitar errores comunes.
                 Nos ocupamos de revisar la situación fiscal, controlar{" "}
@@ -162,7 +157,7 @@ const Home = () => {
                 , analizar la facturación, realizar recategorizaciones cuando
                 corresponde y responder consultas concretas de manera clara.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 Nuestro objetivo es que el monotributista pueda trabajar con
                 tranquilidad, sabiendo que su situación está controlada y que
                 cuenta con un contador que puede orientarlo cuando aparece una
@@ -175,7 +170,7 @@ const Home = () => {
                 Contadores para responsables inscriptos, profesionales y
                 empresas
               </h2>
-              <p className="opacity-70 text-sm">
+              <p className="opacity-70 text-base">
                 Cuando una persona o empresa está inscripta como responsable
                 inscripto, la gestión contable e impositiva requiere mayor
                 seguimiento. La{" "}
@@ -189,15 +184,15 @@ const Home = () => {
                 declaraciones juradas exige orden, documentación y control
                 permanente.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
-                En estos casos, nuestro trabajo consiste en acompañar al
-                cliente mes a mes para que sus obligaciones se cumplan
-                correctamente. Revisamos la información disponible, solicitamos
-                la documentación necesaria, liquidamos los impuestos
+              <p className="mt-4 opacity-70 text-base">
+                En estos casos, nuestro trabajo consiste en acompañar al cliente
+                mes a mes para que sus obligaciones se cumplan correctamente.
+                Revisamos la información disponible, solicitamos la
+                documentación necesaria, liquidamos los impuestos
                 correspondientes y explicamos cada vencimiento para que no haya
                 sorpresas.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 También asesoramos en cuestiones vinculadas con la facturación,
                 gastos deducibles, registración de operaciones, planificación
                 fiscal y evaluación de la carga tributaria. Una buena gestión
@@ -210,15 +205,15 @@ const Home = () => {
               <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
                 Startups, pymes y nuevos negocios
               </h2>
-              <p className="opacity-70 text-sm">
-                Muchas startups y pymes crecen rápido, pero no siempre
-                acompañan ese crecimiento con una estructura contable ordenada.
-                Al principio todo parece manejable, pero con el tiempo aparecen
-                nuevos proveedores, empleados, clientes, facturación
-                recurrente, inversiones, gastos, impuestos y obligaciones que
-                requieren mayor organización.
+              <p className="opacity-70 text-base">
+                Muchas startups y pymes crecen rápido, pero no siempre acompañan
+                ese crecimiento con una estructura contable ordenada. Al
+                principio todo parece manejable, pero con el tiempo aparecen
+                nuevos proveedores, empleados, clientes, facturación recurrente,
+                inversiones, gastos, impuestos y obligaciones que requieren
+                mayor organización.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 En Estudio Contable Dillon trabajamos con empresas de distintas
                 formas y tamaños, incluyendo emprendimientos en etapa inicial y
                 negocios en expansión. Entendemos que cada proyecto tiene sus
@@ -226,7 +221,7 @@ const Home = () => {
                 genéricas: analizamos cada caso y proponemos una forma de
                 trabajo acorde a la realidad del cliente.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 Podemos ayudarte a definir una estructura fiscal adecuada,
                 ordenar la documentación, preparar reportes, acompañar la
                 constitución o administración de sociedades,{" "}
@@ -237,15 +232,12 @@ const Home = () => {
                   liquidar impuestos
                 </Link>
                 ,{" "}
-                <Link
-                  href="/sueldos"
-                  className="text-blue-700 hover:underline"
-                >
+                <Link href="/sueldos" className="text-blue-700 hover:underline">
                   gestionar sueldos
                 </Link>{" "}
                 y mejorar el control general de la información contable.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 Nuestro enfoque es simple: que la contabilidad no sea un
                 obstáculo, sino una herramienta útil para crecer mejor.
               </p>
@@ -255,14 +247,14 @@ const Home = () => {
               <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
                 Un estudio contable moderno, cercano y claro
               </h2>
-              <p className="opacity-70 text-sm">
-                Elegir un contador no debería ser solamente elegir a alguien
-                que presente impuestos. Un buen estudio contable tiene que
-                estar disponible, explicar con claridad, anticiparse a los
+              <p className="opacity-70 text-base">
+                Elegir un contador no debería ser solamente elegir a alguien que
+                presente impuestos. Un buen estudio contable tiene que estar
+                disponible, explicar con claridad, anticiparse a los
                 vencimientos y acompañar al cliente en las decisiones
                 importantes.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 En Estudio Contable Dillon nos esforzamos por escuchar las
                 necesidades de cada cliente, invertir en tecnología y capacitar
                 permanentemente a nuestro equipo para brindar un servicio
@@ -271,7 +263,7 @@ const Home = () => {
                 claro. Por eso buscamos traducir esa complejidad en respuestas
                 concretas.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 Nos interesa que nuestros clientes entiendan qué estamos
                 haciendo y por qué. No usamos tecnicismos innecesarios ni damos
                 respuestas automáticas. Cada consulta merece una explicación
@@ -286,21 +278,21 @@ const Home = () => {
                 Atención en Capital Federal y asesoramiento online en todo el
                 país
               </h2>
-              <p className="opacity-70 text-sm">
+              <p className="opacity-70 text-base">
                 Aunque somos un estudio contable de Capital Federal, trabajamos
                 también con clientes de distintos puntos de Argentina. La
                 digitalización de trámites, documentación y comunicaciones
                 permite brindar un servicio ágil sin que la distancia sea un
                 problema.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 Podemos acompañarte estés en CABA, en la provincia de Buenos
                 Aires o en cualquier otra jurisdicción del país. Lo importante
                 es contar con una dinámica de trabajo ordenada: documentación
                 clara, comunicación fluida, vencimientos controlados y
                 seguimiento profesional.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 Para muchos clientes, esta modalidad resulta más cómoda que la
                 atención tradicional. Permite resolver consultas, enviar
                 comprobantes, revisar información y recibir asesoramiento sin
@@ -312,7 +304,7 @@ const Home = () => {
               <h2 className="mt-8 mb-3 text-lg font-semibold opacity-70">
                 Por qué elegir Estudio Contable Dillon
               </h2>
-              <p className="opacity-70 text-sm">
+              <p className="opacity-70 text-base">
                 Elegir Estudio Contable Dillon es elegir un equipo que entiende
                 tanto la parte técnica como la realidad cotidiana de quienes
                 trabajan y emprenden en Argentina. No todos los clientes
@@ -321,13 +313,13 @@ const Home = () => {
                 una startup en crecimiento requiere el mismo acompañamiento que
                 un profesional independiente.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 Por eso adaptamos nuestro servicio a cada perfil. Nos enfocamos
                 en brindar soluciones concretas, evitar complicaciones,
                 anticipar problemas y ordenar la información fiscal y contable
                 de manera eficiente.
               </p>
-              <p className="mt-4 opacity-70 text-sm">
+              <p className="mt-4 opacity-70 text-base">
                 Trabajamos con compromiso, responsabilidad y criterio
                 profesional. Nos importa que cada cliente pueda concentrarse en
                 su actividad principal, sabiendo que cuenta con un estudio
@@ -342,7 +334,6 @@ const Home = () => {
                 para coordinar una primera consulta.
               </p>
             </article>
-
           </div>
         </div>
       </main>
