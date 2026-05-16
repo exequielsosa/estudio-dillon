@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import Aos from "aos";
 import Layout from "@/components/layout";
 import FloatingWhatsApp from "@/components/floatingWP";
+import ScrollToTop from "@/components/scrollToTop";
 import { Analytics } from "@vercel/analytics/react";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -47,6 +48,7 @@ export default function App({ Component, pageProps }) {
       />
       <Layout>
         <FloatingWhatsApp />
+        <ScrollToTop />
         <Component {...pageProps} />
         <Analytics />
       </Layout>
