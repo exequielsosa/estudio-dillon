@@ -13,7 +13,7 @@ const Home = () => {
         <div className="flex w-full justify-center flex-col items-center">
           <div className="w-full">
             <article>
-              <h1 className="mt-8 text-2xl font-semibold">
+              <h1 className="mt-4 md:mt-8 text-2xl font-semibold">
                 Estudio Contable Dillon
               </h1>
               <p className="mt-2 text-lg font-medium opacity-80">

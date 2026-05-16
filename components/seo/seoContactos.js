@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { contactoFAQs } from "@/lib/faqs/contacto";
 
 const SeoContactos = () => {
   return (
@@ -72,6 +73,18 @@ const SeoContactos = () => {
             telephone: "+54-11-5895-9825",
             email: "ma.eugenia.dillon@gmail.com",
           },
+        })}
+      </script>
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: contactoFAQs.map(({ q, a }) => ({
+            "@type": "Question",
+            name: q,
+            acceptedAnswer: { "@type": "Answer", text: a },
+          })),
         })}
       </script>
       {/* Breadcrumb Schema */}
