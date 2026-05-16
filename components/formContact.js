@@ -1,5 +1,6 @@
 import { Label, TextInput, Textarea, Button } from "flowbite-react";
 import { useState } from "react";
+import Link from "next/link";
 import ThanksMail from "../components/thanks";
 import { useRouter } from "next/router";
 import { sendContactForm } from "../lib/api";
@@ -62,7 +63,51 @@ const FormContact = () => {
   };
 
   return (
-    <div className="mb-5 mt-10 w-full flex items-center justify-center">
+    <div className="mb-5 mt-10 w-full flex flex-col items-center justify-center">
+      <section
+        aria-label="Servicios contables - Estudio Dillon"
+        className="w-full md:w-[600px] mb-6 px-2"
+      >
+        <h2 className="text-lg font-semibold opacity-80 mb-3">
+          Consultá por nuestros servicios contables
+        </h2>
+        <p className="opacity-70 text-sm">
+          Si estás buscando un contador en Capital Federal, necesitás ordenar
+          tu situación fiscal, inscribirte en el{" "}
+          <Link
+            href="/monotributo"
+            className="text-blue-700 hover:underline"
+          >
+            monotributo
+          </Link>
+          ,{" "}
+          <Link
+            href="/impuestos"
+            className="text-blue-700 hover:underline"
+          >
+            liquidar impuestos
+          </Link>
+          , gestionar una empresa o recibir asesoramiento contable para tu
+          negocio, podemos ayudarte.
+        </p>
+        <p className="opacity-70 text-sm mt-3">
+          En Estudio Contable Dillon trabajamos para que tus impuestos estén
+          en orden, tus{" "}
+          <Link
+            href="/vencimientos"
+            className="text-blue-700 hover:underline"
+          >
+            vencimientos
+          </Link>{" "}
+          bajo control y tus decisiones cuenten con respaldo profesional.
+        </p>
+        <p className="opacity-70 text-sm mt-3">
+          Contactanos y contanos tu situación. Te ayudamos a encontrar la
+          mejor forma de organizar tu contabilidad, cumplir con tus
+          obligaciones y ganar tranquilidad para enfocarte en lo más
+          importante: hacer crecer tu actividad.
+        </p>
+      </section>
       <div className="w-full md:w-[600px] border-[1px] border-[#10207A] rounded-lg bg-white pb-3 px-8 h-[500px] flex items-center flex-col justify-center shadow-md">
         {isLoading ? (
           <>

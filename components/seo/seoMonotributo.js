@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { monotributoFAQs } from "@/lib/faqs/monotributo";
 
 const SeoMonotributo = () => {
   return (
@@ -87,40 +88,11 @@ const SeoMonotributo = () => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
-          mainEntity: [
-            {
-              "@type": "Question",
-              name: "¿Qué es el Monotributo y quién puede inscribirse?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "El Monotributo es el régimen simplificado para pequeños contribuyentes. Pueden inscribirse quienes vendan bienes o presten servicios y cumplan con los topes de facturación, alquileres, superficie y consumo de energía establecidos para cada categoría por AFIP/ARCA.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "¿Cuándo se debe realizar la recategorización del Monotributo?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "Las recategorizaciones se realizan dos veces al año: en enero y julio. Sólo deben realizar el trámite quienes hayan tenido modificaciones en sus parámetros (facturación, alquileres, superficie afectada o energía consumida). Las nuevas cuotas se abonan a partir de febrero y agosto respectivamente.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "¿Qué ocurre si supero el tope de facturación del Monotributo?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "Si se supera el tope máximo de la categoría más alta o se incumplen los parámetros, el contribuyente queda excluido del régimen y debe pasar al Régimen General (Responsable Inscripto en IVA y Ganancias). Es importante anticiparse a esta transición para evitar sanciones y ajustar la operatoria contable.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "¿Cuándo vence el pago mensual del Monotributo?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "El pago mensual del Monotributo vence todos los días 20 de cada mes, o el primer día hábil siguiente en caso de coincidir con un feriado o día inhábil.",
-              },
-            },
-          ],
+          mainEntity: monotributoFAQs.map(({ q, a }) => ({
+            "@type": "Question",
+            name: q,
+            acceptedAnswer: { "@type": "Answer", text: a },
+          })),
         })}
       </script>
       {/* Breadcrumb Schema */}

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { impuestosFAQs } from "@/lib/faqs/impuestos";
 
 const SeoImpuestos = () => {
   return (
@@ -130,40 +131,11 @@ const SeoImpuestos = () => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
-          mainEntity: [
-            {
-              "@type": "Question",
-              name: "¿Qué impuestos liquidan en el estudio?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "Liquidamos los principales impuestos nacionales y provinciales de Argentina: IVA, Impuesto a las Ganancias, Bienes Personales, Ingresos Brutos y Convenio Multilateral. Realizamos las declaraciones juradas correspondientes y presentamos ante AFIP/ARCA en tiempo y forma.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "¿Quiénes deben presentar declaración jurada de Ganancias y Bienes Personales?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "Deben presentar declaración jurada las personas humanas inscriptas en Ganancias y los empleados o jubilados cuyos ingresos brutos anuales superen el monto fijado por AFIP. También las personas alcanzadas por Bienes Personales según el mínimo no imponible vigente para el período fiscal.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "¿Cuándo vence la liquidación mensual de IVA?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "El vencimiento de la presentación y pago de IVA mensual va, en términos generales, del 18 al 22 de cada mes, según la terminación del CUIT y con los corrimientos correspondientes por días inhábiles. Las Micro y Pequeñas empresas con certificado MiPyME vigente pueden acogerse al beneficio de pago diferido.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "¿Atienden a empresas de todo el país o solo de Buenos Aires?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "Atendemos clientes de toda Argentina, tanto de forma presencial en CABA como remota. Trabajamos con empresas, monotributistas y personas humanas de todas las provincias.",
-              },
-            },
-          ],
+          mainEntity: impuestosFAQs.map(({ q, a }) => ({
+            "@type": "Question",
+            name: q,
+            acceptedAnswer: { "@type": "Answer", text: a },
+          })),
         })}
       </script>
       {/* Breadcrumb Schema */}

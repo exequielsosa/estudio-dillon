@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { tramitesFAQs } from "@/lib/faqs/tramites";
 
 const SeoTramites = () => {
   return (
@@ -90,40 +91,11 @@ const SeoTramites = () => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
-          mainEntity: [
-            {
-              "@type": "Question",
-              name: "¿Qué trámites ante AFIP pueden gestionar?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "Gestionamos altas y bajas de CUIT, inscripciones y bajas en impuestos (IVA, Ganancias, Bienes Personales, Monotributo, Ingresos Brutos), tramitación de clave fiscal, certificados de no retención, certificaciones contables, MiPyME, exenciones, planes de facilidades de pago y trámites societarios.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "¿Cómo obtengo la clave fiscal de AFIP?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "La clave fiscal nivel 3 se obtiene presencialmente en una dependencia AFIP con documento. Para niveles inferiores existen alternativas digitales con biometría. Desde nuestro estudio te asesoramos sobre qué nivel necesitás según el trámite que vayas a realizar y te acompañamos en el proceso.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "¿Pueden inscribirme como Responsable Inscripto o Autónomo?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "Sí. Gestionamos la inscripción inicial ante AFIP en el régimen impositivo que corresponda según tu actividad: Responsable Inscripto en IVA y Ganancias, Autónomo, o Monotributo. También ante el régimen provincial de Ingresos Brutos y Convenio Multilateral si aplica.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "¿Atienden a clientes del interior del país?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "Sí, atendemos clientes de todas las provincias de Argentina. La mayoría de los trámites pueden gestionarse de forma remota mediante poderes y autorizaciones electrónicas, sin necesidad de presencia física en CABA.",
-              },
-            },
-          ],
+          mainEntity: tramitesFAQs.map(({ q, a }) => ({
+            "@type": "Question",
+            name: q,
+            acceptedAnswer: { "@type": "Answer", text: a },
+          })),
         })}
       </script>
       {/* Breadcrumb Schema */}
