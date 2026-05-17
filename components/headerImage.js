@@ -11,6 +11,7 @@ const HeaderImage = ({ image, alt = "Estudio Contable Dillon" }) => {
         priority
         sizes="(max-width: 1280px) 100vw, 1280px"
         className="rounded-2xl object-cover max-h-[400px] w-full"
+        unoptimized
       />
     </div>
   );
