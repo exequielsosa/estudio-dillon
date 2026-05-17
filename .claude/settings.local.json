@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"g:/TRABAJO/Paginas Web/customxs/\" 2>&1 | head -30)",
+      "Read(//g/TRABAJO/Paginas Web/customxs/**)",
+      "Bash(ls -la .github)",
+      "Bash(ls .github/workflows)",
+      "Bash(ls scripts/)"
+    ]
+  }
+}

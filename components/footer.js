@@ -119,6 +119,11 @@ const FooterLayout = () => {
                     Vencimientos
                   </Link>
                 </li>
+                <li className="mb-4">
+                  <Link href="/noticias" className="hover:underline">
+                    Noticias
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>

@@ -1,0 +1,61 @@
+name: Generate Noticias Estudio Dillon
+
+# Ejecutar Lun, Mié, Vie a las 11:00 UTC (08:00 AR)
+# Genera noticias contables/impositivas/económicas para /noticias
+
+on:
+  schedule:
+    - cron: "0 11 * * 1,3,5"
+
+  # Permite trigger manual desde la UI de GitHub Actions
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (no publica, solo loguea)"
+        required: false
+        default: "false"
+        type: boolean
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔄 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "yarn"
+
+      - name: 📥 Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: 🤖 Run noticias generator
+        env:
+          NOTICIAS_API_URL: ${{ secrets.NOTICIAS_API_URL }}
+          NOTICIAS_API_KEY: ${{ secrets.NOTICIAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+        run: |
+          set -o pipefail
+          node scripts/generate-noticias.js 2>&1 | tee noticias-generator.log
+          exit ${PIPESTATUS[0]}
+
+      - name: 📊 Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: noticias-logs-${{ github.run_number }}
+          path: noticias-generator.log
+          retention-days: 30
+
+      - name: 🔔 Notify on failure
+        if: failure()
+        run: |
+          echo "❌ Generador de noticias falló. Revisar logs del run #${{ github.run_number }}"

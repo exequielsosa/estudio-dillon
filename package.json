@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
     "@uidotdev/usehooks": "^2.4.1",
     "@vercel/analytics": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "groq-sdk": "^0.7.0",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.14",
     "eslint": "8.40.0",
@@ -28,6 +31,7 @@
     "react-device-detect": "^2.2.3",
     "react-dom": "18.2.0",
     "react-modal-image": "^2.6.0",
+    "rss-parser": "^3.13.0",
     "tailwindcss": "^3.3.2"
   }
 }

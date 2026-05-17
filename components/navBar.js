@@ -153,6 +153,18 @@ const NavBar = () => {
                     Vencimientos
                   </Link>
                 </li>
+                <li data-aos="zoom-in" data-aos-delay="2750">
+                  <Link
+                    href="/noticias"
+                    className={`block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:hover:text-[#10207A] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${
+                      route.startsWith("/noticias")
+                        ? "text-[#10207A]"
+                        : "text-gray-900"
+                    }`}
+                  >
+                    Noticias
+                  </Link>
+                </li>
                 <li data-aos="zoom-in" data-aos-delay="3000">
                   <Link
                     href="/contacto"
