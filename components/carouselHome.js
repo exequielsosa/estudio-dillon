@@ -30,13 +30,12 @@ const CarouselHome = () => {
         </Link>
         <Link href="/sueldos">
           <Image
-            src="/sueldos.jpg"
+            src="/stock10.jpg"
             alt="Liquidación de Sueldos y Jornales - Estudio Contable Dillon"
             width={1920}
             height={1080}
             className="object-cover w-full h-full"
             sizes="100vw"
-            unoptimized
           />
           <span className="absolute top-1/2 left-1/2 text-2xl font-bold text-fuchsia-600 -translate-x-1/2 -translate-y-1/2 sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl dark:text-gray-800 bg-indigo-200 opacity-75 font-titillium tracking-wider">
             LIQUIDACION DE HABERES
@@ -50,7 +49,6 @@ const CarouselHome = () => {
             height={1080}
             className="object-cover w-full h-full"
             sizes="100vw"
-            unoptimized
           />
           <span className="absolute top-1/2 left-1/2 text-2xl font-bold text-fuchsia-600 -translate-x-1/2 -translate-y-1/2 sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl dark:text-gray-800 bg-indigo-200 opacity-75 font-titillium tracking-wider">
             GESTION DE TRAMITES
@@ -64,7 +62,6 @@ const CarouselHome = () => {
             height={1080}
             className="object-cover w-full h-full"
             sizes="100vw"
-            unoptimized
           />
           <span className="absolute top-1/2 left-1/2 text-2xl font-bold text-fuchsia-600 -translate-x-1/2 -translate-y-1/2 sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl dark:text-gray-800 bg-indigo-200 opacity-75 font-titillium tracking-wider">
             VENCIMIENTOS
