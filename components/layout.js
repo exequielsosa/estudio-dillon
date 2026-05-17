@@ -3,6 +3,7 @@ import NavBar from "./navBar";
 import FooterLayout from "./footer";
 import FormContact from "./formContact";
 import CallToActionCard from "./callToActionCard";
+import UltimasNoticias from "./ultimasNoticias";
 
 const Layout = ({ children }) => {
   return (
@@ -13,6 +14,7 @@ const Layout = ({ children }) => {
       <LayoutBody>
         {children}
 
+        <UltimasNoticias />
         <FormContact />
         <CallToActionCard />
       </LayoutBody>
