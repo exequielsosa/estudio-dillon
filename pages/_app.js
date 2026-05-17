@@ -14,7 +14,7 @@ import { montserrat, titilliumWeb } from "@/lib/fonts";
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 2000, once: true });
   }, []);
   const router = useRouter();
   useEffect(() => {

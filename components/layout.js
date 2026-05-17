@@ -1,10 +1,8 @@
-import dynamic from "next/dynamic";
 import LayoutBody from "./layoutBody";
+import NavBar from "./navBar";
 import FooterLayout from "./footer";
 import FormContact from "./formContact";
 import CallToActionCard from "./callToActionCard";
-
-const NavBar = dynamic(() => import("./navBar"), { ssr: false });
 
 const Layout = ({ children }) => {
   return (

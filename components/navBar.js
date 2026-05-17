@@ -2,7 +2,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { useClickAway } from "@uidotdev/usehooks";
+import useClickAway from "@/hooks/useClickAway";
 
 const NavBar = () => {
   const router = useRouter();
