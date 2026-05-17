@@ -20,3 +20,4 @@ Crawl-delay: 1
 
 # Sitemap location
 Sitemap: https://www.estudio-dillon.com.ar/sitemap.xml
+Sitemap: https://www.estudio-dillon.com.ar/sitemap-noticias.xml

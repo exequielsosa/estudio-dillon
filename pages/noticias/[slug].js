@@ -25,7 +25,23 @@ const formatDate = (date) =>
       })
     : "";
 
-const NoticiaDetalle = ({ noticia }) => {
+// Convierte HTML a texto plano y cuenta palabras
+const stripHtmlToText = (html) =>
+  (html || "")
+    .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, "")
+    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const countWords = (text) =>
+  text ? text.split(/\s+/).filter(Boolean).length : 0;
+
+const NoticiaDetalle = ({ noticia, relacionadas }) => {
   if (!noticia) {
     return (
       <main className="flex flex-col w-full">
@@ -48,18 +64,41 @@ const NoticiaDetalle = ({ noticia }) => {
   const categoriaLabel =
     CATEGORIA_LABELS[noticia.categoria] || noticia.categoria || "Actualidad";
 
+  const articleBody = stripHtmlToText(noticia.contenido);
+  const wordCount = countWords(articleBody);
+  const keywordsArr = [
+    ...(noticia.tags || []),
+    categoriaLabel,
+    "estudio contable",
+    "Argentina",
+  ];
+  const keywordsStr = keywordsArr.join(", ");
+
+  const datePublished = noticia.fecha_publicacion
+    ? new Date(noticia.fecha_publicacion).toISOString()
+    : new Date().toISOString();
+  const dateModified = noticia.created_at
+    ? new Date(noticia.created_at).toISOString()
+    : datePublished;
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
     headline: noticia.titulo,
     description: noticia.descripcion || "",
-    image: imageUrl,
-    datePublished: noticia.fecha_publicacion,
-    dateModified: noticia.fecha_publicacion,
+    image: [imageUrl],
+    datePublished,
+    dateModified,
     author: {
-      "@type": "Organization",
-      name: "Estudio Contable Dillon",
-      url: SITE_URL,
+      "@type": "Person",
+      name: "María Eugenia Dillon",
+      jobTitle: "Contadora Pública",
+      worksFor: {
+        "@type": "Organization",
+        name: "Estudio Contable Dillon",
+        url: SITE_URL,
+      },
+      url: "https://www.linkedin.com/in/maria-eugenia-dillon/",
     },
     publisher: {
       "@type": "Organization",
@@ -68,6 +107,8 @@ const NoticiaDetalle = ({ noticia }) => {
       logo: {
         "@type": "ImageObject",
         url: `${SITE_URL}/assets/logo.png`,
+        width: 512,
+        height: 512,
       },
     },
     mainEntityOfPage: {
@@ -75,7 +116,11 @@ const NoticiaDetalle = ({ noticia }) => {
       "@id": url,
     },
     articleSection: categoriaLabel,
+    articleBody,
+    wordCount,
+    keywords: keywordsStr,
     inLanguage: "es-AR",
+    isAccessibleForFree: true,
   };
 
   const breadcrumbSchema = {
@@ -108,11 +153,15 @@ const NoticiaDetalle = ({ noticia }) => {
             noticia.descripcion || `${noticia.titulo} - Estudio Contable Dillon`
           }
         />
+        <meta name="keywords" content={keywordsStr} />
+        <meta name="news_keywords" content={keywordsStr} />
+        <meta name="author" content="María Eugenia Dillon" />
         <link rel="canonical" href={url} />
         <meta name="robots" content="index, follow, max-image-preview:large" />
 
         <meta property="og:locale" content="es_AR" />
         <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Estudio Contable Dillon" />
         <meta property="og:title" content={noticia.titulo} />
         <meta
           property="og:description"
@@ -120,11 +169,16 @@ const NoticiaDetalle = ({ noticia }) => {
         />
         <meta property="og:url" content={url} />
         <meta property="og:image" content={imageUrl} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta
-          property="article:published_time"
-          content={noticia.fecha_publicacion}
+          property="og:image:alt"
+          content={noticia.imagen_alt || noticia.titulo}
         />
+        <meta property="article:published_time" content={datePublished} />
+        <meta property="article:modified_time" content={dateModified} />
         <meta property="article:section" content={categoriaLabel} />
+        <meta property="article:author" content="María Eugenia Dillon" />
         {noticia.tags?.map((tag) => (
           <meta property="article:tag" content={tag} key={tag} />
         ))}
@@ -136,6 +190,13 @@ const NoticiaDetalle = ({ noticia }) => {
           content={noticia.descripcion || noticia.titulo}
         />
         <meta name="twitter:image" content={imageUrl} />
+        <meta name="twitter:label1" content="Categoría" />
+        <meta name="twitter:data1" content={categoriaLabel} />
+        <meta name="twitter:label2" content="Lectura" />
+        <meta
+          name="twitter:data2"
+          content={`${Math.max(1, Math.round(wordCount / 200))} min`}
+        />
 
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
@@ -152,7 +213,6 @@ const NoticiaDetalle = ({ noticia }) => {
               href="/noticias"
               className="text-md font-semibold opacity-70 decoration-gray-500 hover:text-blue-500 flex"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/Back_Arrow.svg"
                 className="flex w-[24px] mr-2"
@@ -218,6 +278,48 @@ const NoticiaDetalle = ({ noticia }) => {
             </div>
           )}
 
+          {relacionadas?.length > 0 && (
+            <section className="mt-12 pt-8 border-t border-gray-200">
+              <h2 className="text-lg font-semibold mb-4 text-[#10207A]">
+                Otras noticias de {categoriaLabel}
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                {relacionadas.map((r) => (
+                  <Link
+                    key={r.slug}
+                    href={`/noticias/${r.slug}`}
+                    className="flex flex-col border border-gray-200 rounded-xl overflow-hidden bg-white transition-shadow duration-300 ease-in-out hover:shadow-md"
+                  >
+                    {r.imagen_url ? (
+                      <div className="aspect-[16/9] bg-gray-100 overflow-hidden">
+                        <img
+                          src={r.imagen_url}
+                          alt={r.imagen_alt || r.titulo}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                      </div>
+                    ) : (
+                      <div className="aspect-[16/9] bg-[#10207A]/10 flex items-center justify-center">
+                        <span className="text-[#10207A] font-semibold text-sm uppercase tracking-wider">
+                          Estudio Dillon
+                        </span>
+                      </div>
+                    )}
+                    <div className="p-4 flex flex-col flex-1">
+                      <h3 className="text-sm font-semibold mb-2 leading-tight">
+                        {r.titulo}
+                      </h3>
+                      <span className="text-xs opacity-60 mt-auto">
+                        {formatDate(r.fecha_publicacion)}
+                      </span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
           {noticia.fuente_url && (
             <p className="mt-8 text-xs opacity-50">
               Información basada en fuentes públicas. Esta nota es de
@@ -244,7 +346,22 @@ export async function getServerSideProps({ params }) {
     return { notFound: true };
   }
 
-  return { props: { noticia } };
+  // Otras noticias de la misma categoría (excluyendo la actual)
+  let relacionadas = [];
+  if (noticia.categoria) {
+    const { data: rel } = await supabase
+      .from("noticias")
+      .select(
+        "slug, titulo, imagen_url, imagen_alt, fecha_publicacion"
+      )
+      .eq("categoria", noticia.categoria)
+      .neq("slug", slug)
+      .order("fecha_publicacion", { ascending: false })
+      .limit(3);
+    relacionadas = rel || [];
+  }
+
+  return { props: { noticia, relacionadas } };
 }
 
 export default NoticiaDetalle;

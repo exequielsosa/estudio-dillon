@@ -1,8 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
+import Head from "next/head";
 import Link from "next/link";
 import SeoNoticias from "@/components/seo/seoNoticias";
 import { supabase } from "@/lib/supabase";
 import HeaderImage from "@/components/headerImage";
+
+const SITE_URL = "https://www.estudio-dillon.com.ar";
 const CATEGORIA_LABELS = {
   impuestos: "Impuestos",
   monotributo: "Monotributo",
@@ -23,9 +26,28 @@ const formatDate = (date) =>
     : "";
 
 const NoticiasIndex = ({ noticias }) => {
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Últimas noticias - Estudio Contable Dillon",
+    url: `${SITE_URL}/noticias`,
+    numberOfItems: noticias.length,
+    itemListElement: noticias.slice(0, 20).map((n, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${SITE_URL}/noticias/${n.slug}`,
+      name: n.titulo,
+    })),
+  };
+
   return (
     <>
       <SeoNoticias />
+      <Head>
+        <script type="application/ld+json">
+          {JSON.stringify(itemListSchema)}
+        </script>
+      </Head>
       <main className="flex flex-col w-full">
         <HeaderImage
           image="/header/noticias.jpg"
