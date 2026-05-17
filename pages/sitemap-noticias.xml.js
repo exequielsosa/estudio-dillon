@@ -10,6 +10,12 @@ const escapeXml = (str) =>
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&apos;");
 
+const toAbsoluteUrl = (src) => {
+  if (!src) return null;
+  if (/^https?:\/\//i.test(src)) return src;
+  return `${SITE_URL}${src.startsWith("/") ? "" : "/"}${src}`;
+};
+
 const buildSitemap = (noticias) => {
   const urls = noticias
     .map((n) => {
@@ -17,10 +23,11 @@ const buildSitemap = (noticias) => {
       const lastmod = (n.created_at || n.fecha_publicacion || new Date().toISOString())
         .toString()
         .split("T")[0];
-      const imageTag = n.imagen_url
+      const absImageUrl = toAbsoluteUrl(n.imagen_url);
+      const imageTag = absImageUrl
         ? `
     <image:image>
-      <image:loc>${escapeXml(n.imagen_url)}</image:loc>
+      <image:loc>${escapeXml(absImageUrl)}</image:loc>
       <image:title>${escapeXml(n.titulo || "")}</image:title>
     </image:image>`
         : "";
