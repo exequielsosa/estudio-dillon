@@ -1,12 +1,12 @@
 import ModalImage from "react-modal-image";
 import Taxes24 from "../components/taxes24";
-import SeoVencimientos from "../components/seo/seoVencimientos";
+import SeoVencimientos2024 from "../components/seo/seoVencimientos2024";
 import Link from "next/link";
 
 const Vencimientos = () => {
   return (
     <>
-      <SeoVencimientos />
+      <SeoVencimientos2024 />
       <main>
         <div className="flex w-full justify-left">
           <Link
