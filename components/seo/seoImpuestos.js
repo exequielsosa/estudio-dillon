@@ -72,93 +72,102 @@ const SeoImpuestos = () => {
         content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"
       />
       {/* Schema Markup - Service */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "@id": "https://www.estudio-dillon.com.ar/impuestos",
-          serviceType: "Liquidación de Impuestos",
-          provider: {
-            "@id": "https://www.estudio-dillon.com.ar/#organization",
-          },
-          areaServed: {
-            "@type": "Country",
-            name: "Argentina",
-          },
-          hasOfferCatalog: {
-            "@type": "OfferCatalog",
-            name: "Servicios de Liquidación de Impuestos",
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": "https://www.estudio-dillon.com.ar/impuestos",
+            serviceType: "Liquidación de Impuestos",
+            provider: {
+              "@id": "https://www.estudio-dillon.com.ar/#organization",
+            },
+            areaServed: {
+              "@type": "Country",
+              name: "Argentina",
+            },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Servicios de Liquidación de Impuestos",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "IVA",
+                    description: "Liquidación de IVA mensual y anual",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Ganancias",
+                    description: "Liquidación de impuesto a las ganancias",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Bienes Personales",
+                    description: "Declaración jurada de bienes personales",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Ingresos Brutos",
+                    description:
+                      "Liquidación de ingresos brutos y convenio multilateral",
+                  },
+                },
+              ],
+            },
+          }),
+        }}
+      />
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: impuestosFAQs.map(({ q, a }) => ({
+              "@type": "Question",
+              name: q,
+              acceptedAnswer: { "@type": "Answer", text: a },
+            })),
+          }),
+        }}
+      />
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
             itemListElement: [
               {
-                "@type": "Offer",
-                itemOffered: {
-                  "@type": "Service",
-                  name: "IVA",
-                  description: "Liquidación de IVA mensual y anual",
-                },
+                "@type": "ListItem",
+                position: 1,
+                name: "Inicio",
+                item: "https://www.estudio-dillon.com.ar",
               },
               {
-                "@type": "Offer",
-                itemOffered: {
-                  "@type": "Service",
-                  name: "Ganancias",
-                  description: "Liquidación de impuesto a las ganancias",
-                },
-              },
-              {
-                "@type": "Offer",
-                itemOffered: {
-                  "@type": "Service",
-                  name: "Bienes Personales",
-                  description: "Declaración jurada de bienes personales",
-                },
-              },
-              {
-                "@type": "Offer",
-                itemOffered: {
-                  "@type": "Service",
-                  name: "Ingresos Brutos",
-                  description:
-                    "Liquidación de ingresos brutos y convenio multilateral",
-                },
+                "@type": "ListItem",
+                position: 2,
+                name: "Liquidación de Impuestos",
+                item: "https://www.estudio-dillon.com.ar/impuestos",
               },
             ],
-          },
-        })}
-      </script>
-      {/* FAQ Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: impuestosFAQs.map(({ q, a }) => ({
-            "@type": "Question",
-            name: q,
-            acceptedAnswer: { "@type": "Answer", text: a },
-          })),
-        })}
-      </script>
-      {/* Breadcrumb Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Inicio",
-              item: "https://www.estudio-dillon.com.ar",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Liquidación de Impuestos",
-              item: "https://www.estudio-dillon.com.ar/impuestos",
-            },
-          ],
-        })}
-      </script>
+          }),
+        }}
+      />
       <meta name="geo.region" content="AR" />
       <meta name="geo.placename" content="Ciudad Autónoma de Buenos Aires" />
       <meta name="geo.position" content="-34.6037,-58.3816" />

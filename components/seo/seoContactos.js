@@ -57,57 +57,66 @@ const SeoContactos = () => {
         content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"
       />
       {/* Schema Markup - ContactPage */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "ContactPage",
-          "@id": "https://www.estudio-dillon.com.ar/contacto",
-          url: "https://www.estudio-dillon.com.ar/contacto",
-          name: "Contacto - Estudio Contable Dillon",
-          description:
-            "Contacte con nuestro estudio contable para servicios de asesoramiento impositivo y contable integral.",
-          mainEntity: {
-            "@type": "ProfessionalService",
-            "@id": "https://www.estudio-dillon.com.ar/#organization",
-            name: "Estudio Contable Dillon",
-            telephone: "+54-11-5895-9825",
-            email: "ma.eugenia.dillon@gmail.com",
-          },
-        })}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "@id": "https://www.estudio-dillon.com.ar/contacto",
+            url: "https://www.estudio-dillon.com.ar/contacto",
+            name: "Contacto - Estudio Contable Dillon",
+            description:
+              "Contacte con nuestro estudio contable para servicios de asesoramiento impositivo y contable integral.",
+            mainEntity: {
+              "@type": "ProfessionalService",
+              "@id": "https://www.estudio-dillon.com.ar/#organization",
+              name: "Estudio Contable Dillon",
+              telephone: "+54-11-5895-9825",
+              email: "ma.eugenia.dillon@gmail.com",
+            },
+          }),
+        }}
+      />
       {/* FAQ Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: contactoFAQs.map(({ q, a }) => ({
-            "@type": "Question",
-            name: q,
-            acceptedAnswer: { "@type": "Answer", text: a },
-          })),
-        })}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: contactoFAQs.map(({ q, a }) => ({
+              "@type": "Question",
+              name: q,
+              acceptedAnswer: { "@type": "Answer", text: a },
+            })),
+          }),
+        }}
+      />
       {/* Breadcrumb Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Inicio",
-              item: "https://www.estudio-dillon.com.ar",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Contacto",
-              item: "https://www.estudio-dillon.com.ar/contacto",
-            },
-          ],
-        })}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Inicio",
+                item: "https://www.estudio-dillon.com.ar",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Contacto",
+                item: "https://www.estudio-dillon.com.ar/contacto",
+              },
+            ],
+          }),
+        }}
+      />
       <meta name="geo.region" content="AR" />
       <meta name="geo.placename" content="Ciudad Autónoma de Buenos Aires" />
       <meta name="geo.position" content="-34.6037,-58.3816" />

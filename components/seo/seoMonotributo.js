@@ -66,56 +66,65 @@ const SeoMonotributo = () => {
         content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"
       />
       {/* Schema Markup - Service */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "@id": "https://www.estudio-dillon.com.ar/monotributo",
-          serviceType: "Gestión de Monotributo",
-          provider: {
-            "@id": "https://www.estudio-dillon.com.ar/#organization",
-          },
-          areaServed: {
-            "@type": "Country",
-            name: "Argentina",
-          },
-          description:
-            "Asesoramiento integral para monotributistas: alta, recategorización, liquidación mensual y facturación electrónica.",
-        })}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": "https://www.estudio-dillon.com.ar/monotributo",
+            serviceType: "Gestión de Monotributo",
+            provider: {
+              "@id": "https://www.estudio-dillon.com.ar/#organization",
+            },
+            areaServed: {
+              "@type": "Country",
+              name: "Argentina",
+            },
+            description:
+              "Asesoramiento integral para monotributistas: alta, recategorización, liquidación mensual y facturación electrónica.",
+          }),
+        }}
+      />
       {/* FAQ Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: monotributoFAQs.map(({ q, a }) => ({
-            "@type": "Question",
-            name: q,
-            acceptedAnswer: { "@type": "Answer", text: a },
-          })),
-        })}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: monotributoFAQs.map(({ q, a }) => ({
+              "@type": "Question",
+              name: q,
+              acceptedAnswer: { "@type": "Answer", text: a },
+            })),
+          }),
+        }}
+      />
       {/* Breadcrumb Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Inicio",
-              item: "https://www.estudio-dillon.com.ar",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Monotributo",
-              item: "https://www.estudio-dillon.com.ar/monotributo",
-            },
-          ],
-        })}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Inicio",
+                item: "https://www.estudio-dillon.com.ar",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Monotributo",
+                item: "https://www.estudio-dillon.com.ar/monotributo",
+              },
+            ],
+          }),
+        }}
+      />
       <meta name="geo.region" content="AR" />
       <meta name="geo.placename" content="Ciudad Autónoma de Buenos Aires" />
       <meta name="geo.position" content="-34.6037,-58.3816" />

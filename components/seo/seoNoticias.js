@@ -45,40 +45,46 @@ const SeoNoticias = () => {
       <meta name="geo.region" content="AR" />
       <meta name="geo.placename" content="Ciudad Autónoma de Buenos Aires" />
 
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "CollectionPage",
-          "@id": url,
-          name: title,
-          description,
-          url,
-          inLanguage: "es-AR",
-          publisher: {
-            "@id": "https://www.estudio-dillon.com.ar/#organization",
-          },
-        })}
-      </script>
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Inicio",
-              item: "https://www.estudio-dillon.com.ar",
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "@id": url,
+            name: title,
+            description,
+            url,
+            inLanguage: "es-AR",
+            publisher: {
+              "@id": "https://www.estudio-dillon.com.ar/#organization",
             },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Noticias",
-              item: url,
-            },
-          ],
-        })}
-      </script>
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Inicio",
+                item: "https://www.estudio-dillon.com.ar",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Noticias",
+                item: url,
+              },
+            ],
+          }),
+        }}
+      />
     </Head>
   );
 };

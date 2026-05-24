@@ -69,56 +69,65 @@ const SeoTramites = () => {
         content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"
       />
       {/* Schema Markup - Service */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "@id": "https://www.estudio-dillon.com.ar/tramites",
-          serviceType: "Gestión de Trámites",
-          provider: {
-            "@id": "https://www.estudio-dillon.com.ar/#organization",
-          },
-          areaServed: {
-            "@type": "Country",
-            name: "Argentina",
-          },
-          description:
-            "Gestión integral de trámites ante AFIP, inscripción de impuestos, alta de CUIT, certificados contables y trámites societarios.",
-        })}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": "https://www.estudio-dillon.com.ar/tramites",
+            serviceType: "Gestión de Trámites",
+            provider: {
+              "@id": "https://www.estudio-dillon.com.ar/#organization",
+            },
+            areaServed: {
+              "@type": "Country",
+              name: "Argentina",
+            },
+            description:
+              "Gestión integral de trámites ante AFIP, inscripción de impuestos, alta de CUIT, certificados contables y trámites societarios.",
+          }),
+        }}
+      />
       {/* FAQ Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: tramitesFAQs.map(({ q, a }) => ({
-            "@type": "Question",
-            name: q,
-            acceptedAnswer: { "@type": "Answer", text: a },
-          })),
-        })}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: tramitesFAQs.map(({ q, a }) => ({
+              "@type": "Question",
+              name: q,
+              acceptedAnswer: { "@type": "Answer", text: a },
+            })),
+          }),
+        }}
+      />
       {/* Breadcrumb Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Inicio",
-              item: "https://www.estudio-dillon.com.ar",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Gestión de Trámites",
-              item: "https://www.estudio-dillon.com.ar/tramites",
-            },
-          ],
-        })}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Inicio",
+                item: "https://www.estudio-dillon.com.ar",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Gestión de Trámites",
+                item: "https://www.estudio-dillon.com.ar/tramites",
+              },
+            ],
+          }),
+        }}
+      />
       <meta name="geo.region" content="AR" />
       <meta name="geo.placename" content="Ciudad Autónoma de Buenos Aires" />
       <meta name="geo.position" content="-34.6037,-58.3816" />

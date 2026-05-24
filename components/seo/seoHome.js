@@ -66,109 +66,115 @@ const SeoHome = () => {
         content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"
       />
       {/* Schema Markup - LocalBusiness */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "ProfessionalService",
-          "@id": "https://www.estudio-dillon.com.ar/#organization",
-          name: "Estudio Contable Dillon",
-          description:
-            "Servicios contables y legales integrales para empresas, monotributistas y pymes. Más de 20 años de experiencia en asesoramiento impositivo y contable.",
-          url: "https://www.estudio-dillon.com.ar",
-          telephone: "+54-11-5895-9825",
-          email: "ma.eugenia.dillon@gmail.com",
-          address: {
-            "@type": "PostalAddress",
-            addressLocality: "Ciudad Autónoma de Buenos Aires",
-            addressRegion: "Buenos Aires",
-            addressCountry: "AR",
-            postalCode: "C1000",
-          },
-          geo: {
-            "@type": "GeoCoordinates",
-            latitude: -34.6037,
-            longitude: -58.3816,
-          },
-          areaServed: {
-            "@type": "Country",
-            name: "Argentina",
-          },
-          priceRange: "$$",
-          openingHoursSpecification: [
-            {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-              ],
-              opens: "09:00",
-              closes: "18:00",
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "@id": "https://www.estudio-dillon.com.ar/#organization",
+            name: "Estudio Contable Dillon",
+            description:
+              "Servicios contables y legales integrales para empresas, monotributistas y pymes. Más de 20 años de experiencia en asesoramiento impositivo y contable.",
+            url: "https://www.estudio-dillon.com.ar",
+            telephone: "+54-11-5895-9825",
+            email: "ma.eugenia.dillon@gmail.com",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Ciudad Autónoma de Buenos Aires",
+              addressRegion: "Buenos Aires",
+              addressCountry: "AR",
+              postalCode: "C1000",
             },
-          ],
-          sameAs: [
-            "https://www.linkedin.com/in/maria-eugenia-dillon/",
-            "https://twitter.com/maugexxiv",
-          ],
-          hasOfferCatalog: {
-            "@type": "OfferCatalog",
-            name: "Servicios Contables",
-            itemListElement: [
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: -34.6037,
+              longitude: -58.3816,
+            },
+            areaServed: {
+              "@type": "Country",
+              name: "Argentina",
+            },
+            priceRange: "$$",
+            openingHoursSpecification: [
               {
-                "@type": "Offer",
-                itemOffered: {
-                  "@type": "Service",
-                  name: "Liquidación de Impuestos",
-                  description:
-                    "Gestión integral de impuestos nacionales y provinciales",
-                },
-              },
-              {
-                "@type": "Offer",
-                itemOffered: {
-                  "@type": "Service",
-                  name: "Liquidación de Sueldos",
-                  description:
-                    "Tercerización de liquidación de sueldos y jornales",
-                },
-              },
-              {
-                "@type": "Offer",
-                itemOffered: {
-                  "@type": "Service",
-                  name: "Monotributo",
-                  description: "Asesoramiento y gestión de monotributo",
-                },
-              },
-              {
-                "@type": "Offer",
-                itemOffered: {
-                  "@type": "Service",
-                  name: "Trámites AFIP",
-                  description: "Gestión de trámites ante organismos oficiales",
-                },
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                ],
+                opens: "09:00",
+                closes: "18:00",
               },
             ],
-          },
-        })}
-      </script>
-      {/* Breadcrumb Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Inicio",
-              item: "https://www.estudio-dillon.com.ar",
+            sameAs: [
+              "https://www.linkedin.com/in/maria-eugenia-dillon/",
+              "https://twitter.com/maugexxiv",
+            ],
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Servicios Contables",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Liquidación de Impuestos",
+                    description:
+                      "Gestión integral de impuestos nacionales y provinciales",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Liquidación de Sueldos",
+                    description:
+                      "Tercerización de liquidación de sueldos y jornales",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Monotributo",
+                    description: "Asesoramiento y gestión de monotributo",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Trámites AFIP",
+                    description: "Gestión de trámites ante organismos oficiales",
+                  },
+                },
+              ],
             },
-          ],
-        })}
-      </script>
+          }),
+        }}
+      />
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Inicio",
+                item: "https://www.estudio-dillon.com.ar",
+              },
+            ],
+          }),
+        }}
+      />
       <meta name="geo.region" content="AR-C" />
       <meta name="geo.placename" content="Ciudad Autónoma de Buenos Aires" />
       <meta name="geo.position" content="-34.6037;-58.3816" />

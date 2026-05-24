@@ -2,7 +2,7 @@ import Head from "next/head";
 
 const SeoVencimientos2024 = () => {
   return (
-    <Head>
+<Head>
       <title>Vencimientos AFIP 2024 - Calendario Impositivo | Estudio Contable Dillon</title>
       <meta
         name="description"
@@ -68,59 +68,65 @@ const SeoVencimientos2024 = () => {
         content="https://www.estudio-dillon.com.ar/ven2024.png"
       />
       {/* Schema Markup - Article */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Article",
-          "@id": "https://www.estudio-dillon.com.ar/vencimientos-2024",
-          headline: "Calendario de Vencimientos AFIP 2024",
-          description:
-            "Calendario con todas las fechas de vencimiento de impuestos nacionales, provinciales y monotributo del año 2024.",
-          image: "https://www.estudio-dillon.com.ar/ven2024.png",
-          datePublished: "2024-01-01",
-          dateModified: "2024-12-15",
-          author: {
-            "@type": "Organization",
-            name: "Estudio Contable Dillon",
-            url: "https://www.estudio-dillon.com.ar",
-          },
-          publisher: {
-            "@type": "Organization",
-            name: "Estudio Contable Dillon",
-            logo: {
-              "@type": "ImageObject",
-              url: "https://www.estudio-dillon.com.ar/assets/logo.png",
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "@id": "https://www.estudio-dillon.com.ar/vencimientos-2024",
+            headline: "Calendario de Vencimientos AFIP 2024",
+            description:
+              "Calendario con todas las fechas de vencimiento de impuestos nacionales, provinciales y monotributo del año 2024.",
+            image: "https://www.estudio-dillon.com.ar/ven2024.png",
+            datePublished: "2024-01-01",
+            dateModified: "2024-12-15",
+            author: {
+              "@type": "Organization",
+              name: "Estudio Contable Dillon",
+              url: "https://www.estudio-dillon.com.ar",
             },
-          },
-        })}
-      </script>
+            publisher: {
+              "@type": "Organization",
+              name: "Estudio Contable Dillon",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://www.estudio-dillon.com.ar/assets/logo.png",
+              },
+            },
+          }),
+        }}
+      />
       {/* Breadcrumb Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Inicio",
-              item: "https://www.estudio-dillon.com.ar",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Vencimientos",
-              item: "https://www.estudio-dillon.com.ar/vencimientos",
-            },
-            {
-              "@type": "ListItem",
-              position: 3,
-              name: "Vencimientos AFIP 2024",
-              item: "https://www.estudio-dillon.com.ar/vencimientos-2024",
-            },
-          ],
-        })}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Inicio",
+                item: "https://www.estudio-dillon.com.ar",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Vencimientos",
+                item: "https://www.estudio-dillon.com.ar/vencimientos",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: "Vencimientos AFIP 2024",
+                item: "https://www.estudio-dillon.com.ar/vencimientos-2024",
+              },
+            ],
+          }),
+        }}
+      />
       <meta name="geo.region" content="AR" />
       <meta name="geo.placename" content="Ciudad Autónoma de Buenos Aires" />
       <meta name="geo.position" content="-34.6037,-58.3816" />

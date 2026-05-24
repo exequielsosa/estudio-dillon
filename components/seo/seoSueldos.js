@@ -69,56 +69,65 @@ const SeoSueldos = () => {
         content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"
       />
       {/* Schema Markup - Service */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "@id": "https://www.estudio-dillon.com.ar/sueldos",
-          serviceType: "Liquidación de Sueldos y Jornales",
-          provider: {
-            "@id": "https://www.estudio-dillon.com.ar/#organization",
-          },
-          areaServed: {
-            "@type": "Country",
-            name: "Argentina",
-          },
-          description:
-            "Tercerización de liquidación de sueldos, gestión de aportes y contribuciones, recibos de sueldo digitales.",
-        })}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": "https://www.estudio-dillon.com.ar/sueldos",
+            serviceType: "Liquidación de Sueldos y Jornales",
+            provider: {
+              "@id": "https://www.estudio-dillon.com.ar/#organization",
+            },
+            areaServed: {
+              "@type": "Country",
+              name: "Argentina",
+            },
+            description:
+              "Tercerización de liquidación de sueldos, gestión de aportes y contribuciones, recibos de sueldo digitales.",
+          }),
+        }}
+      />
       {/* FAQ Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: sueldosFAQs.map(({ q, a }) => ({
-            "@type": "Question",
-            name: q,
-            acceptedAnswer: { "@type": "Answer", text: a },
-          })),
-        })}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: sueldosFAQs.map(({ q, a }) => ({
+              "@type": "Question",
+              name: q,
+              acceptedAnswer: { "@type": "Answer", text: a },
+            })),
+          }),
+        }}
+      />
       {/* Breadcrumb Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Inicio",
-              item: "https://www.estudio-dillon.com.ar",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Liquidación de Sueldos",
-              item: "https://www.estudio-dillon.com.ar/sueldos",
-            },
-          ],
-        })}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Inicio",
+                item: "https://www.estudio-dillon.com.ar",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Liquidación de Sueldos",
+                item: "https://www.estudio-dillon.com.ar/sueldos",
+              },
+            ],
+          }),
+        }}
+      />
       <meta name="geo.region" content="AR" />
       <meta name="geo.placename" content="Ciudad Autónoma de Buenos Aires" />
       <meta name="geo.position" content="-34.6037,-58.3816" />
