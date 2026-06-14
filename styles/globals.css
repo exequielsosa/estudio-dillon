@@ -35,6 +35,15 @@ html {
 }
 
 @layer components {
+  /* Ocultar scrollbar pero mantener scroll funcional */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
   /* Heading de sección con acento azul corporativo */
   .section-h {
     @apply mt-8 mb-4 text-lg font-semibold text-[#10207A] border-l-4 border-[#10207A] pl-4 py-1;

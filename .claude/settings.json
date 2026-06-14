@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(yarn dev *)",
+      "Bash(curl -s http://localhost:3003/noticias)"
+    ]
+  }
+}

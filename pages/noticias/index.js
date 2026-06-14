@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import Link from "next/link";
+import { useState, useMemo } from "react";
 import SeoNoticias from "@/components/seo/seoNoticias";
 import { supabase } from "@/lib/supabase";
 import HeaderImage from "@/components/headerImage";
@@ -25,7 +26,59 @@ const formatDate = (date) =>
       })
     : "";
 
+const getMonthKey = (dateStr) => {
+  const date = new Date(dateStr);
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(
+    2,
+    "0",
+  )}`;
+};
+
+const getMonthLabel = (monthKey) => {
+  const [year, month] = monthKey.split("-");
+  const date = new Date(year, parseInt(month) - 1);
+  return date.toLocaleDateString("es-AR", { year: "numeric", month: "long" });
+};
+
 const NoticiasIndex = ({ noticias }) => {
+  const [selectedMonth, setSelectedMonth] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
+  const { months, noticiasPorMes } = useMemo(() => {
+    const grouped = {};
+
+    noticias.forEach((noticia) => {
+      const monthKey = getMonthKey(noticia.fecha_publicacion);
+      if (!grouped[monthKey]) {
+        grouped[monthKey] = [];
+      }
+      grouped[monthKey].push(noticia);
+    });
+
+    const monthsList = Object.keys(grouped).sort().reverse();
+
+    return {
+      months: monthsList,
+      noticiasPorMes: grouped,
+    };
+  }, [noticias]);
+
+  const activeMonth = selectedMonth || months[0];
+  const noticiasDelMes = noticiasPorMes[activeMonth] || [];
+
+  // Contar categorías solo del mes seleccionado
+  const categoriasDelMes = {};
+  noticiasDelMes.forEach((n) => {
+    const cat = n.categoria || "sin-categoria";
+    categoriasDelMes[cat] = (categoriasDelMes[cat] || 0) + 1;
+  });
+
+  let noticiasActuales = noticiasDelMes;
+  if (selectedCategory) {
+    noticiasActuales = noticiasActuales.filter(
+      (n) => (n.categoria || "sin-categoria") === selectedCategory,
+    );
+  }
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -76,51 +129,103 @@ const NoticiasIndex = ({ noticias }) => {
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-              {noticias.map((noticia) => (
-                <Link
-                  key={noticia.slug}
-                  href={`/noticias/${noticia.slug}`}
-                  className="flex flex-col border border-gray-200 rounded-xl overflow-hidden bg-white transition-shadow duration-300 ease-in-out hover:shadow-lg"
-                >
-                  {noticia.imagen_url ? (
-                    <div className="aspect-[16/9] bg-gray-100 overflow-hidden">
-                      <img
-                        src={noticia.imagen_url}
-                        alt={noticia.imagen_alt || noticia.titulo}
-                        className="w-full h-full object-cover"
-                        loading="lazy"
-                      />
-                    </div>
-                  ) : (
-                    <div className="aspect-[16/9] bg-[#10207A]/10 flex items-center justify-center">
-                      <span className="text-[#10207A] font-semibold text-sm uppercase tracking-wider">
-                        Estudio Dillon
-                      </span>
+            <>
+              {months.length > 0 && (
+                <div className="mt-8 border-b border-gray-200">
+                  <div className="flex gap-2 overflow-x-auto snap-x snap-mandatory pb-4 -mb-4 scrollbar-hide">
+                    {months.map((month) => (
+                      <button
+                        key={month}
+                        onClick={() => setSelectedMonth(month)}
+                        className={`snap-start flex-shrink-0 px-4 py-2 rounded-lg font-semibold text-sm transition-colors whitespace-nowrap ${
+                          activeMonth === month
+                            ? "bg-[#10207A] text-white"
+                            : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                        }`}
+                      >
+                        {getMonthLabel(month)}
+                      </button>
+                    ))}
+                  </div>
+
+                  {Object.keys(categoriasDelMes).length > 0 && (
+                    <div className="flex flex-wrap gap-1.5 md:gap-2 pb-4 pt-4">
+                      <button
+                        onClick={() => setSelectedCategory(null)}
+                        className={`px-2 py-0.5 md:px-3 md:py-1 rounded-full text-xs md:text-sm font-medium transition-colors whitespace-nowrap ${
+                          selectedCategory === null
+                            ? "bg-[#10207A] text-white"
+                            : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                        }`}
+                      >
+                        Todas ({noticiasDelMes.length})
+                      </button>
+                      {Object.entries(categoriasDelMes)
+                        .sort(([, a], [, b]) => b - a)
+                        .map(([cat, count]) => (
+                          <button
+                            key={cat}
+                            onClick={() => setSelectedCategory(cat)}
+                            className={`px-2 py-0.5 md:px-3 md:py-1 rounded-full text-xs md:text-sm font-medium transition-colors whitespace-nowrap ${
+                              selectedCategory === cat
+                                ? "bg-[#10207A] text-white"
+                                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                            }`}
+                          >
+                            {CATEGORIA_LABELS[cat] || cat} ({count})
+                          </button>
+                        ))}
                     </div>
                   )}
-                  <div className="p-5 flex flex-col flex-1">
-                    {noticia.categoria && (
-                      <span className="text-xs font-bold uppercase tracking-wider text-[#10207A] mb-2">
-                        {CATEGORIA_LABELS[noticia.categoria] ||
-                          noticia.categoria}
+                </div>
+              )}
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                {noticiasActuales.map((noticia) => (
+                  <Link
+                    key={noticia.slug}
+                    href={`/noticias/${noticia.slug}`}
+                    className="flex flex-col border border-gray-200 rounded-xl overflow-hidden bg-white transition-shadow duration-300 ease-in-out hover:shadow-lg"
+                  >
+                    {noticia.imagen_url ? (
+                      <div className="aspect-[16/9] bg-gray-100 overflow-hidden">
+                        <img
+                          src={noticia.imagen_url}
+                          alt={noticia.imagen_alt || noticia.titulo}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                      </div>
+                    ) : (
+                      <div className="aspect-[16/9] bg-[#10207A]/10 flex items-center justify-center">
+                        <span className="text-[#10207A] font-semibold text-sm uppercase tracking-wider">
+                          Estudio Dillon
+                        </span>
+                      </div>
+                    )}
+                    <div className="p-5 flex flex-col flex-1">
+                      {noticia.categoria && (
+                        <span className="text-xs font-bold uppercase tracking-wider text-[#10207A] mb-2">
+                          {CATEGORIA_LABELS[noticia.categoria] ||
+                            noticia.categoria}
+                        </span>
+                      )}
+                      <h2 className="text-lg font-semibold mb-2 leading-tight">
+                        {noticia.titulo}
+                      </h2>
+                      {noticia.descripcion && (
+                        <p className="opacity-70 text-sm flex-1 mb-3">
+                          {noticia.descripcion}
+                        </p>
+                      )}
+                      <span className="text-xs opacity-60">
+                        {formatDate(noticia.fecha_publicacion)}
                       </span>
-                    )}
-                    <h2 className="text-lg font-semibold mb-2 leading-tight">
-                      {noticia.titulo}
-                    </h2>
-                    {noticia.descripcion && (
-                      <p className="opacity-70 text-sm flex-1 mb-3">
-                        {noticia.descripcion}
-                      </p>
-                    )}
-                    <span className="text-xs opacity-60">
-                      {formatDate(noticia.fecha_publicacion)}
-                    </span>
-                  </div>
-                </Link>
-              ))}
-            </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </>
           )}
         </div>
       </main>
