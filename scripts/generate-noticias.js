@@ -434,8 +434,9 @@ async function generateNoticiaSEO(title, content, sourceUrl) {
   const preview = content.substring(0, 2000);
 
   const completion = await groq.chat.completions.create({
-    model: "llama-3.3-70b-versatile",
-    max_tokens: 3000,
+    model: "openai/gpt-oss-120b",
+    max_tokens: 5000,
+    response_format: { type: "json_object" },
     messages: [
       {
         role: "system",
