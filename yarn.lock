@@ -1916,7 +1916,7 @@ grapheme-splitter@^1.0.4:
   resolved "https://registry.yarnpkg.com/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz#9cf3a665c6247479896834af35cf1dbb4400767e"
   integrity sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==
 
-groq-sdk@1.3.0:
+groq-sdk@^1.3.0:
   version "1.3.0"
   resolved "https://registry.npmjs.org/groq-sdk/-/groq-sdk-1.3.0.tgz#0ae713f5e224b4ad62efd95aaebb92b7fd9408b5"
   integrity sha512-mvgUIpAxlk/VxWIoliHx4R+Ha78Bd/g0t24OFjCXtdLbNiY1rW4h9AcznKBwFho7K/Nq732ZSjxMYkNb1xeCFg==
