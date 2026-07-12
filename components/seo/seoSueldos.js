@@ -4,10 +4,10 @@ import { sueldosFAQs } from "@/lib/faqs/sueldos";
 const SeoSueldos = () => {
   return (
     <Head>
-      <title>Liquidacion de Sueldos - Estudio Contable Dillon</title>
+      <title>Liquidación de Sueldos para PyMEs | Estudio Contable Dillon</title>
       <meta
         name="description"
-        content="La tercerización de la liquidación de sueldos en las empresas ayuda a las mismas en no tener que estar actualizándose en la normativa y problemática laboral"
+        content="Liquidación de sueldos para PyMEs: recibos, aportes, ART, obra social y actualización normativa laboral. Tercerizá la nómina con un estudio contable especializado."
       />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index,follow" />
@@ -21,11 +21,11 @@ const SeoSueldos = () => {
       />
       <meta
         property="og:title"
-        content="Liquidacion de Sueldos - Estudio Contable Dillon"
+        content="Liquidación de Sueldos para PyMEs | Estudio Contable Dillon"
       />
       <meta
         property="og:description"
-        content="La tercerización de la liquidación de sueldos en las empresas ayuda a las mismas en no tener que estar actualizándose en la normativa y problemática laboral"
+        content="Liquidación de sueldos para PyMEs: recibos, aportes, ART, obra social y actualización normativa laboral. Tercerizá la nómina con un estudio contable especializado."
       />
       <meta
         property="og:url"
@@ -33,7 +33,7 @@ const SeoSueldos = () => {
       />
       <meta
         name="title"
-        content="Liquidacion de Sueldos - Estudio Contable Dillon"
+        content="Liquidación de Sueldos para PyMEs | Estudio Contable Dillon"
       />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="Spanish" />
@@ -58,11 +58,11 @@ const SeoSueldos = () => {
       <meta name="twitter:creator" content="@estudiodillon" />
       <meta
         name="twitter:title"
-        content="Liquidacion de Sueldos - Estudio Contable Dillon"
+        content="Liquidación de Sueldos para PyMEs | Estudio Contable Dillon"
       />
       <meta
         name="twitter:description"
-        content="La tercerización de la liquidación de sueldos en las empresas ayuda a las mismas en no tener que estar actualizándose en la normativa y problemática laboral"
+        content="Liquidación de sueldos para PyMEs: recibos, aportes, ART, obra social y actualización normativa laboral. Tercerizá la nómina con un estudio contable especializado."
       />
       <meta
         name="twitter:image"

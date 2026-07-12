@@ -69,11 +69,7 @@ const SeoContactos = () => {
             description:
               "Contacte con nuestro estudio contable para servicios de asesoramiento impositivo y contable integral.",
             mainEntity: {
-              "@type": "ProfessionalService",
               "@id": "https://www.estudio-dillon.com.ar/#organization",
-              name: "Estudio Contable Dillon",
-              telephone: "+54-11-5895-9825",
-              email: "ma.eugenia.dillon@gmail.com",
             },
           }),
         }}

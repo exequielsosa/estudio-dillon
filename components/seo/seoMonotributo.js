@@ -4,10 +4,10 @@ import { monotributoFAQs } from "@/lib/faqs/monotributo";
 const SeoMonotributo = () => {
   return (
     <Head>
-      <title>Monotributo - Estudio Contable Dillon</title>
+      <title>Contador para Monotributistas: alta, recategorización y vencimientos | Estudio Dillon</title>
       <meta
         name="description"
-        content="Para pequeños emprendimientos, ofrecemos un trato personalizado y profesional, basado en nuestra experiencia con otras empresas."
+        content="Contador especializado en monotributo: alta, recategorización, control de facturación y vencimientos. Atención en CABA y online. Consultá sin cargo."
       />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index,follow" />
@@ -21,17 +21,20 @@ const SeoMonotributo = () => {
       <meta property="og:site_name" content="Estudio Contable Dillon" />
       <meta
         property="og:title"
-        content="Monotributo - Estudio Contable Dillon"
+        content="Contador para Monotributistas: alta, recategorización y vencimientos | Estudio Dillon"
       />
       <meta
         property="og:description"
-        content="Para pequeños emprendimientos, ofrecemos un trato personalizado y profesional, basado en nuestra experiencia con otras empresas."
+        content="Contador especializado en monotributo: alta, recategorización, control de facturación y vencimientos. Atención en CABA y online. Consultá sin cargo."
       />
       <meta
         property="og:url"
         content="https://www.estudio-dillon.com.ar/monotributo"
       />
-      <meta name="title" content="Monotributo - Estudio Contable Dillon" />
+      <meta
+        name="title"
+        content="Contador para Monotributistas: alta, recategorización y vencimientos | Estudio Dillon"
+      />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="Spanish" />
       <meta
@@ -48,18 +51,18 @@ const SeoMonotributo = () => {
       <meta property="og:image:height" content="630" />
       <meta
         property="og:image:alt"
-        content="Monotributo - Estudio Contable Dillon"
+        content="Contador para Monotributistas - Estudio Dillon"
       />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@estudiodillon" />
       <meta name="twitter:creator" content="@estudiodillon" />
       <meta
         name="twitter:title"
-        content="Monotributo - Estudio Contable Dillon"
+        content="Contador para Monotributistas: alta, recategorización y vencimientos | Estudio Dillon"
       />
       <meta
         name="twitter:description"
-        content="Para pequeños emprendimientos, ofrecemos un trato personalizado y profesional, basado en nuestra experiencia con otras empresas."
+        content="Contador especializado en monotributo: alta, recategorización, control de facturación y vencimientos. Atención en CABA y online."
       />
       <meta
         name="twitter:image"

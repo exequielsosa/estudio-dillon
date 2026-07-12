@@ -3,10 +3,10 @@ import Head from "next/head";
 const SeoVencimientos = () => {
   return (
     <Head>
-      <title>Vencimientos AFIP 2026 - Estudio Contable Dillon</title>
+      <title>Vencimientos ARCA (ex AFIP) 2026: calendario completo de impuestos - Estudio Contable Dillon</title>
       <meta
         name="description"
-        content="Calendario completo de vencimientos AFIP 2026. Consulte todas las fechas de vencimiento de impuestos nacionales, provinciales y monotributo actualizadas."
+        content="Calendario completo de vencimientos ARCA (ex AFIP) 2026. Consulte todas las fechas de vencimiento de impuestos nacionales, provinciales y monotributo actualizadas."
       />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index,follow" />
@@ -17,11 +17,11 @@ const SeoVencimientos = () => {
       />
       <meta
         name="title"
-        content="Vencimientos AFIP 2026 - Estudio Contable Dillon"
+        content="Vencimientos ARCA (ex AFIP) 2026 - Estudio Contable Dillon"
       />
       <meta
         name="keywords"
-        content="vencimientos AFIP 2026, calendario AFIP, vencimientos IVA, vencimientos ganancias, vencimientos monotributo, fechas de pago AFIP, calendario impositivo 2026, vencimientos ingresos brutos"
+        content="vencimientos ARCA 2026, vencimientos AFIP 2026, calendario ARCA, calendario AFIP, vencimientos IVA, vencimientos ganancias, vencimientos monotributo, fechas de pago ARCA, calendario impositivo 2026, vencimientos ingresos brutos"
       />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="Spanish" />
@@ -31,11 +31,11 @@ const SeoVencimientos = () => {
       <meta property="og:site_name" content="Estudio Contable Dillon" />
       <meta
         property="og:title"
-        content="Vencimientos AFIP 2026 - Estudio Contable Dillon"
+        content="Vencimientos ARCA (ex AFIP) 2026 - Estudio Contable Dillon"
       />
       <meta
         property="og:description"
-        content="Calendario completo de vencimientos AFIP 2026. Consulte todas las fechas de vencimiento de impuestos nacionales, provinciales y monotributo actualizadas."
+        content="Calendario completo de vencimientos ARCA (ex AFIP) 2026. Consulte todas las fechas de vencimiento de impuestos nacionales, provinciales y monotributo actualizadas."
       />
       <meta
         property="og:url"
@@ -50,18 +50,18 @@ const SeoVencimientos = () => {
       <meta property="og:image:height" content="630" />
       <meta
         property="og:image:alt"
-        content="Calendario Vencimientos AFIP 2026"
+        content="Calendario Vencimientos ARCA (ex AFIP) 2026"
       />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@estudiodillon" />
       <meta name="twitter:creator" content="@estudiodillon" />
       <meta
         name="twitter:title"
-        content="Vencimientos AFIP 2026 - Estudio Contable Dillon"
+        content="Vencimientos ARCA (ex AFIP) 2026 - Estudio Contable Dillon"
       />
       <meta
         name="twitter:description"
-        content="Calendario completo de vencimientos AFIP 2026. Consulte todas las fechas de vencimiento de impuestos actualizadas."
+        content="Calendario completo de vencimientos ARCA (ex AFIP) 2026. Consulte todas las fechas de vencimiento de impuestos actualizadas."
       />
       <meta
         name="twitter:image"
@@ -75,12 +75,12 @@ const SeoVencimientos = () => {
             "@context": "https://schema.org",
             "@type": "Article",
             "@id": "https://www.estudio-dillon.com.ar/vencimientos",
-            headline: "Calendario de Vencimientos AFIP 2026",
+            headline: "Calendario de Vencimientos ARCA (ex AFIP) 2026",
             description:
               "Calendario completo con todas las fechas de vencimiento de impuestos nacionales, provinciales y monotributo para el año 2026.",
             image: "https://www.estudio-dillon.com.ar/assets/og-image.jpg",
             datePublished: "2026-01-01",
-            dateModified: "2026-05-15",
+            dateModified: "2026-07-12",
             author: {
               "@type": "Organization",
               name: "Estudio Contable Dillon",
@@ -114,7 +114,7 @@ const SeoVencimientos = () => {
               {
                 "@type": "ListItem",
                 position: 2,
-                name: "Vencimientos AFIP 2026",
+                name: "Vencimientos ARCA (ex AFIP) 2026",
                 item: "https://www.estudio-dillon.com.ar/vencimientos",
               },
             ],

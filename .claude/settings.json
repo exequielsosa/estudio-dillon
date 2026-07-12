@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(yarn dev *)",
-      "Bash(curl -s http://localhost:3003/noticias)"
+      "Bash(curl -s http://localhost:3003/noticias)",
+      "Bash(grep -o \"GROQ_API_KEY=.\\\\{0,6\\\\}\" .env.local)",
+      "Bash(npm view *)",
+      "WebSearch",
+      "Bash(node scripts/test-ai.js)"
     ]
   }
 }

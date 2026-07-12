@@ -5,6 +5,9 @@ const Taxes = () => {
     <>
       <div className="w-full justify-center flex mt-8">
         <div className="w-full">
+          <p className="text-sm opacity-60 mb-4">
+            Última actualización: 12 de julio de 2026
+          </p>
           <Content />
           <span id="iva" />
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
@@ -54,12 +57,12 @@ const Taxes = () => {
             modificaciones normativas posteriores.
             <br />
             <br />
-            <span id="ig" />
             Los <b>anticipos de Ganancias y Bienes Personales</b> de personas
             humanas tendrán vencimientos durante febrero, abril, agosto, octubre
             y diciembre de 2026, agrupados según la terminación de CUIT y
             considerando siempre los corrimientos por días inhábiles.
           </p>
+          <span id="ig" />
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Impuesto a las Ganancias
           </h2>
@@ -88,7 +91,6 @@ const Taxes = () => {
             de no ser así, los vencimientos se corren al día hábil siguiente.
             <br />
             <br />
-            <span id="pip" />
             Los <b>anticipos de personas humanas</b> continuarán distribuidos
             durante el año, con vencimientos en febrero, abril, agosto, octubre
             y diciembre de 2026, agrupados por terminación de CUIT. Para los
@@ -96,10 +98,10 @@ const Taxes = () => {
             simplificada de Ganancias, el vencimiento general será el{" "}
             <b>30 de junio de 2026</b>.
           </p>
+          <span id="pip" />
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Percepciones de impuesto a las ganancias y bienes personales
           </h2>
-          <span id="cc" />
           <p className="opacity-70 text-base">
             El importe abonado en concepto de percepciones por operaciones
             alcanzadas, como compra de moneda extranjera o consumos con tarjeta
@@ -123,10 +125,10 @@ const Taxes = () => {
             eventualmente no pueda recuperarse por esa vía deberá solicitarse
             mediante el procedimiento correspondiente.
           </p>
+          <span id="cc" />
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Cuarta Categoría
           </h2>
-          <span id="cas" />
           <p className="opacity-70 text-base">
             Los empleados en relación de dependencia tendrán que informar las
             percepciones, deducciones y demás datos correspondientes al período
@@ -142,7 +144,7 @@ const Taxes = () => {
             retener o devolver la diferencia del impuesto en la liquidación de
             sueldos correspondiente.
           </p>
-          <span id="ps" />
+          <span id="cas" />
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Cargas sociales y aportes jubilatorios
           </h2>
@@ -163,10 +165,10 @@ const Taxes = () => {
             mes, según la terminación de CUIT y considerando siempre los días
             hábiles.
           </p>
+          <span id="ps" />
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Participaciones societarias, autoridades y apoderados
           </h2>
-          <span id="sicore" />
           <p className="opacity-70 text-base">
             El <b>Régimen de información anual</b> que deben presentar las
             sociedades, correspondiente al período fiscal 2025, vencerá durante
@@ -182,7 +184,7 @@ const Taxes = () => {
             previsto por la normativa vigente, contado desde que se produjo la
             modificación.
           </p>
-          <span id="mono" />
+          <span id="sicore" />
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Retenciones y percepciones (SICORE / SIRE)
           </h2>
@@ -198,10 +200,10 @@ const Taxes = () => {
             días <b>9 y 13 de cada mes</b>, agrupados según la finalización del
             número de CUIT.
           </p>
+          <span id="mono" />
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Régimen Simplificado (Monotributo)
           </h2>
-          <span id="ii" />
           <p className="opacity-70 text-base">
             El pago mensual del Monotributo{" "}
             <b>vencerá todos los días 20 de cada mes</b> o el primer día hábil
@@ -222,7 +224,7 @@ const Taxes = () => {
             aunque deberán abonar el importe actualizado que corresponda a su
             categoría.
           </p>
-          <span id="cm" />
+          <span id="ii" />
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Impuestos internos
           </h2>
@@ -236,7 +238,7 @@ const Taxes = () => {
             Cuando alguna de esas fechas coincida con un día inhábil, el
             vencimiento se trasladará al día hábil inmediato siguiente.
           </p>
-          <span id="fc" />
+          <span id="cm" />
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Convenio Multilateral
           </h2>
@@ -252,8 +254,7 @@ const Taxes = () => {
             presentación deberá aplicarse el coeficiente unificado que
             corresponda, de acuerdo con la normativa vigente.
           </p>
-          <span id="gmp" />
-          <span id="vaf" />
+          <span id="fc" />
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Fondo Cooperativo
           </h2>
@@ -268,6 +269,7 @@ const Taxes = () => {
             el cronograma aplicable para este tributo, considerando los días
             hábiles y los corrimientos que correspondan.
           </p>
+          <span id="vaf" />
           <h2 className="mt-6 mb-4 text-lg font-semibold opacity-70 underline decoration-gray-500">
             Vencimientos del Alivio Fiscal
           </h2>

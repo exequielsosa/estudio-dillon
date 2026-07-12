@@ -3,14 +3,14 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": "AccountingService",
   "@id": "https://www.estudio-dillon.com.ar/#organization",
   name: "Estudio Contable Dillon",
   alternateName: "Estudio Dillon",
   description:
     "Estudio contable y legal con más de 20 años de experiencia. Servicios integrales para empresas, monotributistas y pymes en Argentina.",
   url: "https://www.estudio-dillon.com.ar",
-  telephone: "+54-11-5895-9825",
+  telephone: "+54-11-5895-9823",
   email: "ma.eugenia.dillon@gmail.com",
   logo: "https://www.estudio-dillon.com.ar/assets/logo.png",
   image: "https://www.estudio-dillon.com.ar/assets/og-image.jpg",
@@ -20,7 +20,11 @@ const organizationSchema = {
     addressRegion: "Buenos Aires",
     addressCountry: "AR",
   },
-  areaServed: { "@type": "Country", name: "Argentina" },
+  areaServed: [
+    { "@type": "AdministrativeArea", name: "Ciudad Autónoma de Buenos Aires" },
+    { "@type": "AdministrativeArea", name: "Provincia de Buenos Aires" },
+    { "@type": "Country", name: "Argentina" },
+  ],
   priceRange: "$$",
   sameAs: [
     "https://www.linkedin.com/in/maria-eugenia-dillon/",

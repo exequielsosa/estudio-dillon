@@ -22,7 +22,7 @@ const Vencimientos = () => {
               <div className="w-full justify-center flex mt-4">
                 <div className="w-full">
                   <h1 className="mb-4 text-2xl font-semibold">
-                    Calendario de vencimientos impositivos para el 2026:
+                    Calendario de vencimientos ARCA (ex AFIP) para el 2026:
                   </h1>
                 </div>
               </div>

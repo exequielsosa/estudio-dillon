@@ -34,6 +34,11 @@ const FooterLayout = () => {
                     WhatsApp
                   </a>
                 </li>
+                <li className="mb-4">
+                  <a href="tel:+541158959823" className="hover:underline">
+                    +54 11 5895-9823
+                  </a>
+                </li>
                 <li>
                   <a
                     href="mailto:estudiodillonsosa@gmail.com?Subject:Consulta%20a%20Estudio%20Dillon"
