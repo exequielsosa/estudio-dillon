@@ -14,6 +14,10 @@ module.exports = {
       titillium: ["var(--font-titillium)", "system-ui", "sans-serif"],
     },
     extend: {
+      screens: {
+        // breakpoint propio del navbar: el menu horizontal necesita ~1200px
+        nav: "1200px",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

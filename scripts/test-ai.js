@@ -46,7 +46,7 @@ async function isRelevantForEstudioDillon(title, content) {
   const preview = content.substring(0, 500);
 
   const completion = await groq.chat.completions.create({
-    model: "llama-3.1-8b-instant",
+    model: "openai/gpt-oss-20b",
     max_tokens: 10,
     messages: [
       {
