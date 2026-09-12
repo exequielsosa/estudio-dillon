@@ -389,7 +389,8 @@ async function isRelevantForEstudioDillon(title, content) {
 
   const completion = await groq.chat.completions.create({
     model: "openai/gpt-oss-20b",
-    max_tokens: 10,
+    max_tokens: 50,
+    reasoning_effort: "low",
     messages: [
       {
         role: "system",
