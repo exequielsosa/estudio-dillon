@@ -8,8 +8,8 @@ import { sendContactForm } from "../lib/api";
 const initValues = {
   name: "",
   email: "",
-  subject: "Mensaje de estudio-dillon.com ",
   message: "",
+  website: "", // honeypot anti-spam
 };
 
 const initState = { isLoading: false, error: "", values: initValues };
@@ -45,10 +45,10 @@ const FormContact = () => {
   const router = useRouter();
   const route = router.asPath;
 
-  const disabled =
-    state.values.name.length > 1 &&
-    state.values.email.length > 1 &&
-    state.values.message.length > 1;
+  const canSubmit =
+    state.values.name.trim().length > 1 &&
+    state.values.email.trim().length > 1 &&
+    state.values.message.trim().length >= 10;
 
   const handleClose = () => {
     setState(initState);
@@ -129,6 +129,19 @@ const FormContact = () => {
                   sizing="md"
                   onChange={handleChange}
                   placeholder="ingresa tu nombre"
+                  required={true}
+                  maxLength={100}
+                />
+                {/* Honeypot: invisible para personas, los bots suelen completarlo */}
+                <input
+                  type="text"
+                  name="website"
+                  value={values.website}
+                  onChange={handleChange}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  className="absolute -left-[9999px] w-px h-px opacity-0"
                 />
                 <div className="mb-2 mt-4 block">
                   <Label htmlFor="email" value="Email" />
@@ -143,7 +156,7 @@ const FormContact = () => {
                   onChange={handleChange}
                 />
                 <div className="mb-2 block mt-3">
-                  <Label htmlFor="comment" value="Detalle" />
+                  <Label htmlFor="message" value="Detalle" />
                 </div>
                 <Textarea
                   id="message"
@@ -151,11 +164,19 @@ const FormContact = () => {
                   value={values.message}
                   placeholder="Dejanos el motivo de tu consulta..."
                   required={true}
+                  minLength={10}
+                  maxLength={5000}
                   rows={4}
                   onChange={handleChange}
                 />
+                {error && (
+                  <p className="mt-3 text-sm text-red-600">
+                    No pudimos enviar tu mensaje. Revisá los datos o escribinos
+                    por WhatsApp.
+                  </p>
+                )}
                 <div className="mb-2 mt-4 w-full flex items-end justify-center">
-                  <Button color="light" type="submit" disabled={!disabled}>
+                  <Button color="light" type="submit" disabled={!canSubmit}>
                     Enviar
                   </Button>
                 </div>

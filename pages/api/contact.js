@@ -3,9 +3,19 @@ import { mailOptions, transporter } from "../../config/nodemailer";
 const CONTACT_MESSAGE_FIELDS = {
   name: "Nombre",
   email: "Email",
-  subject: "Asunto",
   message: "Mensaje",
 };
+
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+// Evita que el contenido enviado por el usuario se interprete como HTML en el email
+const escapeHtml = (str) =>
+  String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 
 const generateEmailContent = (data) => {
   const stringData = Object.entries(data).reduce(
@@ -15,7 +25,9 @@ const generateEmailContent = (data) => {
   );
 
   const htmlData = Object.entries(data).reduce((str, [key, val]) => {
-    return (str += `<h3 class="form-heading" align="left">${CONTACT_MESSAGE_FIELDS[key]}</h3><p class="form-answer" align="left">${val}</p>`);
+    return (str += `<h3 class="form-heading" align="left">${
+      CONTACT_MESSAGE_FIELDS[key]
+    }</h3><p class="form-answer" align="left">${escapeHtml(val)}</p>`);
   }, "");
 
   return {
@@ -26,23 +38,43 @@ const generateEmailContent = (data) => {
 
 const handler = async (req, res) => {
   if (req.method === "POST") {
-    const data = req.body;
-    console.log(data);
-    if (!data || !data.name || !data.email || !data.subject || !data.message) {
-      return res.status(400).send({ message: "Bad request" });
+    const body = req.body || {};
+
+    // Honeypot: campo oculto que solo completan los bots. Se responde OK sin enviar nada.
+    if (body.website) {
+      return res.status(200).json({ success: true });
+    }
+
+    // Solo se usan los campos esperados; cualquier otro dato del body se ignora
+    const name = String(body.name || "").trim();
+    const email = String(body.email || "").trim();
+    const message = String(body.message || "").trim();
+
+    if (
+      !name ||
+      name.length > 100 ||
+      !EMAIL_REGEX.test(email) ||
+      email.length > 254 ||
+      message.length < 10 ||
+      message.length > 5000
+    ) {
+      return res.status(400).json({ message: "Bad request" });
     }
 
     try {
       await transporter.sendMail({
         ...mailOptions,
-        ...generateEmailContent(data),
-        subject: data.subject,
+        ...generateEmailContent({ name, email, message }),
+        subject: `Consulta web de ${name} - estudio-dillon.com`,
+        replyTo: email,
       });
 
       return res.status(200).json({ success: true });
     } catch (err) {
-      console.log(err);
-      return res.status(400).json({ message: err.message });
+      console.error("Error enviando email de contacto:", err.message);
+      return res
+        .status(500)
+        .json({ message: "No se pudo enviar el mensaje" });
     }
   }
   return res.status(400).json({ message: "Bad request" });

@@ -87,4 +87,6 @@ Si la tarea toca SEO, revisar esos archivos antes de empezar para no duplicar tr
 _(Esta sección se actualiza al cierre de cada sesión con un resumen de lo hecho y lo pendiente.)_
 
 - Último trabajo en curso: ajustes de SEO + Google Analytics (commits recientes en `master`).
+- 2026-10-18: endurecido el formulario de contacto (`pages/api/contact.js` + `components/formContact.js`): escape de HTML en el email, asunto fijo en servidor (`Consulta web de <nombre>`), `replyTo` al remitente, honeypot `website`, validación de email/largos, sin logs de datos personales, mensaje de error visible en el form. Sin probar envío real todavía.
+- Mejoras propuestas pendientes: caché/ISR en `pages/noticias/*`, "Últimas noticias" server-side, comprimir imágenes pesadas de `public/` y migrar `<img>` a `next/image`, bajar duración de AOS, borrar `pages/api/hello.js`, mover deps de dev a `devDependencies`, actualizar este CLAUDE.md (Next 14, Supabase, noticias, `lib/fonts.js`).
 - Pendiente conocido: reemplazar placeholders de contacto en `components/seo/*.js` (ver ACTUALIZAR-CONTACTO.md) y generar imágenes faltantes (ver IMAGENES-SEO.md).
