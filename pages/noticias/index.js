@@ -233,7 +233,10 @@ const NoticiasIndex = ({ noticias }) => {
   );
 };
 
-export async function getServerSideProps() {
+// ISR: Supabase recibe ~1 consulta por hora sin importar el tráfico (antes,
+// con getServerSideProps, una por visita). /api/noticias/create la regenera
+// al instante cuando entra una noticia nueva.
+export async function getStaticProps() {
   const { data: noticias, error } = await supabase
     .from("noticias")
     .select(
@@ -243,14 +246,17 @@ export async function getServerSideProps() {
     .order("created_at", { ascending: false })
     .limit(60);
 
+  // Lanzar en vez de devolver []: así ISR conserva la última versión buena
+  // en lugar de cachear un listado vacío si Supabase falla.
   if (error) {
-    console.error("Error fetching noticias:", error);
+    throw new Error(`Error fetching noticias: ${error.message}`);
   }
 
   return {
     props: {
       noticias: noticias || [],
     },
+    revalidate: 3600,
   };
 }
 

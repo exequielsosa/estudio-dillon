@@ -50,6 +50,15 @@ const handler = async (req, res) => {
     return res.status(500).json({ message: error.message });
   }
 
+  // Regenerar las páginas ISR para que la noticia aparezca sin esperar el
+  // revalidate. Si falla, la noticia ya está guardada: aparece en ≤ 1 h.
+  try {
+    await res.revalidate("/noticias");
+    await res.revalidate(`/noticias/${data.slug}`);
+  } catch (err) {
+    console.error("Error revalidando noticias:", err.message);
+  }
+
   return res.status(201).json({ success: true, slug: data.slug });
 };
 
