@@ -333,17 +333,29 @@ const NoticiaDetalle = ({ noticia, relacionadas }) => {
   );
 };
 
-export async function getServerSideProps({ params }) {
+// ISR: ninguna noticia se pre-renderiza en el build; cada una se genera en
+// la primera visita y queda cacheada. /api/noticias/create regenera la nueva.
+export async function getStaticPaths() {
+  return { paths: [], fallback: "blocking" };
+}
+
+export async function getStaticProps({ params }) {
   const { slug } = params;
 
   const { data: noticia, error } = await supabase
     .from("noticias")
     .select("*")
     .eq("slug", slug)
-    .single();
+    .maybeSingle();
 
-  if (error || !noticia) {
-    return { notFound: true };
+  // Error real de Supabase: lanzar para que ISR conserve la versión anterior
+  // en vez de cachear un 404 de una noticia que existe.
+  if (error) {
+    throw new Error(`Error fetching noticia ${slug}: ${error.message}`);
+  }
+
+  if (!noticia) {
+    return { notFound: true, revalidate: 3600 };
   }
 
   // Otras noticias de la misma categoría (excluyendo la actual)
@@ -361,7 +373,9 @@ export async function getServerSideProps({ params }) {
     relacionadas = rel || [];
   }
 
-  return { props: { noticia, relacionadas } };
+  // 24 h: el contenido de una noticia casi no cambia y los bots recorren
+  // todas; las relacionadas nuevas pueden tardar hasta un día en aparecer.
+  return { props: { noticia, relacionadas }, revalidate: 86400 };
 }
 
 export default NoticiaDetalle;

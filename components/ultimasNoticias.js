@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { supabase } from "@/lib/supabase";
 
 const CATEGORIA_LABELS = {
   impuestos: "Impuestos",
@@ -33,17 +32,13 @@ const UltimasNoticias = () => {
   useEffect(() => {
     if (esSeccionNoticias) return;
 
-    supabase
-      .from("noticias")
-      .select(
-        "slug, titulo, descripcion, categoria, imagen_url, imagen_alt, fecha_publicacion",
-      )
-      .order("fecha_publicacion", { ascending: false })
-      .order("created_at", { ascending: false })
-      .limit(3)
-      .then(({ data }) => {
+    // Desde /api/noticias/ultimas (cacheado en la CDN), no de Supabase directo
+    fetch("/api/noticias/ultimas")
+      .then((r) => (r.ok ? r.json() : []))
+      .then((data) => {
         if (data?.length) setNoticias(data);
-      });
+      })
+      .catch(() => {});
   }, [esSeccionNoticias]);
 
   if (esSeccionNoticias || noticias.length === 0) return null;
