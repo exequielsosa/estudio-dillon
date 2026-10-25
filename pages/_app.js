@@ -36,7 +36,9 @@ export default function App({ Component, pageProps }) {
 
       // Solo el WhatsApp del estudio (excluye "compartir por WhatsApp")
       if (href.includes("wa.me/541158959823")) {
-        gtag.trackEvent("click_whatsapp", { ubicacion });
+        // data-perfil (opcional) indica desde qué perfil escribió, ej. las cards de la home
+        const perfil = link.dataset.perfil;
+        gtag.trackEvent("click_whatsapp", perfil ? { ubicacion, perfil } : { ubicacion });
       } else if (href.startsWith("tel:")) {
         gtag.trackEvent("click_telefono", { ubicacion });
       } else if (href.startsWith("mailto:")) {
