@@ -42,19 +42,17 @@ const Taxes = () => {
     </Seccion>
     <Seccion id="bp" titulo="Bienes Personales">
       <p>
-            La fecha de <b>vencimiento</b> para la presentación de la{" "}
-            <b>declaración jurada</b> correspondiente al período fiscal 2025,
-            para los inscriptos y quienes deban pagar el impuesto, cae en el
-            período que abarca del <b>11 al 16 de junio de 2026</b>, según la
-            terminación de CUIT. El pago se podrá efectuar entre los días{" "}
-            <b>12 y 17 de junio de 2026</b>, también de acuerdo con la
-            finalización del número de CUIT.
+            La <b>declaración jurada</b> de Bienes Personales correspondiente al
+            período fiscal 2025 tuvo prórroga: el <b>pago</b> del saldo venció el{" "}
+            <b>27 de julio de 2026</b> y la <b>presentación</b> se extendió hasta
+            el <b>30 de octubre de 2026</b>, para todas las terminaciones de CUIT.
       </p>
       <p>
-            En las mismas fechas se ubican los vencimientos vinculados con{" "}
-            <b>Bienes Personales de participaciones societarias</b>, que
-            presentan y pagan las sociedades por sus integrantes, de acuerdo con
-            el cronograma previsto para el período fiscal 2025.
+            Los vencimientos de{" "}
+            <b>Bienes Personales de participaciones societarias</b>, que presentan
+            y pagan las sociedades por sus integrantes, no se modificaron: la
+            presentación fue del <b>11 al 16 de junio de 2026</b> y el pago del{" "}
+            <b>12 al 17 de junio de 2026</b>, según la terminación de CUIT.
       </p>
       <p>
             Para los empleados en <b>relación de dependencia y jubilados</b> que
@@ -72,18 +70,15 @@ const Taxes = () => {
     <Seccion id="ig" titulo="Impuesto a las Ganancias">
       <p>
             Las <b>declaraciones juradas anuales</b> de Ganancias de personas
-            humanas correspondientes al período fiscal 2025 vencerán junto con
-            las de Bienes Personales: la presentación irá del{" "}
-            <b>11 al 16 de junio de 2026</b> y el pago del saldo resultante se
-            podrá realizar del <b>12 al 17 de junio de 2026</b>, según la
-            terminación de CUIT.
+            humanas correspondientes al período fiscal 2025 vencen junto con las de
+            Bienes Personales: el pago del saldo resultante venció el{" "}
+            <b>27 de julio de 2026</b> y la presentación se prorrogó hasta el{" "}
+            <b>30 de octubre de 2026</b>.
       </p>
       <p>
             Los sujetos que únicamente deban presentar el{" "}
-            <b>impuesto cedular</b> tendrán vencimientos específicos en junio de
-            2026: la presentación operará los días 19, 22 y 23 de junio, y el
-            pago del saldo resultante los días 22, 23 y 24 de junio, de acuerdo
-            con la finalización del número de CUIT.
+            <b>impuesto cedular</b> también quedaron alcanzados por la prórroga, con
+            vencimiento el <b>27 de julio de 2026</b>.
       </p>
       <p>
             Las declaraciones juradas anuales de las sociedades vencen en el{" "}
