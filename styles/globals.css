@@ -91,6 +91,18 @@ html {
   background: currentColor;
   animation: l6 2s infinite;
 }
+/* Aparición suave del mensaje de "gracias" del formulario */
+@keyframes entrar {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @keyframes l6 {
   100% {
     inset: 0;

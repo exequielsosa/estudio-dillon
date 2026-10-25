@@ -5,6 +5,7 @@ import FormContact from "./formContact";
 import CallToActionCard from "./callToActionCard";
 import UltimasNoticias from "./ultimasNoticias";
 
+// Bloques globales al final de cada página: noticias → servicios → consulta.
 const Layout = ({ children }) => {
   return (
     <>
@@ -15,8 +16,8 @@ const Layout = ({ children }) => {
         {children}
 
         <UltimasNoticias />
-        <FormContact />
         <CallToActionCard />
+        <FormContact />
       </LayoutBody>
       <FooterLayout />
     </>
