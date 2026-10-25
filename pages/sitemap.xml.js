@@ -7,8 +7,6 @@ const pages = [
   { path: "/monotributo", changefreq: "monthly", priority: "0.9" },
   { path: "/tramites", changefreq: "monthly", priority: "0.9" },
   { path: "/vencimientos", changefreq: "monthly", priority: "0.9" },
-  { path: "/vencimientos-2024", changefreq: "yearly", priority: "0.4" },
-  { path: "/vencimientos-2023", changefreq: "yearly", priority: "0.3" },
   { path: "/noticias", changefreq: "daily", priority: "0.8" },
   { path: "/contacto", changefreq: "yearly", priority: "0.8" },
 ];

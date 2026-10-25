@@ -39,7 +39,7 @@ const SeoHome = () => {
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="Spanish" />
       <meta name="author" content="Estudio Contable Dillon" />
-      <meta name="theme-color" content="#1e40af" />
+      <meta name="theme-color" content="#14213D" />
       <meta
         property="og:image"
         content="https://www.estudio-dillon.com.ar/assets/og-image.jpg"

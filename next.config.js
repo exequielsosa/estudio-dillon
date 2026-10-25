@@ -18,6 +18,15 @@ const nextConfig = {
   // Compression
   compress: true,
 
+  // Calendarios de años anteriores: redirigen al calendario actual (301).
+  // La herramienta de /vencimientos ya permite navegar meses anteriores.
+  async redirects() {
+    return [
+      { source: "/vencimientos-2023", destination: "/vencimientos", permanent: true },
+      { source: "/vencimientos-2024", destination: "/vencimientos", permanent: true },
+    ];
+  },
+
   // Headers for security and SEO
   async headers() {
     return [

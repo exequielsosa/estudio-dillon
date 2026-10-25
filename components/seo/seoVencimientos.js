@@ -25,7 +25,7 @@ const SeoVencimientos = () => {
       />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="Spanish" />
-      <meta name="theme-color" content="#1e40af" />
+      <meta name="theme-color" content="#14213D" />
       <meta property="og:locale" content="es_AR" />
       <meta property="og:type" content="article" />
       <meta property="og:site_name" content="Estudio Contable Dillon" />
@@ -80,7 +80,7 @@ const SeoVencimientos = () => {
               "Calendario completo con todas las fechas de vencimiento de impuestos nacionales, provinciales y monotributo para el año 2026.",
             image: "https://www.estudio-dillon.com.ar/assets/og-image.jpg",
             datePublished: "2026-01-01",
-            dateModified: "2026-07-12",
+            dateModified: "2026-10-25",
             author: {
               "@type": "Organization",
               name: "Estudio Contable Dillon",

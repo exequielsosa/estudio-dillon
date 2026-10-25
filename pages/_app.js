@@ -10,13 +10,45 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import * as gtag from "../gatg";
 import Script from "next/script";
-import { montserrat, titilliumWeb } from "@/lib/fonts";
+import { manrope } from "@/lib/fonts";
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     Aos.init({ duration: 2000, once: true });
   }, []);
   const router = useRouter();
+
+  // Mide clics de contacto en cualquier parte del sitio con un solo listener.
+  // Así sobrevive al rediseño: no depende de cada componente.
+  useEffect(() => {
+    const handleClick = (e) => {
+      const link = e.target.closest?.("a[href]");
+      if (!link) return;
+      const href = link.getAttribute("href") || "";
+
+      const ubicacion = link.classList.contains("whatsapp_float")
+        ? "flotante"
+        : link.closest("footer")
+        ? "footer"
+        : link.closest("nav, header")
+        ? "header"
+        : "contenido";
+
+      // Solo el WhatsApp del estudio (excluye "compartir por WhatsApp")
+      if (href.includes("wa.me/541158959823")) {
+        // data-perfil (opcional) indica desde qué perfil escribió, ej. las cards de la home
+        const perfil = link.dataset.perfil;
+        gtag.trackEvent("click_whatsapp", perfil ? { ubicacion, perfil } : { ubicacion });
+      } else if (href.startsWith("tel:")) {
+        gtag.trackEvent("click_telefono", { ubicacion });
+      } else if (href.startsWith("mailto:")) {
+        gtag.trackEvent("click_email", { ubicacion });
+      }
+    };
+    document.addEventListener("click", handleClick, true);
+    return () => document.removeEventListener("click", handleClick, true);
+  }, []);
+
   useEffect(() => {
     const handleRouteChange = (url) => {
       gtag.pageview(url);
@@ -27,7 +59,7 @@ export default function App({ Component, pageProps }) {
     };
   }, [router.events]);
   return (
-    <div className={`${montserrat.variable} ${titilliumWeb.variable}`}>
+    <div className={manrope.variable}>
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
