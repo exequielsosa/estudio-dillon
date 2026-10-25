@@ -1,0 +1,1672 @@
+{
+  "anio": 2026,
+  "fuente": {
+    "nombre": "ARCA — Agenda de vencimientos (agenda sintética)",
+    "url": "https://seti.afip.gob.ar/av/seleccionVencimientosSintetica.do",
+    "actualizadoArca": "2026-10-24",
+    "consultado": "2026-10-25",
+    "verificadoPor": null
+  },
+  "nota": "Fechas tomadas de la agenda oficial de ARCA, con prórrogas vigentes al 24/10/2026. Si ARCA publica una prórroga, actualizar este archivo (ver ACTUALIZAR-VENCIMIENTOS.md).",
+  "obligaciones": [
+    {
+      "id": "iva",
+      "nombre": "IVA",
+      "detalle": "Declaración jurada mensual y pago",
+      "quienes": "Responsables inscriptos",
+      "seccion": "iva",
+      "vencimientos": [
+        {
+          "fecha": "2026-01-19",
+          "cuit": [0, 1],
+          "periodo": "Diciembre/2025",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-01-20",
+          "cuit": [2, 3],
+          "periodo": "Diciembre/2025",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-01-21",
+          "cuit": [4, 5],
+          "periodo": "Diciembre/2025",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-01-22",
+          "cuit": [6, 7],
+          "periodo": "Diciembre/2025",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-01-23",
+          "cuit": [8, 9],
+          "periodo": "Diciembre/2025",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-02-18",
+          "cuit": [0, 1],
+          "periodo": "Enero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-02-19",
+          "cuit": [2, 3],
+          "periodo": "Enero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-02-20",
+          "cuit": [4, 5],
+          "periodo": "Enero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-02-23",
+          "cuit": [6, 7],
+          "periodo": "Enero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-02-24",
+          "cuit": [8, 9],
+          "periodo": "Enero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-03-18",
+          "cuit": [0, 1],
+          "periodo": "Febrero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-03-19",
+          "cuit": [2, 3],
+          "periodo": "Febrero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-03-20",
+          "cuit": [4, 5],
+          "periodo": "Febrero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-03-25",
+          "cuit": [6, 7],
+          "periodo": "Febrero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-03-26",
+          "cuit": [8, 9],
+          "periodo": "Febrero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-04-20",
+          "cuit": [0, 1],
+          "periodo": "Marzo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-04-21",
+          "cuit": [2, 3],
+          "periodo": "Marzo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-04-22",
+          "cuit": [4, 5],
+          "periodo": "Marzo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-04-23",
+          "cuit": [6, 7],
+          "periodo": "Marzo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-04-24",
+          "cuit": [8, 9],
+          "periodo": "Marzo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-05-18",
+          "cuit": [0, 1],
+          "periodo": "Abril/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-05-19",
+          "cuit": [2, 3],
+          "periodo": "Abril/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-05-20",
+          "cuit": [4, 5],
+          "periodo": "Abril/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-05-21",
+          "cuit": [6, 7],
+          "periodo": "Abril/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-05-22",
+          "cuit": [8, 9],
+          "periodo": "Abril/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-06-18",
+          "cuit": [0, 1],
+          "periodo": "Mayo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-06-19",
+          "cuit": [2, 3],
+          "periodo": "Mayo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-06-22",
+          "cuit": [4, 5],
+          "periodo": "Mayo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-06-23",
+          "cuit": [6, 7],
+          "periodo": "Mayo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-06-24",
+          "cuit": [8, 9],
+          "periodo": "Mayo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-07-20",
+          "cuit": [0, 1],
+          "periodo": "Junio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-07-21",
+          "cuit": [2, 3],
+          "periodo": "Junio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-07-22",
+          "cuit": [4, 5],
+          "periodo": "Junio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-07-23",
+          "cuit": [6, 7],
+          "periodo": "Junio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-07-24",
+          "cuit": [8, 9],
+          "periodo": "Junio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-08-18",
+          "cuit": [0, 1],
+          "periodo": "Julio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-08-19",
+          "cuit": [2, 3],
+          "periodo": "Julio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-08-20",
+          "cuit": [4, 5],
+          "periodo": "Julio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-08-21",
+          "cuit": [6, 7],
+          "periodo": "Julio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-08-24",
+          "cuit": [8, 9],
+          "periodo": "Julio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-09-18",
+          "cuit": [0, 1],
+          "periodo": "Agosto/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-09-21",
+          "cuit": [2, 3],
+          "periodo": "Agosto/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-09-22",
+          "cuit": [4, 5],
+          "periodo": "Agosto/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-09-23",
+          "cuit": [6, 7],
+          "periodo": "Agosto/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-09-24",
+          "cuit": [8, 9],
+          "periodo": "Agosto/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-10-19",
+          "cuit": [0, 1],
+          "periodo": "Septiembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-10-20",
+          "cuit": [2, 3],
+          "periodo": "Septiembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-10-21",
+          "cuit": [4, 5],
+          "periodo": "Septiembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-10-22",
+          "cuit": [6, 7],
+          "periodo": "Septiembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-10-23",
+          "cuit": [8, 9],
+          "periodo": "Septiembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-11-18",
+          "cuit": [0, 1],
+          "periodo": "Octubre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-11-19",
+          "cuit": [2, 3],
+          "periodo": "Octubre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-11-20",
+          "cuit": [4, 5],
+          "periodo": "Octubre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-11-24",
+          "cuit": [6, 7],
+          "periodo": "Octubre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-11-25",
+          "cuit": [8, 9],
+          "periodo": "Octubre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-12-18",
+          "cuit": [0, 1],
+          "periodo": "Noviembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-12-21",
+          "cuit": [2, 3],
+          "periodo": "Noviembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-12-22",
+          "cuit": [4, 5],
+          "periodo": "Noviembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-12-23",
+          "cuit": [6, 7],
+          "periodo": "Noviembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-12-24",
+          "cuit": [8, 9],
+          "periodo": "Noviembre/2026",
+          "accion": "Presentación y pago"
+        }
+      ]
+    },
+    {
+      "id": "monotributo",
+      "nombre": "Monotributo",
+      "detalle": "Pago de la cuota mensual",
+      "quienes": "Monotributistas",
+      "seccion": "mono",
+      "vencimientos": [
+        {
+          "fecha": "2026-01-20",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "Enero/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-02-20",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "Febrero/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-03-20",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "Marzo/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-04-20",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "Abril/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-05-20",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "Mayo/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-06-22",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "Junio/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-07-20",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "Julio/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-08-20",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "Agosto/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-09-21",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "Septiembre/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-10-20",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "Octubre/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-11-20",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "Noviembre/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-12-21",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "Diciembre/2026",
+          "accion": "Pago"
+        }
+      ]
+    },
+    {
+      "id": "monotributo_recat",
+      "nombre": "Monotributo",
+      "detalle": "Recategorización semestral",
+      "quienes": "Monotributistas",
+      "seccion": "mono",
+      "vencimientos": [
+        {
+          "fecha": "2026-02-05",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "2º semestre del año 2025",
+          "accion": "Recategorización"
+        },
+        {
+          "fecha": "2026-08-05",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "1º semestre del año 2026",
+          "accion": "Recategorización"
+        }
+      ]
+    },
+    {
+      "id": "f931",
+      "nombre": "Cargas sociales (F.931)",
+      "detalle": "Declaración jurada y pago de aportes y contribuciones",
+      "quienes": "Empleadores",
+      "seccion": "cas",
+      "vencimientos": [
+        {
+          "fecha": "2026-01-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Diciembre/2025",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-01-12",
+          "cuit": [4, 5, 6],
+          "periodo": "Diciembre/2025",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-01-13",
+          "cuit": [7, 8, 9],
+          "periodo": "Diciembre/2025",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-02-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Enero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-02-10",
+          "cuit": [4, 5, 6],
+          "periodo": "Enero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-02-11",
+          "cuit": [7, 8, 9],
+          "periodo": "Enero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-03-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Febrero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-03-10",
+          "cuit": [4, 5, 6],
+          "periodo": "Febrero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-03-11",
+          "cuit": [7, 8, 9],
+          "periodo": "Febrero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-04-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Marzo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-04-10",
+          "cuit": [4, 5, 6],
+          "periodo": "Marzo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-04-13",
+          "cuit": [7, 8, 9],
+          "periodo": "Marzo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-05-11",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Abril/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-05-12",
+          "cuit": [4, 5, 6],
+          "periodo": "Abril/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-05-13",
+          "cuit": [7, 8, 9],
+          "periodo": "Abril/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-06-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Mayo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-06-10",
+          "cuit": [4, 5, 6],
+          "periodo": "Mayo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-06-11",
+          "cuit": [7, 8, 9],
+          "periodo": "Mayo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-07-13",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Junio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-07-14",
+          "cuit": [4, 5, 6],
+          "periodo": "Junio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-07-15",
+          "cuit": [7, 8, 9],
+          "periodo": "Junio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-08-10",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Julio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-08-11",
+          "cuit": [4, 5, 6],
+          "periodo": "Julio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-08-12",
+          "cuit": [7, 8, 9],
+          "periodo": "Julio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-09-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Agosto/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-09-10",
+          "cuit": [4, 5, 6],
+          "periodo": "Agosto/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-09-11",
+          "cuit": [7, 8, 9],
+          "periodo": "Agosto/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-10-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Septiembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-10-13",
+          "cuit": [4, 5, 6],
+          "periodo": "Septiembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-10-14",
+          "cuit": [7, 8, 9],
+          "periodo": "Septiembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-11-11",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Octubre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-11-12",
+          "cuit": [4, 5, 6],
+          "periodo": "Octubre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-11-13",
+          "cuit": [7, 8, 9],
+          "periodo": "Octubre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-12-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Noviembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-12-10",
+          "cuit": [4, 5, 6],
+          "periodo": "Noviembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-12-11",
+          "cuit": [7, 8, 9],
+          "periodo": "Noviembre/2026",
+          "accion": "Presentación y pago"
+        }
+      ]
+    },
+    {
+      "id": "autonomos",
+      "nombre": "Autónomos",
+      "detalle": "Pago de aportes mensuales",
+      "quienes": "Trabajadores autónomos",
+      "seccion": "cas",
+      "vencimientos": [
+        {
+          "fecha": "2026-01-05",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Diciembre/2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-01-06",
+          "cuit": [4, 5, 6],
+          "periodo": "Diciembre/2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-01-07",
+          "cuit": [7, 8, 9],
+          "periodo": "Diciembre/2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-02-05",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Enero/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-02-06",
+          "cuit": [4, 5, 6],
+          "periodo": "Enero/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-02-09",
+          "cuit": [7, 8, 9],
+          "periodo": "Enero/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-03-05",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Febrero/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-03-06",
+          "cuit": [4, 5, 6],
+          "periodo": "Febrero/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-03-09",
+          "cuit": [7, 8, 9],
+          "periodo": "Febrero/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-04-06",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Marzo/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-04-07",
+          "cuit": [4, 5, 6],
+          "periodo": "Marzo/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-04-08",
+          "cuit": [7, 8, 9],
+          "periodo": "Marzo/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-05-05",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Abril/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-05-06",
+          "cuit": [4, 5, 6],
+          "periodo": "Abril/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-05-07",
+          "cuit": [7, 8, 9],
+          "periodo": "Abril/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-06-05",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Mayo/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-06-08",
+          "cuit": [4, 5, 6],
+          "periodo": "Mayo/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-06-09",
+          "cuit": [7, 8, 9],
+          "periodo": "Mayo/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-07-06",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Junio/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-07-07",
+          "cuit": [4, 5, 6],
+          "periodo": "Junio/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-07-08",
+          "cuit": [7, 8, 9],
+          "periodo": "Junio/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-08-05",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Julio/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-08-06",
+          "cuit": [4, 5, 6],
+          "periodo": "Julio/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-08-07",
+          "cuit": [7, 8, 9],
+          "periodo": "Julio/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-09-07",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Agosto/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-09-08",
+          "cuit": [4, 5, 6],
+          "periodo": "Agosto/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-09-09",
+          "cuit": [7, 8, 9],
+          "periodo": "Agosto/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-10-05",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Septiembre/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-10-06",
+          "cuit": [4, 5, 6],
+          "periodo": "Septiembre/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-10-07",
+          "cuit": [7, 8, 9],
+          "periodo": "Septiembre/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-11-05",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Octubre/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-11-11",
+          "cuit": [4, 5, 6],
+          "periodo": "Octubre/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-11-12",
+          "cuit": [7, 8, 9],
+          "periodo": "Octubre/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-12-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Noviembre/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-12-10",
+          "cuit": [4, 5, 6],
+          "periodo": "Noviembre/2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-12-11",
+          "cuit": [7, 8, 9],
+          "periodo": "Noviembre/2026",
+          "accion": "Pago"
+        }
+      ]
+    },
+    {
+      "id": "sicore",
+      "nombre": "Retenciones y percepciones (SICORE)",
+      "detalle": "Ganancias: declaración jurada mensual y pagos a cuenta",
+      "quienes": "Agentes de retención y percepción",
+      "seccion": "sicore",
+      "vencimientos": [
+        {
+          "fecha": "2026-01-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Diciembre/2025",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-01-12",
+          "cuit": [4, 5, 6],
+          "periodo": "Diciembre/2025",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-01-13",
+          "cuit": [7, 8, 9],
+          "periodo": "Diciembre/2025",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-01-21",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "1º quincena Enero/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-01-22",
+          "cuit": [4, 5, 6],
+          "periodo": "1º quincena Enero/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-01-23",
+          "cuit": [7, 8, 9],
+          "periodo": "1º quincena Enero/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-02-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Enero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-02-10",
+          "cuit": [4, 5, 6],
+          "periodo": "Enero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-02-11",
+          "cuit": [7, 8, 9],
+          "periodo": "Enero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-02-20",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "1º quincena Febrero/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-02-23",
+          "cuit": [4, 5, 6],
+          "periodo": "1º quincena Febrero/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-02-24",
+          "cuit": [7, 8, 9],
+          "periodo": "1º quincena Febrero/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-03-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Febrero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-03-10",
+          "cuit": [4, 5, 6],
+          "periodo": "Febrero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-03-11",
+          "cuit": [7, 8, 9],
+          "periodo": "Febrero/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-03-25",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "1º quincena Marzo/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-03-26",
+          "cuit": [4, 5, 6],
+          "periodo": "1º quincena Marzo/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-03-27",
+          "cuit": [7, 8, 9],
+          "periodo": "1º quincena Marzo/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-04-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Marzo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-04-10",
+          "cuit": [4, 5, 6],
+          "periodo": "Marzo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-04-13",
+          "cuit": [7, 8, 9],
+          "periodo": "Marzo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-04-21",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "1º quincena Abril/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-04-22",
+          "cuit": [4, 5, 6],
+          "periodo": "1º quincena Abril/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-04-23",
+          "cuit": [7, 8, 9],
+          "periodo": "1º quincena Abril/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-05-11",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Abril/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-05-12",
+          "cuit": [4, 5, 6],
+          "periodo": "Abril/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-05-13",
+          "cuit": [7, 8, 9],
+          "periodo": "Abril/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-05-21",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "1º quincena Mayo/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-05-22",
+          "cuit": [4, 5, 6],
+          "periodo": "1º quincena Mayo/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-05-26",
+          "cuit": [7, 8, 9],
+          "periodo": "1º quincena Mayo/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-06-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Mayo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-06-10",
+          "cuit": [4, 5, 6],
+          "periodo": "Mayo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-06-11",
+          "cuit": [7, 8, 9],
+          "periodo": "Mayo/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-06-22",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "1º quincena Junio/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-06-23",
+          "cuit": [4, 5, 6],
+          "periodo": "1º quincena Junio/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-06-24",
+          "cuit": [7, 8, 9],
+          "periodo": "1º quincena Junio/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-07-13",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Junio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-07-14",
+          "cuit": [4, 5, 6],
+          "periodo": "Junio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-07-15",
+          "cuit": [7, 8, 9],
+          "periodo": "Junio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-07-21",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "1º quincena Julio/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-07-22",
+          "cuit": [4, 5, 6],
+          "periodo": "1º quincena Julio/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-07-23",
+          "cuit": [7, 8, 9],
+          "periodo": "1º quincena Julio/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-08-10",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Julio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-08-11",
+          "cuit": [4, 5, 6],
+          "periodo": "Julio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-08-12",
+          "cuit": [7, 8, 9],
+          "periodo": "Julio/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-08-21",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "1º quincena Agosto/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-08-24",
+          "cuit": [4, 5, 6],
+          "periodo": "1º quincena Agosto/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-08-25",
+          "cuit": [7, 8, 9],
+          "periodo": "1º quincena Agosto/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-09-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Agosto/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-09-10",
+          "cuit": [4, 5, 6],
+          "periodo": "Agosto/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-09-11",
+          "cuit": [7, 8, 9],
+          "periodo": "Agosto/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-09-21",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "1º quincena Septiembre/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-09-22",
+          "cuit": [4, 5, 6],
+          "periodo": "1º quincena Septiembre/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-09-23",
+          "cuit": [7, 8, 9],
+          "periodo": "1º quincena Septiembre/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-10-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Septiembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-10-13",
+          "cuit": [4, 5, 6],
+          "periodo": "Septiembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-10-14",
+          "cuit": [7, 8, 9],
+          "periodo": "Septiembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-10-21",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "1º quincena Octubre/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-10-22",
+          "cuit": [4, 5, 6],
+          "periodo": "1º quincena Octubre/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-10-23",
+          "cuit": [7, 8, 9],
+          "periodo": "1º quincena Octubre/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-11-11",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Octubre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-11-12",
+          "cuit": [4, 5, 6],
+          "periodo": "Octubre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-11-13",
+          "cuit": [7, 8, 9],
+          "periodo": "Octubre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-11-24",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "1º quincena Noviembre/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-11-25",
+          "cuit": [4, 5, 6],
+          "periodo": "1º quincena Noviembre/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-11-26",
+          "cuit": [7, 8, 9],
+          "periodo": "1º quincena Noviembre/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-12-09",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "Noviembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-12-10",
+          "cuit": [4, 5, 6],
+          "periodo": "Noviembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-12-11",
+          "cuit": [7, 8, 9],
+          "periodo": "Noviembre/2026",
+          "accion": "Presentación y pago"
+        },
+        {
+          "fecha": "2026-12-21",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "1º quincena Diciembre/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-12-22",
+          "cuit": [4, 5, 6],
+          "periodo": "1º quincena Diciembre/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        },
+        {
+          "fecha": "2026-12-23",
+          "cuit": [7, 8, 9],
+          "periodo": "1º quincena Diciembre/2026",
+          "accion": "Pago a cuenta 1ª quincena"
+        }
+      ]
+    },
+    {
+      "id": "ganancias_anticipo",
+      "nombre": "Ganancias personas humanas",
+      "detalle": "Anticipo",
+      "quienes": "Personas humanas",
+      "seccion": "ig",
+      "vencimientos": [
+        {
+          "fecha": "2026-02-13",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "4º anticipo del año 2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-02-18",
+          "cuit": [4, 5, 6],
+          "periodo": "4º anticipo del año 2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-02-19",
+          "cuit": [7, 8, 9],
+          "periodo": "4º anticipo del año 2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-04-13",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "5º anticipo del año 2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-04-14",
+          "cuit": [4, 5, 6],
+          "periodo": "5º anticipo del año 2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-04-15",
+          "cuit": [7, 8, 9],
+          "periodo": "5º anticipo del año 2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-09-24",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "1º anticipo del año 2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-10-13",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "2º anticipo del año 2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-10-14",
+          "cuit": [4, 5, 6],
+          "periodo": "2º anticipo del año 2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-10-15",
+          "cuit": [7, 8, 9],
+          "periodo": "2º anticipo del año 2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-12-14",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "3º anticipo del año 2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-12-15",
+          "cuit": [4, 5, 6],
+          "periodo": "3º anticipo del año 2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-12-16",
+          "cuit": [7, 8, 9],
+          "periodo": "3º anticipo del año 2026",
+          "accion": "Pago"
+        }
+      ]
+    },
+    {
+      "id": "bp_anticipo",
+      "nombre": "Bienes Personales",
+      "detalle": "Anticipo",
+      "quienes": "Personas humanas",
+      "seccion": "bp",
+      "vencimientos": [
+        {
+          "fecha": "2026-02-13",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "4º anticipo del año 2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-02-18",
+          "cuit": [4, 5, 6],
+          "periodo": "4º anticipo del año 2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-02-19",
+          "cuit": [7, 8, 9],
+          "periodo": "4º anticipo del año 2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-04-13",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "5º anticipo del año 2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-04-14",
+          "cuit": [4, 5, 6],
+          "periodo": "5º anticipo del año 2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-04-15",
+          "cuit": [7, 8, 9],
+          "periodo": "5º anticipo del año 2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-08-13",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "1º anticipo del año 2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-08-14",
+          "cuit": [4, 5, 6],
+          "periodo": "1º anticipo del año 2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-08-18",
+          "cuit": [7, 8, 9],
+          "periodo": "1º anticipo del año 2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-10-13",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "2º anticipo del año 2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-10-14",
+          "cuit": [4, 5, 6],
+          "periodo": "2º anticipo del año 2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-10-15",
+          "cuit": [7, 8, 9],
+          "periodo": "2º anticipo del año 2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-12-14",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "3º anticipo del año 2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-12-15",
+          "cuit": [4, 5, 6],
+          "periodo": "3º anticipo del año 2026",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-12-16",
+          "cuit": [7, 8, 9],
+          "periodo": "3º anticipo del año 2026",
+          "accion": "Pago"
+        }
+      ]
+    },
+    {
+      "id": "ganancias_bp_anual",
+      "nombre": "Ganancias y Bienes Personales",
+      "detalle": "Declaración jurada anual 2025",
+      "quienes": "Personas humanas",
+      "seccion": "ig",
+      "vencimientos": [
+        {
+          "fecha": "2026-07-27",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "año 2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-10-30",
+          "cuit": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "periodo": "año 2025",
+          "accion": "Presentación"
+        }
+      ]
+    },
+    {
+      "id": "bp_acciones",
+      "nombre": "Bienes Personales acciones y participaciones",
+      "detalle": "Declaración jurada anual 2025 (responsable sustituto)",
+      "quienes": "Sociedades",
+      "seccion": "ps",
+      "vencimientos": [
+        {
+          "fecha": "2026-06-11",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "año 2025",
+          "accion": "Presentación"
+        },
+        {
+          "fecha": "2026-06-12",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "año 2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-06-12",
+          "cuit": [4, 5, 6],
+          "periodo": "año 2025",
+          "accion": "Presentación"
+        },
+        {
+          "fecha": "2026-06-16",
+          "cuit": [4, 5, 6],
+          "periodo": "año 2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-06-16",
+          "cuit": [7, 8, 9],
+          "periodo": "año 2025",
+          "accion": "Presentación"
+        },
+        {
+          "fecha": "2026-06-17",
+          "cuit": [7, 8, 9],
+          "periodo": "año 2025",
+          "accion": "Pago"
+        }
+      ]
+    },
+    {
+      "id": "ganancias_sociedades_dic",
+      "nombre": "Ganancias sociedades",
+      "detalle": "Declaración jurada anual · cierre diciembre 2025",
+      "quienes": "Sociedades con cierre en diciembre",
+      "seccion": "ig",
+      "vencimientos": [
+        {
+          "fecha": "2026-05-13",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "ejercicios con cierre en Diciembre/2025",
+          "accion": "Presentación"
+        },
+        {
+          "fecha": "2026-05-14",
+          "cuit": [0, 1, 2, 3],
+          "periodo": "ejercicios con cierre en Diciembre/2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-05-14",
+          "cuit": [4, 5, 6],
+          "periodo": "ejercicios con cierre en Diciembre/2025",
+          "accion": "Presentación"
+        },
+        {
+          "fecha": "2026-05-15",
+          "cuit": [4, 5, 6],
+          "periodo": "ejercicios con cierre en Diciembre/2025",
+          "accion": "Pago"
+        },
+        {
+          "fecha": "2026-05-15",
+          "cuit": [7, 8, 9],
+          "periodo": "ejercicios con cierre en Diciembre/2025",
+          "accion": "Presentación"
+        },
+        {
+          "fecha": "2026-05-18",
+          "cuit": [7, 8, 9],
+          "periodo": "ejercicios con cierre en Diciembre/2025",
+          "accion": "Pago"
+        }
+      ]
+    }
+  ]
+}
