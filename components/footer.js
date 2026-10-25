@@ -20,7 +20,7 @@ const REDES = [
   { href: "https://twitter.com/maugexxiv?lang=es", label: "X (Twitter)" },
 ];
 
-const EMAIL = "estudiodillonsosa@gmail.com";
+const EMAIL = "ma.eugenia.dillon@gmail.com";
 
 const Titulo = ({ children }) => (
   <h2 className="mb-4 text-xs font-bold tracking-[0.2em] text-tinta-300">{children}</h2>

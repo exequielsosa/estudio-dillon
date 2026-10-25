@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import Link from "next/link";
 import ThanksMail from "../components/thanks";
-import { useRouter } from "next/router";
 import { sendContactForm } from "../lib/api";
 import { trackEvent } from "../gatg";
 
@@ -14,7 +13,7 @@ const initValues = {
 
 const initState = { isLoading: false, error: "", values: initValues };
 
-const EMAIL = "estudiodillonsosa@gmail.com";
+const EMAIL = "ma.eugenia.dillon@gmail.com";
 
 const linkTexto = "font-bold text-tinta-900 underline underline-offset-[3px] decoration-ambar-500 hover:decoration-2";
 const campo =
@@ -42,7 +41,9 @@ const OtrosCanales = ({ className = "" }) => (
   </div>
 );
 
-const FormContact = () => {
+// Tarjeta con el formulario y sus estados (enviando, enviado, error).
+// Se usa en el bloque global y arriba de todo en /contacto.
+export const TarjetaFormulario = ({ titulo = "Comunicate con nosotros", bajada, ubicacion = "bloque" }) => {
   const [state, setState] = useState(initState);
   const [success, setSuccess] = useState(false);
   const [enviado, setEnviado] = useState({ nombre: "", email: "" }); // para personalizar el "gracias"
@@ -66,7 +67,7 @@ const FormContact = () => {
       setEnviado({ nombre: values.name.trim().split(/\s+/)[0], email: values.email.trim() });
       setState(initState);
       setSuccess(true);
-      trackEvent("generate_lead", { formulario: "contacto" });
+      trackEvent("generate_lead", { formulario: "contacto", ubicacion });
     } catch (error) {
       setState((prev) => ({
         ...prev,
@@ -75,9 +76,6 @@ const FormContact = () => {
       }));
     }
   };
-
-  const router = useRouter();
-  const route = router.asPath;
 
   const canSubmit =
     state.values.name.trim().length > 1 &&
@@ -91,7 +89,67 @@ const FormContact = () => {
   };
 
   return (
-    <section className="mt-14 md:mt-20 -mx-4 w-[calc(100%+2rem)] md:mx-0 md:w-full bg-tinta-50 md:rounded-3xl px-4 py-9 md:p-12"
+    <div ref={tarjeta} style={success && altoTarjeta ? { minHeight: altoTarjeta } : undefined}
+      className="bg-white rounded-[18px] md:rounded-[20px] p-[22px] md:p-8 shadow-[0_12px_32px_rgba(20,33,61,0.08)] flex flex-col">
+      {success ? (
+        <ThanksMail nombre={enviado.nombre} email={enviado.email} handleClick={handleClose} />
+      ) : (
+        <>
+          {titulo && (
+            <h3 className={`${bajada ? "mb-1" : "mb-3 md:mb-3.5"} text-xl md:text-[22px] font-extrabold text-tinta-900`}>{titulo}</h3>
+          )}
+          {bajada && <p className="mb-3.5 md:mb-4 text-[15px] leading-normal text-tinta-500">{bajada}</p>}
+          <form id="contact-form" onSubmit={(e) => onSubmit(e)} aria-busy={isLoading} className="relative w-full">
+            {/* Mientras envía, el formulario queda visible y bloqueado: nada salta de lugar */}
+            <fieldset disabled={isLoading} className="group flex flex-col gap-1.5 min-w-0">
+            <label htmlFor="name" className={etiqueta}>Nombre y apellido</label>
+            <input type="text" id="name" name="name" value={values.name} onChange={handleChange}
+              placeholder="Tu nombre" required maxLength={100} autoComplete="name" className={`${campo} mb-2.5 md:mb-3`} />
+            {/* Honeypot: invisible para personas, los bots suelen completarlo */}
+            <input type="text" name="website" value={values.website} onChange={handleChange} tabIndex={-1}
+              autoComplete="off" aria-hidden="true" className="absolute -left-[9999px] w-px h-px opacity-0" />
+            <label htmlFor="email" className={etiqueta}>Email</label>
+            <input type="email" id="email" name="email" value={values.email} onChange={handleChange}
+              placeholder="nombre@empresa.com" required autoComplete="email" className={`${campo} mb-2.5 md:mb-3`} />
+            <label htmlFor="message" className={etiqueta}>Detalle</label>
+            <textarea id="message" name="message" value={values.message} onChange={handleChange}
+              placeholder="Contanos el motivo de tu consulta..." required minLength={10} maxLength={5000} rows={4}
+              className={`${campo} resize-none`} />
+            </fieldset>
+            {error && (
+              <div role="alert" className="mt-3.5 flex gap-3 items-start px-4 py-3.5 rounded-xl bg-[#FEF3F2] border border-[#F4C7C3]">
+                <svg viewBox="0 0 24 24" className="w-5 h-5 shrink-0 mt-px" fill="none" stroke="#B42318" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" /><path d="M12 7.5v5.5M12 16.5h.01" />
+                </svg>
+                <div className="flex flex-col gap-1">
+                  <span className="text-[15px] font-bold text-error">No pudimos enviar tu consulta</span>
+                  <span className="text-sm leading-normal text-[#7A271A]">
+                    Probá de nuevo en un momento o escribinos por{" "}
+                    <a href="https://wa.me/541158959823" target="_blank" rel="noopener noreferrer" className="font-bold text-[#7A271A] underline">WhatsApp</a>.
+                    Lo que escribiste no se perdió.
+                  </span>
+                </div>
+              </div>
+            )}
+            <button type="submit" disabled={!canSubmit || isLoading}
+              className={`w-full mt-4 flex items-center justify-center gap-2.5 text-base font-bold text-white p-4 rounded-xl transition-colors ${
+                isLoading ? "bg-tinta-900 cursor-progress" : "bg-tinta-900 hover:bg-tinta-800 disabled:bg-tinta-300 disabled:cursor-not-allowed"
+              }`}>
+              {isLoading && (
+                <span className="w-[18px] h-[18px] rounded-full border-[2.5px] border-white/30 border-t-ambar-500 animate-spin" aria-hidden="true" />
+              )}
+              <span className="text-white">{isLoading ? "Enviando consulta…" : error ? "Reintentar envío" : "Enviar consulta"}</span>
+            </button>
+          </form>
+        </>
+      )}
+    </div>
+  );
+};
+
+const FormContact = () => {
+  return (
+    <section id="consulta" className="scroll-mt-24 mt-14 md:mt-20 -mx-4 w-[calc(100%+2rem)] md:mx-0 md:w-full bg-tinta-50 md:rounded-3xl px-4 py-9 md:p-12"
       aria-label="Servicios contables - Estudio Dillon">
       <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_520px] gap-5 lg:gap-12 items-start [&>*]:min-w-0">
         {/* Columna izquierda: texto SEO (sin cambios de contenido) */}
@@ -124,61 +182,7 @@ const FormContact = () => {
           <OtrosCanales className="hidden lg:flex mt-7" />
         </div>
 
-        {/* Columna derecha: formulario */}
-        <div ref={tarjeta} style={success && altoTarjeta ? { minHeight: altoTarjeta } : undefined}
-          className="bg-white rounded-[18px] md:rounded-[20px] p-[22px] md:p-8 shadow-[0_12px_32px_rgba(20,33,61,0.08)] flex flex-col">
-          {success ? (
-            <ThanksMail nombre={enviado.nombre} email={enviado.email} handleClick={handleClose} />
-          ) : (
-            <>
-              {route !== "/contacto" && (
-                <h3 className="mb-3 md:mb-3.5 text-xl md:text-[22px] font-extrabold text-tinta-900">Comunicate con nosotros</h3>
-              )}
-              <form id="contact-form" onSubmit={(e) => onSubmit(e)} aria-busy={isLoading} className="relative w-full">
-                {/* Mientras envía, el formulario queda visible y bloqueado: nada salta de lugar */}
-                <fieldset disabled={isLoading} className="group flex flex-col gap-1.5 min-w-0">
-                <label htmlFor="name" className={etiqueta}>Nombre y apellido</label>
-                <input type="text" id="name" name="name" value={values.name} onChange={handleChange}
-                  placeholder="Tu nombre" required maxLength={100} autoComplete="name" className={`${campo} mb-2.5 md:mb-3`} />
-                {/* Honeypot: invisible para personas, los bots suelen completarlo */}
-                <input type="text" name="website" value={values.website} onChange={handleChange} tabIndex={-1}
-                  autoComplete="off" aria-hidden="true" className="absolute -left-[9999px] w-px h-px opacity-0" />
-                <label htmlFor="email" className={etiqueta}>Email</label>
-                <input type="email" id="email" name="email" value={values.email} onChange={handleChange}
-                  placeholder="nombre@empresa.com" required autoComplete="email" className={`${campo} mb-2.5 md:mb-3`} />
-                <label htmlFor="message" className={etiqueta}>Detalle</label>
-                <textarea id="message" name="message" value={values.message} onChange={handleChange}
-                  placeholder="Contanos el motivo de tu consulta..." required minLength={10} maxLength={5000} rows={4}
-                  className={`${campo} resize-none`} />
-                </fieldset>
-                {error && (
-                  <div role="alert" className="mt-3.5 flex gap-3 items-start px-4 py-3.5 rounded-xl bg-[#FEF3F2] border border-[#F4C7C3]">
-                    <svg viewBox="0 0 24 24" className="w-5 h-5 shrink-0 mt-px" fill="none" stroke="#B42318" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <circle cx="12" cy="12" r="9" /><path d="M12 7.5v5.5M12 16.5h.01" />
-                    </svg>
-                    <div className="flex flex-col gap-1">
-                      <span className="text-[15px] font-bold text-error">No pudimos enviar tu consulta</span>
-                      <span className="text-sm leading-normal text-[#7A271A]">
-                        Probá de nuevo en un momento o escribinos por{" "}
-                        <a href="https://wa.me/541158959823" target="_blank" rel="noopener noreferrer" className="font-bold text-[#7A271A] underline">WhatsApp</a>.
-                        Lo que escribiste no se perdió.
-                      </span>
-                    </div>
-                  </div>
-                )}
-                <button type="submit" disabled={!canSubmit || isLoading}
-                  className={`w-full mt-4 flex items-center justify-center gap-2.5 text-base font-bold text-white p-4 rounded-xl transition-colors ${
-                    isLoading ? "bg-tinta-900 cursor-progress" : "bg-tinta-900 hover:bg-tinta-800 disabled:bg-tinta-300 disabled:cursor-not-allowed"
-                  }`}>
-                  {isLoading && (
-                    <span className="w-[18px] h-[18px] rounded-full border-[2.5px] border-white/30 border-t-ambar-500 animate-spin" aria-hidden="true" />
-                  )}
-                  <span className="text-white">{isLoading ? "Enviando consulta…" : error ? "Reintentar envío" : "Enviar consulta"}</span>
-                </button>
-              </form>
-            </>
-          )}
-        </div>
+        <TarjetaFormulario />
 
         <OtrosCanales className="flex lg:hidden" />
       </div>
