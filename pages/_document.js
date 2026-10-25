@@ -40,6 +40,7 @@ export default function Document() {
         {/* <meta name="google-site-verification" content="PEGAR_TOKEN_AQUI" /> */}
 
         {/* Icons and Manifest */}
+        <link rel="icon" type="image/svg+xml" href="/brand/favicon.svg" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link
           rel="icon"

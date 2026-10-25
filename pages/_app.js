@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import * as gtag from "../gatg";
 import Script from "next/script";
-import { montserrat, titilliumWeb } from "@/lib/fonts";
+import { manrope } from "@/lib/fonts";
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -57,7 +57,7 @@ export default function App({ Component, pageProps }) {
     };
   }, [router.events]);
   return (
-    <div className={`${montserrat.variable} ${titilliumWeb.variable}`}>
+    <div className={manrope.variable}>
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
