@@ -15,3 +15,13 @@ export const event = ({ action, category, label, value }) => {
     value: value,
   });
 };
+
+// Eventos GA4 (Fase 0 del rediseño). No falla si gtag todavía no cargó
+// o si un bloqueador de anuncios lo frena.
+export const trackEvent = (name, params = {}) => {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  window.gtag("event", name, {
+    page_path: window.location.pathname,
+    ...params,
+  });
+};

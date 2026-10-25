@@ -4,6 +4,7 @@ import Link from "next/link";
 import ThanksMail from "../components/thanks";
 import { useRouter } from "next/router";
 import { sendContactForm } from "../lib/api";
+import { trackEvent } from "../gatg";
 
 const initValues = {
   name: "",
@@ -33,6 +34,7 @@ const FormContact = () => {
       await sendContactForm(values);
       setState(initState);
       setSuccess(true);
+      trackEvent("generate_lead", { formulario: "contacto" });
     } catch (error) {
       setState((prev) => ({
         ...prev,

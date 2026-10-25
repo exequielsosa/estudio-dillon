@@ -17,6 +17,36 @@ export default function App({ Component, pageProps }) {
     Aos.init({ duration: 2000, once: true });
   }, []);
   const router = useRouter();
+
+  // Mide clics de contacto en cualquier parte del sitio con un solo listener.
+  // Así sobrevive al rediseño: no depende de cada componente.
+  useEffect(() => {
+    const handleClick = (e) => {
+      const link = e.target.closest?.("a[href]");
+      if (!link) return;
+      const href = link.getAttribute("href") || "";
+
+      const ubicacion = link.classList.contains("whatsapp_float")
+        ? "flotante"
+        : link.closest("footer")
+        ? "footer"
+        : link.closest("nav, header")
+        ? "header"
+        : "contenido";
+
+      // Solo el WhatsApp del estudio (excluye "compartir por WhatsApp")
+      if (href.includes("wa.me/541158959823")) {
+        gtag.trackEvent("click_whatsapp", { ubicacion });
+      } else if (href.startsWith("tel:")) {
+        gtag.trackEvent("click_telefono", { ubicacion });
+      } else if (href.startsWith("mailto:")) {
+        gtag.trackEvent("click_email", { ubicacion });
+      }
+    };
+    document.addEventListener("click", handleClick, true);
+    return () => document.removeEventListener("click", handleClick, true);
+  }, []);
+
   useEffect(() => {
     const handleRouteChange = (url) => {
       gtag.pageview(url);
